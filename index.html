@@ -329,8 +329,8 @@
         <!--contact information-->
         <section>
             <section>
-            <h3>Have You Any Questions ?</h3>
-            <h4>I'M AT YOUR SERVICES</h4>
+                <h3>Have You Any Questions ?</h3>
+                <h4>I'M AT YOUR SERVICES</h4>
             </section>
 
             <section>
@@ -356,14 +356,30 @@
             </section>
 
             <section>
-            <h3>SEND ME AN EMAIL</h3>
-            <h4>I'M AT YOUR SERVICES</h4>
+                <h3>SEND ME AN EMAIL</h3>
+                <h4>I'M AT YOUR SERVICES</h4>
             </section>
         </section>
 
         <!--send message-->
         <section>
-
+            <form action="details" method="post">
+                <div>
+                    <input type="text" id="clientName" placeholder="Name" required>
+                </div>
+                <div>
+                    <input type="email" id="clientEmail" placeholder="Email" required>
+                </div>
+                <div>
+                    <input type="text" id="clientSubject" placeholder="Subject" required>
+                </div>
+                <div>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <div>
+                    <button type="button">Contact Us</button>
+                </div>
+            </form>
         </section>
 
     </section>
