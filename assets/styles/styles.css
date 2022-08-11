@@ -96,4 +96,27 @@ header > section {
     color: #FFA500;
 }
 
+.hover-line::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 6px;
+    background-color: #FFA500;
+    border-radius: 26%;
+    transition: width .3s;
+}
 
+.hover-line:hover::after {
+    width: 40%;
+    transition: width .3s;
+}
+
+.active-hover-line::after {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 6px;
+    background-color: #FFA500;
+    border-radius: 26%;
+    transition: width .3s;
+}
