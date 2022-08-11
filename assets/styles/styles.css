@@ -88,4 +88,12 @@ header > section {
     color: black;
 }
 
+.menu ul li a:hover {
+    color: #FFA500;
+}
+
+.menu ul li #active {
+    color: #FFA500;
+}
+
 
