@@ -1,18 +1,19 @@
-
-/*body {*/
-/*    position: absolute;*/
-/*    max-width: 1140px;*/
-/*    !*margin-left: -8px;*!*/
-/*    !*overflow: hidden;*!*/
-/*}*/
-
+/**
+ * @author : Pasan Pahasara
+ * @since : 0.1.0
+ **/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/**Heading Section*/
 header > section {
-    position: absolute;
-    width: 1440px;
+    position: fixed;
+    /*backdrop-filter: blur(50px);*/
+    /*width: 1440px*/
+    width: 98.9vw;
     height: 81px;
     overflow: hidden;
     left: 0px;
     top: 0px;
+    scroll-margin-block: revert;
 
     background: #ECF0F3;
 }
@@ -120,3 +121,71 @@ header > section {
     border-radius: 26%;
     transition: width .3s;
 }
+
+/*.banner{*/
+/*position: relative;*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    !*background: url("");*!*/
+/*    background-size: cover;*/
+/*}*/
+
+/**Home Section*/
+/*body > main:nth-child(2) > section:first-child {*/
+/*    position: absolute;*/
+/*    width: 1440px;*/
+/*    height: 150px;*/
+/*    overflow: hidden;*/
+/*    left: 0px;*/
+/*    top: 81px;*/
+
+/*    background: #ECF0F3;*/
+/*}*/
+
+/*body > main:nth-child(2) > section:first-child > aside:first-child > h3:first-child {*/
+/*    position: absolute;*/
+/*    width: 133.81px;*/
+/*    height: 68px;*/
+/*    left: 173px;*/
+/*    top: 181px;*/
+
+/*    font-family: 'Poppins';*/
+/*    font-style: normal;*/
+/*    font-weight: 600;*/
+/*    font-size: 31px;*/
+/*    line-height: 46px;*/
+
+/*    color: #FFA500;*/
+/*}*/
+
+/*body > main:nth-child(2) > section:first-child > aside:first-child > h1:nth-child(2) {*/
+/*    position: absolute;*/
+/*    width: 99px;*/
+/*    height: 72px;*/
+/*    left: 174px;*/
+/*    top: 223px;*/
+
+/*    font-family: 'Poppins';*/
+/*    font-style: normal;*/
+/*    font-weight: 800;*/
+/*    font-size: 55px;*/
+/*    line-height: 82px;*/
+
+/*    color: #000000;*/
+/*}*/
+
+/*body > main:nth-child(2) > section:first-child > aside:first-child > h1:nth-child(2) > span {*/
+/*    position: absolute;*/
+/*    width: 99px;*/
+/*    height: 72px;*/
+/*    left: 174px;*/
+/*    top: 223px;*/
+
+/*    font-family: 'Poppins';*/
+/*    font-style: normal;*/
+/*    font-weight: 800;*/
+/*    font-size: 55px;*/
+/*    line-height: 82px;*/
+
+/*    color: #000000;*/
+/*}*/

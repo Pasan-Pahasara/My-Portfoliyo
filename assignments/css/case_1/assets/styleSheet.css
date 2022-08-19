@@ -1,0 +1,111 @@
+section{
+    height: 50vh;
+    width: 50vw;
+}
+.container{
+    background-color: yellow;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainSquare{
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    z-index:4;
+}
+.centerCircle{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    z-index: 5;
+}
+div{
+    background-color:transparent;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    z-index: 2;
+}
+.square{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+.semiCircleRight{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px 0px 0px 0px;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.semiCircleTop{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 0px 0px 0px 150px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.semiCircleLeft{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 0px 0px 150px 0px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.semiCircleLeftBottom{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 0px 150px 0px 0px;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.topLeft{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.topRight{
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bottomLeft{
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.bottomRight{
+    background-color: deeppink;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
