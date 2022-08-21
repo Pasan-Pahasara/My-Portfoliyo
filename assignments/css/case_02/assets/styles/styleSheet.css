@@ -111,6 +111,19 @@ body > main > section > div {
     margin-left: 10px;
 }
 
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
 
 
