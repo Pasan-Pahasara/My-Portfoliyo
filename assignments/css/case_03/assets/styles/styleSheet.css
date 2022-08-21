@@ -47,3 +47,13 @@ body > section > div:nth-child(2) {
     margin: auto;
     z-index: 1;
 }
+
+/**
+ * Customized Div Styles.
+ */
+body > section > section > div {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
