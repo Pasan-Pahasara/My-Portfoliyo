@@ -106,6 +106,13 @@ body > main > section > section > img:nth-child(3) {
     border-bottom-color: #1C691E;
 }
 
+body > main > section > div {
+    position: relative;
+    margin-left: 10px;
+}
+
+
+
 
 
 
