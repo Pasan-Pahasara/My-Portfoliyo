@@ -57,3 +57,22 @@ body > section > section > div {
     font-size: 20px;
     font-weight: bold;
 }
+
+/**
+ * Customized First Purple Color Absolute Circle Position.
+ */
+body > section > section > div:nth-child(1) {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background-color: #943F7B;
+    border-radius: 100%;
+    top: 264px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body > section > section > div:nth-child(1) > p {
+    margin-top: 100px;
+}
