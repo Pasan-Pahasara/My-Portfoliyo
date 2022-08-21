@@ -84,3 +84,23 @@ body > section > section > div:nth-child(1) {
 body > section > section > div:nth-child(1) > p {
     margin-top: 100px;
 }
+
+/**
+ * Customized Second Blue Color Absolute Circle Position.
+ */
+body > section > section > div:nth-child(2) {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background-color: #1C97C0;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body > section > section > div:nth-child(2) > p {
+    margin-top: 100px;
+}
