@@ -75,7 +75,7 @@ body > section > section > div:nth-child(1) {
     height: 230px;
     background-color: #943F7B;
     border-radius: 100%;
-    top: 264px;
+    top: 266px;
     left: 0;
     right: 0;
     margin: auto;
@@ -103,4 +103,23 @@ body > section > section > div:nth-child(2) {
 
 body > section > section > div:nth-child(2) > p {
     margin-top: 100px;
+}
+
+/**
+ * Customized Third Red Color Absolute Circle Position.
+ */
+body > section > section > div:nth-child(3) {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background-color: #FF6452;
+    border-radius: 100%;
+    bottom: 263px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body > section > section > div:nth-child(3) > p {
+    margin-top: 80px;
 }
