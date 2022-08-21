@@ -15,6 +15,14 @@
 }
 
 /**
+ * Customized Body Position.
+ */
+body {
+    position: relative;
+    height: 300vh;
+}
+
+/**
  * Customized First Fixed Circle Position.
  */
 body > section > div:first-child {
