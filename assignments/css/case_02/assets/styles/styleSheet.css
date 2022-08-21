@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 header {
@@ -26,8 +32,50 @@ header > nav {
 
 header > nav > ul > li {
     display: inline-block;
-    cursor: pointer;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
     color: rgba(46, 41, 41, 0.96);
 }
+
+header > nav > ul > li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+body > main > aside {
+    width: 300px;
+    background: #4C0182;
+    position: absolute;
+    top: 73px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+body > main > aside > nav > ul {
+    position: relative;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 30px;
+    color: white;
+}
+
+body > main > aside > nav > ul > li {
+    display: block;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
