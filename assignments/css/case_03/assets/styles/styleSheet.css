@@ -2,3 +2,31 @@
  * @author : Pasan Pahasara
  * @since : 0.1.0
  **/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Universal Selector
+   ========================================================================== */
+
+/**
+ * Added font-family.
+ */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/**
+ * Customized First Fixed Circle Position.
+ */
+body > section > div:first-child {
+    position: fixed;
+    width: 260px;
+    height: 260px;
+    border: 19px solid #B19183;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+}
