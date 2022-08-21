@@ -30,3 +30,20 @@ body > section > div:first-child {
     margin: auto;
     z-index: 1;
 }
+
+/**
+ * Customized Second Fixed Circle Position.
+ */
+body > section > div:nth-child(2) {
+    position: fixed;
+    width: 225px;
+    height: 225px;
+    border: 19px solid #F90100;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+}
