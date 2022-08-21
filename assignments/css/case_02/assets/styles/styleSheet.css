@@ -66,8 +66,10 @@ body > main > aside > nav > ul > li {
     font-family: 'Poppins', sans-serif;
 }
 
-
-
+body > main > aside > nav > ul > li:hover {
+    color: red;
+    cursor: pointer;
+}
 
 
 
