@@ -52,7 +52,16 @@ body > section > h1 {
     transform: translate(0%, -50%);
 }
 
+/**
+ * Customized First Card Section Color.
+ */
+body > section:nth-child(1) {
+    background: #FFFFFF;
+}
 
+.div1 {
+    background: #FE351F;
+}
 
 
 
