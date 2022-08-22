@@ -14,6 +14,15 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* Scrollbar
+   ========================================================================== */
+/**
+ * Customized Scrollbar.
+ */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 /**
  * Customized Section Position.
  */
