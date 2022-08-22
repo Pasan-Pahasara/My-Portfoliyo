@@ -85,7 +85,16 @@ body > section:nth-child(3) {
     background: #292925;
 }
 
+/**
+ * Customized Fourth Card Section Color.
+ */
+body > section:nth-child(4) {
+    background: #D93725;
+}
 
+.div4 {
+    background: #7C322A;
+}
 
 
 
