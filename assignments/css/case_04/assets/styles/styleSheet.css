@@ -41,6 +41,16 @@ body > section > div > h1 {
     color: white;
 }
 
+/**
+ * Customized The h1 In The Section And Added Relative Position.
+ */
+body > section > h1 {
+    position: relative;
+    margin-top: 50vh;
+    text-align: center;
+    font-size: 150px;
+    transform: translate(0%, -50%);
+}
 
 
 
