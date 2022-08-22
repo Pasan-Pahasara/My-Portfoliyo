@@ -2,6 +2,27 @@
  * @author : Pasan Pahasara
  * @since : 0.1.0
  **/
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&family=Ubuntu:wght@300&display=swap');
+
+/* Universal Selector
+   ========================================================================== */
+
+/**
+ * Added font-family.
+ */
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/**
+ * Customized Section Position.
+ */
+body > section {
+    position: relative;
+    height: 100vh;
+}
+
+
 
 
 
