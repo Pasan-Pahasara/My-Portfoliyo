@@ -22,8 +22,15 @@ body > section {
     height: 100vh;
 }
 
-
-
+/**
+ * Customized Sticky Div Position.
+ */
+body > section > div {
+    position: sticky;
+    height: 60px;
+    top: 0;
+    z-index: 3;
+}
 
 
 
