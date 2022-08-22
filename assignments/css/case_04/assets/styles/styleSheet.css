@@ -32,6 +32,15 @@ body > section > div {
     z-index: 3;
 }
 
+/**
+ * Customized The h1 In The Div.
+ */
+body > section > div > h1 {
+    margin: auto;
+    padding: 10px 10px 10px 25px;
+    color: white;
+}
+
 
 
 
