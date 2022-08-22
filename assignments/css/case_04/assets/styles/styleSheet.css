@@ -74,7 +74,16 @@ body > section:nth-child(2) {
     background: #004583;
 }
 
+/**
+ * Customized Third Card Section Color.
+ */
+body > section:nth-child(3) {
+    background: #5B554E;
+}
 
+.div3 {
+    background: #292925;
+}
 
 
 
