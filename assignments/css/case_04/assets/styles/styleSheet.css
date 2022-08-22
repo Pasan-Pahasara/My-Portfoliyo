@@ -63,6 +63,16 @@ body > section:nth-child(1) {
     background: #FE351F;
 }
 
+/**
+ * Customized Second Card Section Color.
+ */
+body > section:nth-child(2) {
+    background: #58AEF3;
+}
+
+.div2 {
+    background: #004583;
+}
 
 
 
