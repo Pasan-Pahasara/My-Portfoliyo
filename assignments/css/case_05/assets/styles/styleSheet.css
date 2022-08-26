@@ -1,0 +1,130 @@
+/*!
+ * @author : Pasan Pahasara
+ * @since : 0.1.0
+ **/
+
+/**
+ * Customized Section Position Introduce Grid.
+ */
+section {
+    width: 1200px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px;
+}
+
+/**
+ * Customized 01 Image
+ */
+section > div:nth-child(1) {
+    background-size: cover;
+    background: url("../img/1.jpg") center;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
+/**
+ * Customized 02 Image
+ */
+section > div:nth-child(2) {
+    background-size: cover;
+    background: url("../img/2.jpg") center;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
+/**
+ * Customized 03 Image
+ */
+section > div:nth-child(3) {
+    background-size: cover;
+    background: url("../img/3.jpg") center;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
+/**
+ * Customized 04 Image
+ */
+section > div:nth-child(4) {
+    background-size: cover;
+    background: url("../img/4.jpg") center;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
+/**
+ * Customized 05 Image
+ */
+section > div:nth-child(5) {
+    background-size: cover;
+    background: url("../img/5.jpg") center;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
+/**
+ * Customized 06 Image
+ */
+section > div:nth-child(6) {
+    background-size: cover;
+    background: url("../img/6.jpg") center;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
+/**
+ * Customized 07 Image
+ */
+section > div:nth-child(7) {
+    background-size: cover;
+    background: url("../img/7.jpg") center;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
+/**
+ * Customized 08 Image
+ */
+section > div:nth-child(8) {
+    background-size: cover;
+    background: url("../img/8.jpg") center;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
+/**
+ * Customized 09 Image
+ */
+section > div:nth-child(9) {
+    background-size: cover;
+    background: url("../img/9.jpg") center;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
+/**
+ * Customized 10 Image
+ */
+section > div:nth-child(10) {
+    background-size: cover;
+    background: url("../img/10.jpg") center;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
+/**
+ * Customized 11 Image
+ */
+section > div:nth-child(11) {
+    background-size: cover;
+    background: url("../img/11.jpg") center;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
+/**
+ * Customized 12 Image
+ */
+section > div:nth-child(12) {
+    background-size: cover;
+    background: url("../img/12.jpg") center;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
