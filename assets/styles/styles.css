@@ -3,12 +3,28 @@
  * @since : 0.1.0
  **/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Scrollbar
+   ========================================================================== */
+
+/**
+ * Customized Scrollbar.
+ */
+::-webkit-scrollbar {
+    width: 8px;
+    background: #3f3838;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFA500;
+}
+
 /**Heading Section*/
 header > section {
     position: fixed;
     /*backdrop-filter: blur(50px);*/
     /*width: 1440px*/
-    width: 98.9vw;
+    width: 100vw;
     height: 81px;
     overflow: hidden;
     left: 0px;
@@ -189,3 +205,111 @@ header > section {
 
 /*    color: #000000;*/
 /*}*/
+
+
+.homeFirstShape {
+    box-sizing: border-box;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 157px;
+    top: 135px;
+
+    border: 7px solid rgba(255, 165, 0, 0.52);
+    transform: matrix(0.6, 0.8, -0.79, 0.6, 0, 0);
+}
+
+.homeSecondShape {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 745px;
+    top: 214px;
+    border-radius: 100%;
+
+    border: 6px solid rgba(255, 165, 0, 0.52);
+}
+
+/*.homeDoubleSquareShape{*/
+/*    position: absolute;*/
+/*    width: 55px;*/
+/*    height: 54px;*/
+/*    left: 446px;*/
+/*    top: 673px;*/
+/*}*/
+
+.square1 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    left: 446px;
+    top: 673px;
+
+    border: 7px solid rgba(255, 165, 0, 0.52);
+    border-radius: 12px;
+}
+
+.square2 {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    left: 460px;
+    top: 686px;
+
+    background: rgba(255, 165, 0, 0.22);
+    border-radius: 12px;
+}
+
+.cube {
+    position: absolute;
+    width: 224px;
+    height: 172px;
+    left: 892px;
+    top: 420px;
+}
+
+#vector1{
+    position: relative;
+    width: 360px;
+    height: 327px;
+    left: 878px;
+    top: 258px;
+
+    fill:#FFA500;
+    stroke:#FFA500;
+}
+
+#vector2{
+    position: absolute;
+    width: 331px;
+    height: 326px;
+    left: 886px;
+    top: 258px;
+
+    fill:#FFA500;
+    fill-opacity:0.22;
+    stroke:#FFA500;
+    stroke-opacity:0.22;
+}
+
+#cube{
+
+}
+
+#dashLine {
+    position: absolute;
+    width: 793px;
+    height: 451px;
+    left: 490px;
+    top: 233px;
+
+    fill: none;
+    stroke: #FFA500;
+    stroke-opacity: 0.41;
+    stroke-width: 3;
+    stroke-dasharray: 14 14;
+}
