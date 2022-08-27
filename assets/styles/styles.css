@@ -132,3 +132,12 @@ header {
     border-radius: 26%;
     transition: width .3s;
 }
+
+/**
+* main section
+*/
+main{
+    position: relative;
+    margin-top: 73px;
+}
+
