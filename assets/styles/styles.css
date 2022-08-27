@@ -11,7 +11,7 @@
  * Customized Scrollbar.
  */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
     background: #3f3838;
 }
 
@@ -19,23 +19,17 @@
     background: #FFA500;
 }
 
-/**Heading Section*/
-header > section {
+header {
     position: fixed;
-    /*backdrop-filter: blur(50px);*/
-    /*width: 1440px*/
-    width: 100vw;
-    height: 81px;
-    overflow: hidden;
-    left: 0px;
-    top: 0px;
-    scroll-margin-block: revert;
-
     background: #ECF0F3;
+    width: 100%;
+    top: 0;
+    height: 73px;
+    z-index: 2;
 }
 
 #heading1 {
-    position: absolute;
+    position: relative;
     left: 120px;
     top: 15px;
     text-decoration: none;
@@ -66,7 +60,7 @@ header > section {
     width: 110px;
     height: 110px;
     left: -42px;
-    top: -35px;
+    top: -37px;
 
     background: #ECF0F3;
     border: 25px solid rgba(246, 160, 2, 0.65);
@@ -83,26 +77,27 @@ header > section {
     background: rgba(254, 182, 51, 0.49);
 }
 
-.menu ul {
-    float: right;
-    margin-right: 120px;
+.menu{
+    position: absolute;
+    right: 110px;
+    top: 0;
 }
 
 .menu ul li {
-    list-style: none;
     display: inline-block;
-    margin: 10px 12px;
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: Bahnschrift;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .menu ul li a {
-    font-family: Bahnschrift;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
     line-height: 20px;
     text-decoration: none;
     transition: 0.3s all;
-    color: black;
+    color: #000000;
 }
 
 .menu ul li a:hover {
@@ -136,180 +131,4 @@ header > section {
     background-color: #FFA500;
     border-radius: 26%;
     transition: width .3s;
-}
-
-/*.banner{*/
-/*position: relative;*/
-/*    width: 100%;*/
-/*    height: 100vh;*/
-/*    !*background: url("");*!*/
-/*    background-size: cover;*/
-/*}*/
-
-/**Home Section*/
-/*body > main:nth-child(2) > section:first-child {*/
-/*    position: absolute;*/
-/*    width: 1440px;*/
-/*    height: 150px;*/
-/*    overflow: hidden;*/
-/*    left: 0px;*/
-/*    top: 81px;*/
-
-/*    background: #ECF0F3;*/
-/*}*/
-
-/*body > main:nth-child(2) > section:first-child > aside:first-child > h3:first-child {*/
-/*    position: absolute;*/
-/*    width: 133.81px;*/
-/*    height: 68px;*/
-/*    left: 173px;*/
-/*    top: 181px;*/
-
-/*    font-family: 'Poppins';*/
-/*    font-style: normal;*/
-/*    font-weight: 600;*/
-/*    font-size: 31px;*/
-/*    line-height: 46px;*/
-
-/*    color: #FFA500;*/
-/*}*/
-
-/*body > main:nth-child(2) > section:first-child > aside:first-child > h1:nth-child(2) {*/
-/*    position: absolute;*/
-/*    width: 99px;*/
-/*    height: 72px;*/
-/*    left: 174px;*/
-/*    top: 223px;*/
-
-/*    font-family: 'Poppins';*/
-/*    font-style: normal;*/
-/*    font-weight: 800;*/
-/*    font-size: 55px;*/
-/*    line-height: 82px;*/
-
-/*    color: #000000;*/
-/*}*/
-
-/*body > main:nth-child(2) > section:first-child > aside:first-child > h1:nth-child(2) > span {*/
-/*    position: absolute;*/
-/*    width: 99px;*/
-/*    height: 72px;*/
-/*    left: 174px;*/
-/*    top: 223px;*/
-
-/*    font-family: 'Poppins';*/
-/*    font-style: normal;*/
-/*    font-weight: 800;*/
-/*    font-size: 55px;*/
-/*    line-height: 82px;*/
-
-/*    color: #000000;*/
-/*}*/
-
-
-.homeFirstShape {
-    box-sizing: border-box;
-    position: absolute;
-    width: 34px;
-    height: 34px;
-    left: 157px;
-    top: 135px;
-
-    border: 7px solid rgba(255, 165, 0, 0.52);
-    transform: matrix(0.6, 0.8, -0.79, 0.6, 0, 0);
-}
-
-.homeSecondShape {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 745px;
-    top: 214px;
-    border-radius: 100%;
-
-    border: 6px solid rgba(255, 165, 0, 0.52);
-}
-
-/*.homeDoubleSquareShape{*/
-/*    position: absolute;*/
-/*    width: 55px;*/
-/*    height: 54px;*/
-/*    left: 446px;*/
-/*    top: 673px;*/
-/*}*/
-
-.square1 {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 41px;
-    height: 41px;
-    left: 446px;
-    top: 673px;
-
-    border: 7px solid rgba(255, 165, 0, 0.52);
-    border-radius: 12px;
-}
-
-.square2 {
-    position: absolute;
-    width: 41px;
-    height: 41px;
-    left: 460px;
-    top: 686px;
-
-    background: rgba(255, 165, 0, 0.22);
-    border-radius: 12px;
-}
-
-.cube {
-    position: absolute;
-    width: 224px;
-    height: 172px;
-    left: 892px;
-    top: 420px;
-}
-
-#vector1{
-    position: relative;
-    width: 360px;
-    height: 327px;
-    left: 878px;
-    top: 258px;
-
-    fill:#FFA500;
-    stroke:#FFA500;
-}
-
-#vector2{
-    position: absolute;
-    width: 331px;
-    height: 326px;
-    left: 886px;
-    top: 258px;
-
-    fill:#FFA500;
-    fill-opacity:0.22;
-    stroke:#FFA500;
-    stroke-opacity:0.22;
-}
-
-#cube{
-
-}
-
-#dashLine {
-    position: absolute;
-    width: 793px;
-    height: 451px;
-    left: 490px;
-    top: 233px;
-
-    fill: none;
-    stroke: #FFA500;
-    stroke-opacity: 0.41;
-    stroke-width: 3;
-    stroke-dasharray: 14 14;
 }
