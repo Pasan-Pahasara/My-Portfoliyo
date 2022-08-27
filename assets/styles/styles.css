@@ -148,32 +148,62 @@ main > section:nth-child(1) {
     position: relative;
     background: #ECF0F3;
     height: 774px;
+
 }
 
 /**
 * description section
 */
+main > section:nth-child(1) > aside:nth-child(1) {
+    height: 433px;
+    width: 582px;
+    position: absolute;
+    top: 130px;
+    left: 173px;
+    margin: auto;
+}
+
 main > section:nth-child(1) > aside:nth-child(1) > h3:first-child {
     font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31px;
+    margin-top: 0;
+    margin-bottom: 0;
     color: #FFA500;
 }
 
 main > section:nth-child(1) > aside:nth-child(1) > h1:nth-child(2) {
     font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    margin-top: 16px;
+    margin-bottom: 0;
     color: #FFA500;
 }
 
 main > section:nth-child(1) > aside:nth-child(1) > h1:nth-child(2) > span {
     font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
     color: #000000;
 }
 
 main > section:nth-child(1) > aside:nth-child(1) > h1:nth-child(3) {
     font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 16px;
     color: #FFA500;
 }
 
 main > section:nth-child(1) > aside:nth-child(1) > h1:nth-child(3) > span {
     font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
     color: #000000;
 }
