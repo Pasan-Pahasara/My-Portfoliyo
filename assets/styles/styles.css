@@ -141,3 +141,11 @@ main{
     margin-top: 73px;
 }
 
+/**
+* home section
+*/
+main > section:nth-child(1) {
+    position: relative;
+    background: #ECF0F3;
+    height: 774px;
+}
