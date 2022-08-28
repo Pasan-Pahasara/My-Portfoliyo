@@ -292,6 +292,9 @@ main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) > nav:nt
     left: 32%;
 }
 
+/**
+* first shape in home section
+*/
 main > section:first-child > div:first-child {
     box-sizing: border-box;
     position: absolute;
@@ -301,4 +304,18 @@ main > section:first-child > div:first-child {
     top: 92px;
     border: 7px solid rgba(255, 165, 0, 0.52);
     transform: matrix(0.6, 0.8, -0.79, 0.6, 0, 0);
+}
+
+/**
+* second shape in home section
+*/
+main > section:first-child > div:nth-child(3) {
+    box-sizing: border-box;
+    border-radius: 100%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 722px;
+    top: 160px;
+    border: 6px solid rgba(255, 165, 0, 0.52);
 }
