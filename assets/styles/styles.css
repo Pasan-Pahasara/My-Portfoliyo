@@ -256,12 +256,18 @@ main > section:nth-child(1) > aside:nth-child(2) > button:nth-child(4) > div:fir
 /**
 * social links section
 */
+main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) {
+    position: relative;
+    top: 14px;
+}
+
 main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) > h3 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: #909597;
 }
+
 
 main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) > nav {
     display: flex;
@@ -326,4 +332,13 @@ main > section:first-child > aside:nth-child(4) {
     position: absolute;
     right: 185px;
     top: -36px;
+}
+
+/**
+* dash line in home section
+*/
+main > section:first-child > div:nth-child(5) {
+    position: absolute;
+    right: 169px;
+    top: 131px;
 }
