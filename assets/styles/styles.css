@@ -4,7 +4,8 @@
  **/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 /* Scrollbar
    ========================================================================== */
@@ -143,9 +144,9 @@ main {
     margin-top: 73px;
 }
 
-/**
-* home section
-*/
+/*  home section
+   ========================================================================== */
+
 main > section:nth-child(1) {
     position: relative;
     background: #ECF0F3;
@@ -353,6 +354,73 @@ main > section:first-child > div:nth-child(6) {
     left: 0;
     right: 0;
     top: 695px;
+    bottom: 0;
     margin: auto;
     border: 1px solid #CED2D5;
 }
+
+/*  about section
+   ========================================================================== */
+
+main > section:nth-child(2) {
+    position: relative;
+    top: 0;
+    background: rgba(236, 240, 243, 0.4);
+}
+
+/**
+* title in about section
+*/
+main > section:nth-child(2) > section:first-child {
+    position: relative;
+    height: 70px;
+    width: 1062px;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+main > section:nth-child(2) > section:first-child > h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: initial;
+    font-size: 25px;
+    color: #FFA500; !important;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    padding-top: 12px;
+    margin: 0;
+}
+
+main > section:nth-child(2) > section:first-child > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000000; !important;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+main > section:nth-child(2) > section:first-child > div:nth-child(3) {
+    width: 89px;
+    height: 8px;
+    background: #FFA500;
+    position: relative;
+    left: 38.8%;
+    border-radius: 3px;
+}
+
+main > section:nth-child(2) > section:first-child > div:nth-child(4) {
+    top: 13px;
+    width: 44px;
+    height: 8px;
+    background: #FFA500;
+    position: relative;
+    left: 38.8%;
+    border-radius: 3px;
+}
+
