@@ -424,3 +424,13 @@ main > section:nth-child(2) > section:first-child > div:nth-child(4) {
     border-radius: 3px;
 }
 
+/**
+* first cube shape in about section
+*/
+main > section:nth-child(2) > div:nth-child(2){
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 120px;
+    top: 98px;
+}
