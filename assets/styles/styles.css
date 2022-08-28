@@ -149,7 +149,7 @@ main {
 main > section:nth-child(1) {
     position: relative;
     background: #ECF0F3;
-    height: 774px;
+    height: 723px;
 }
 
 /**
@@ -341,4 +341,18 @@ main > section:first-child > div:nth-child(5) {
     position: absolute;
     right: 169px;
     top: 131px;
+}
+
+/**
+* liner in home section
+*/
+main > section:first-child > div:nth-child(6) {
+    position: absolute;
+    width: 79vw;
+    height: 0px;
+    left: 0;
+    right: 0;
+    top: 695px;
+    margin: auto;
+    border: 1px solid #CED2D5;
 }
