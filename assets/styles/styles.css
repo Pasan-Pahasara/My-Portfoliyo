@@ -150,7 +150,6 @@ main > section:nth-child(1) {
     position: relative;
     background: #ECF0F3;
     height: 774px;
-
 }
 
 /**
@@ -318,4 +317,18 @@ main > section:first-child > div:nth-child(3) {
     left: 722px;
     top: 160px;
     border: 6px solid rgba(255, 165, 0, 0.52);
+}
+
+/**
+* main image section in home section
+*/
+main > section:first-child > aside:nth-child(4) {
+    height: 433px;
+    width: 582px;
+    position: relative;
+    top: -36px;
+    left: 1000px;
+    right: 0;
+    bottom: 0;
+    margin: 0;
 }
