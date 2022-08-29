@@ -365,6 +365,7 @@ main > section:first-child > div:nth-child(6) {
 main > section:nth-child(2) {
     position: relative;
     top: 0;
+    height: 933px;
     background: rgba(236, 240, 243, 0.4);
 }
 
@@ -385,8 +386,7 @@ main > section:nth-child(2) > section:first-child > h4 {
     font-family: 'Lato', sans-serif;
     font-weight: initial;
     font-size: 25px;
-    color: #FFA500;
-!important;
+    color: #FFA500 !important;
     text-decoration: none;
     text-align: center;
     border-radius: 3px;
@@ -398,8 +398,7 @@ main > section:nth-child(2) > section:first-child > h1 {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 50px;
-    color: #000000;
-!important;
+    color: #000000 !important;
     text-decoration: none;
     text-align: center;
     border-radius: 3px;
@@ -446,4 +445,27 @@ main > section:nth-child(2) > aside:nth-child(3) > div:first-child {
     height: 331px;
     left: 173px;
     top: 323px;
+}
+
+/**
+* about description in about section
+*/
+main > section:nth-child(2) > aside:nth-child(4) {
+    position: absolute;
+    width: 667px;
+    height: 696px;
+    right: 201px;
+    top: 179px;
+}
+
+/**
+* description title in about section
+*/
+main > section:nth-child(2) > aside:nth-child(4) > h2:first-child {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 52px;
+    color: #000000;
 }
