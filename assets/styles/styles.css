@@ -385,7 +385,8 @@ main > section:nth-child(2) > section:first-child > h4 {
     font-family: 'Lato', sans-serif;
     font-weight: initial;
     font-size: 25px;
-    color: #FFA500; !important;
+    color: #FFA500;
+!important;
     text-decoration: none;
     text-align: center;
     border-radius: 3px;
@@ -397,7 +398,8 @@ main > section:nth-child(2) > section:first-child > h1 {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 50px;
-    color: #000000; !important;
+    color: #000000;
+!important;
     text-decoration: none;
     text-align: center;
     border-radius: 3px;
@@ -427,10 +429,21 @@ main > section:nth-child(2) > section:first-child > div:nth-child(4) {
 /**
 * first cube shape in about section
 */
-main > section:nth-child(2) > div:nth-child(2){
+main > section:nth-child(2) > div:nth-child(2) {
     position: absolute;
     width: 150px;
     height: 150px;
     left: 120px;
     top: 98px;
+}
+
+/**
+* about image in about section
+*/
+main > section:nth-child(2) > aside:nth-child(3) > div:first-child {
+    position: absolute;
+    width: 338px;
+    height: 331px;
+    left: 173px;
+    top: 323px;
 }
