@@ -409,7 +409,7 @@ main > section:nth-child(2) > section:first-child > h1 {
 main > section:nth-child(2) > section:first-child > div:nth-child(3) {
     width: 89px;
     height: 8px;
-    background: #FFA500;
+    background: #FFA500 !important;
     position: relative;
     left: 38.8%;
     border-radius: 3px;
@@ -419,7 +419,7 @@ main > section:nth-child(2) > section:first-child > div:nth-child(4) {
     top: 13px;
     width: 44px;
     height: 8px;
-    background: #FFA500;
+    background: #FFA500 !important;
     position: relative;
     left: 38.8%;
     border-radius: 3px;
@@ -467,5 +467,16 @@ main > section:nth-child(2) > aside:nth-child(4) > h2:first-child {
     font-weight: bold;
     font-size: 35px;
     line-height: 52px;
-    color: #000000;
+    margin-top: 0;
+    color: #000000 !important;
+}
+
+/**
+* introducing description in about section
+*/
+main > section:nth-child(2) > aside:nth-child(4) > p:nth-child(2), p:nth-child(3) {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #9494A1 !important;
 }
