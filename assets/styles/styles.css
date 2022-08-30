@@ -612,3 +612,16 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) > button:fir
     border-width: 0;
 }
 
+main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) > button:first-child > div {
+    position: absolute;
+    width: 55px;
+    height: 53px;
+    left: 224px;
+    top: 4px;
+    border-radius: 100%;
+    background: #F9FAFB;
+    box-shadow: inset -13px -13px 16px #FFFFFF, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
+    cursor: pointer;
+}
+
+
