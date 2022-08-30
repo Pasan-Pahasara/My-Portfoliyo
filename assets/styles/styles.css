@@ -648,3 +648,13 @@ main > section:nth-child(2) > div:nth-child(7) {
     margin: 0 auto;
     border: 1px solid #CED2D5;
 }
+
+/*  services section
+   ========================================================================== */
+
+main > section:nth-child(3) {
+    position: relative;
+    top: 0;
+    height: 1010px;
+    background: #ECF0F3;;
+}
