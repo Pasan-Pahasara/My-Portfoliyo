@@ -555,3 +555,14 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column1 >
     padding-bottom: 5px;
     display: inline-block;
 }
+
+/**
+* my details column 2 titles customized about section
+*/
+main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column2 > p {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--text-black-900) !important;
+    border-bottom: 1px solid #CED2D5;
+}
