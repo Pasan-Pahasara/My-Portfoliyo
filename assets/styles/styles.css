@@ -696,6 +696,9 @@ main > section:nth-child(3) > section:first-child > h1 {
     margin-bottom: 7px;
 }
 
+/**
+* title underline in about section
+*/
 main > section:nth-child(3) > section:first-child > div:nth-child(3) {
     width: 89px;
     height: 8px;
@@ -705,3 +708,12 @@ main > section:nth-child(3) > section:first-child > div:nth-child(3) {
     border-radius: 3px;
 }
 
+main > section:nth-child(3) > section:first-child > div:nth-child(4) {
+    top: 13px;
+    width: 44px;
+    height: 8px;
+    background: #FFA500 !important;
+    position: relative;
+    left: 39%;
+    border-radius: 3px;
+}
