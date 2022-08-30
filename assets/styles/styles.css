@@ -530,3 +530,15 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) {
     display: flex;
     flex-wrap: wrap;
 }
+
+/**
+* my details column 1 titles customized about section
+*/
+main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column1 > p {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--text-black-900) !important;
+    border-bottom: 1px solid #CED2D5;
+    mask-border-mode: revert;
+}
