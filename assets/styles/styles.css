@@ -542,3 +542,16 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column1 >
     border-bottom: 1px solid #CED2D5;
     mask-border-mode: revert;
 }
+
+/**
+* my details column 1 span customized about section
+*/
+main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column1 > p > span {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--text-black-700) !important;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
