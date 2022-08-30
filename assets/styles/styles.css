@@ -6,6 +6,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Lato:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #9494A1;
+}
+
+* {
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 
 /* Scrollbar
    ========================================================================== */
@@ -475,7 +491,7 @@ main > section:nth-child(2) > aside:nth-child(4) > h2:first-child {
 * introducing description in about section
 */
 main > section:nth-child(2) > aside:nth-child(4) > p:nth-child(2), p:nth-child(3) {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 24px;
     color: #9494A1 !important;
@@ -498,10 +514,10 @@ main > section:nth-child(2) > aside:nth-child(4) > p:nth-child(2), p:nth-child(3
 */
 #aboutLineCircle {
     position: absolute;
-    /*width: 150px;*/
     width: 114px;
     height: 157px;
     fill: none;
     right: 0;
     top: 739px;
 }
+
