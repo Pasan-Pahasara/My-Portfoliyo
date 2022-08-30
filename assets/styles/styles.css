@@ -658,3 +658,17 @@ main > section:nth-child(3) {
     height: 1010px;
     background: #ECF0F3;;
 }
+
+/**
+* title in about section
+*/
+main > section:nth-child(3) > section:first-child {
+    position: relative;
+    height: 70px;
+    width: 1062px;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
