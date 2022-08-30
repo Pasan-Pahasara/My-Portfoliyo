@@ -672,3 +672,26 @@ main > section:nth-child(3) > section:first-child {
     margin: auto;
 }
 
+main > section:nth-child(3) > section:first-child > h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: initial;
+    font-size: 25px;
+    color: #FFA500 !important;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    padding-top: 12px;
+    margin: 0;
+}
+
+/*main > section:nth-child(3) > section:first-child > h1 {*/
+/*    font-family: 'Inter', sans-serif;*/
+/*    font-weight: bold;*/
+/*    font-size: 50px;*/
+/*    color: #000000 !important;*/
+/*    text-decoration: none;*/
+/*    text-align: center;*/
+/*    border-radius: 3px;*/
+/*    margin-top: 5px;*/
+/*    margin-bottom: 7px;*/
+/*}*/
