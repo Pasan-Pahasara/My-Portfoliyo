@@ -695,3 +695,13 @@ main > section:nth-child(3) > section:first-child > h1 {
     margin-top: 5px;
     margin-bottom: 7px;
 }
+
+main > section:nth-child(3) > section:first-child > div:nth-child(3) {
+    width: 89px;
+    height: 8px;
+    background: #FFA500 !important;
+    position: relative;
+    left: 39%;
+    border-radius: 3px;
+}
+
