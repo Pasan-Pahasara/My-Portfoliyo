@@ -624,4 +624,14 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) > button:fir
     cursor: pointer;
 }
 
+main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) > button:first-child > div:first-child > i:first-child {
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    left: 33%;
+    top: 30%;
+    bottom: 41.09%;
+    color: #FFA500;
+    cursor: pointer;
+}
 
