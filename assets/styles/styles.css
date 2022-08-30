@@ -566,3 +566,11 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column2 >
     color: var(--text-black-900) !important;
     border-bottom: 1px solid #CED2D5;
 }
+
+/**
+* introduced my details column 2 position about section
+*/
+main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) >#column2{
+    position: absolute;
+    right: 0;
+}
