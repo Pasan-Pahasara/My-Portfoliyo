@@ -750,6 +750,7 @@ main > section:nth-child(3) > section:nth-child(2) {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 /**
@@ -800,6 +801,17 @@ main > section:nth-child(3) > section:nth-child(2) > div > p:nth-child(3) {
     text-align: center;
 }
 
+/**
+* added cube shape service section
+*/
+main > section:nth-child(3) > div:nth-child(3){
+    position: absolute;
+    width: 248px;
+    height: 208px;
+    right: 58px;
+    margin: auto;
+    top: 812px;
+}
 
 
 
