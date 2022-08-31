@@ -916,3 +916,16 @@ main > section:nth-child(4) > section:nth-child(3) {
     left: 172px;
     top: 179px;
 }
+
+/**
+* customized buttons size, shadow and color skills section
+*/
+main > section:nth-child(4) > section:nth-child(3) > nav:first-child > div > button{
+    width: 272px;
+    height: 99px;
+    background: #ECF0F3;
+    box-shadow: inset -23px -23px 45px #FFFFFF, inset 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+    cursor: pointer;
+    border-width: 0;
+}
