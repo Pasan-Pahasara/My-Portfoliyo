@@ -772,3 +772,17 @@ main > section:nth-child(3) > section:nth-child(2) > div > div:first-child > i {
     color: #FFA500;
     font-size: 2.40em;
 }
+
+/**
+* added headings and positions headings service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > div > h4:nth-child(2) {
+    position: absolute;
+    top: 84px;
+    left: 0;
+    right: 0;
+    font-family: 'Inter';
+    font-size: 22px;
+    text-align: center;
+    color: #000000;
+}
