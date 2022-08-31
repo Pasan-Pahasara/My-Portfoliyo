@@ -786,3 +786,24 @@ main > section:nth-child(3) > section:nth-child(2) > div > h4:nth-child(2) {
     text-align: center;
     color: #000000;
 }
+
+/**
+* added descriptions service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > div > p:nth-child(3) {
+    position: absolute;
+    width: 264px;
+    top: 155px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
