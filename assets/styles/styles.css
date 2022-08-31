@@ -804,7 +804,7 @@ main > section:nth-child(3) > section:nth-child(2) > div > p:nth-child(3) {
 /**
 * added cube shape service section
 */
-main > section:nth-child(3) > div:nth-child(3){
+main > section:nth-child(3) > div:nth-child(3) {
     position: absolute;
     width: 248px;
     height: 208px;
@@ -897,6 +897,15 @@ main > section:nth-child(4) > section:first-child > div:nth-child(4) {
     border-radius: 3px;
 }
 
-
+/**
+* added cube shape skills section
+*/
+main > section:nth-child(4) div:nth-child(2) {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 115px;
+    top: 104px;
+}
 
 
