@@ -833,7 +833,7 @@ main > section:nth-child(3) > div:nth-child(4) {
 main > section:nth-child(4) {
     position: relative;
     top: 0;
-    height: 1050px;
+    height: 1318px;
     width: 100%;
     background: #ECF0F3;;
 }
@@ -900,7 +900,7 @@ main > section:nth-child(4) > section:first-child > div:nth-child(4) {
 /**
 * added cube shape skills section
 */
-#skillsCube{
+#skillsCube {
     position: absolute;
     width: 150px;
     height: 150px;
@@ -920,7 +920,7 @@ main > section:nth-child(4) > section:nth-child(3) {
 /**
 * customized buttons size, shadow and color skills section
 */
-main > section:nth-child(4) > section:nth-child(3) > nav:first-child > div > button{
+main > section:nth-child(4) > section:nth-child(3) > nav:first-child > div > button {
     width: 272px;
     height: 99px;
     background: #ECF0F3;
@@ -943,3 +943,4 @@ main > section:nth-child(4) > section:nth-child(3) > nav:first-child {
     box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 25px;
 }
+
