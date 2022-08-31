@@ -875,6 +875,18 @@ main > section:nth-child(4) > section:first-child > h1 {
     margin-bottom: 7px;
 }
 
+/**
+* title underline in skills section
+*/
+main > section:nth-child(4) > section:first-child > div:nth-child(3) {
+    width: 89px;
+    height: 8px;
+    background: #FFA500 !important;
+    position: relative;
+    left: 36.8%;
+    border-radius: 3px;
+}
+
 
 
 
