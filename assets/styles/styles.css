@@ -900,12 +900,11 @@ main > section:nth-child(4) > section:first-child > div:nth-child(4) {
 /**
 * added cube shape skills section
 */
-main > section:nth-child(4) div:nth-child(2) {
+#skillsCube{
     position: absolute;
     width: 150px;
     height: 150px;
     left: 115px;
     top: 104px;
 }
-
 
