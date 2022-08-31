@@ -752,6 +752,19 @@ main > section:nth-child(3) > section:nth-child(2) {
     flex-wrap: wrap;
 }
 
+/**
+* images position service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > div > div:first-child {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: 50px;
+    margin: auto;
+}
+
 main > section:nth-child(3) > section:nth-child(2) > div > div:first-child > i {
     color: #FFA500;
 }
