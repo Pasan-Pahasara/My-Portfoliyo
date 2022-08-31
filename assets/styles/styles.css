@@ -765,6 +765,10 @@ main > section:nth-child(3) > section:nth-child(2) > div > div:first-child {
     margin: auto;
 }
 
+/**
+* added images colors and sizes service section
+*/
 main > section:nth-child(3) > section:nth-child(2) > div > div:first-child > i {
     color: #FFA500;
+    font-size: 2.40em;
 }
