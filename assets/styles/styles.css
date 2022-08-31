@@ -929,3 +929,13 @@ main > section:nth-child(4) > section:nth-child(3) > nav:first-child > div > but
     cursor: pointer;
     border-width: 0;
 }
+
+/**
+* buttons wrapping and position skills section
+*/
+main > section:nth-child(4) > section:nth-child(3) > nav:first-child {
+    display: flex;
+    background: #ECF0F3;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+}
