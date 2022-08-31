@@ -740,7 +740,7 @@ main > section:nth-child(3) > section:nth-child(2) > div {
 /**
 * main section position and display flex service section
 */
-main > section:nth-child(3) > section:nth-child(2){
+main > section:nth-child(3) > section:nth-child(2) {
     position: absolute;
     width: 1280px;
     height: 711px;
@@ -750,4 +750,8 @@ main > section:nth-child(3) > section:nth-child(2){
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+}
+
+main > section:nth-child(3) > section:nth-child(2) > div > div:first-child > i {
+    color: #FFA500;
 }
