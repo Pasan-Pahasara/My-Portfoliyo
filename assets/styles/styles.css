@@ -851,6 +851,19 @@ main > section:nth-child(4) > section:first-child {
     margin: auto;
 }
 
+main > section:nth-child(4) > section:first-child > h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: initial;
+    font-size: 25px;
+    color: #FFA500 !important;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    padding-top: 12px;
+    margin: 0;
+}
+
+
 
 
 
