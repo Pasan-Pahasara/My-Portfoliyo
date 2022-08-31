@@ -908,3 +908,11 @@ main > section:nth-child(4) > section:first-child > div:nth-child(4) {
     top: 104px;
 }
 
+/**
+* added button section position skills section
+*/
+main > section:nth-child(4) > section:nth-child(3) {
+    position: absolute;
+    left: 172px;
+    top: 179px;
+}
