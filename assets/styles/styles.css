@@ -931,7 +931,7 @@ main > section:nth-child(4) > section:nth-child(3) > nav:first-child > div > but
 }
 
 /**
-* buttons wrapping and position skills section
+* buttons wrapping and position flex type skills section
 */
 main > section:nth-child(4) > section:nth-child(3) > nav:first-child {
     display: flex;
