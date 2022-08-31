@@ -827,6 +827,29 @@ main > section:nth-child(3) > div:nth-child(4) {
     border: 1px solid #CED2D5;
 }
 
+/*  skills section
+   ========================================================================== */
+
+main > section:nth-child(4) {
+    position: relative;
+    top: 0;
+    height: 1050px;
+    width: 100%;
+    background: #ECF0F3;;
+}
+
+/**
+* title in skills section
+*/
+main > section:nth-child(4) > section:first-child {
+    position: relative;
+    height: 70px;
+    width: 1062px;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
 
 
 
