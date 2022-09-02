@@ -1011,3 +1011,11 @@ main > section:nth-child(4) > div:nth-child(4) {
     fill: none;
 }
 
+/**
+* second cube position skills section
+*/
+main > section:nth-child(4) > div:nth-child(9) {
+    position: absolute;
+    left: 98px;
+    top: 731px;
+}
