@@ -1357,5 +1357,15 @@ main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > sect
     color: #F29E04;
 }
 
-
+/**
+* customized images sizes project section
+*/
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > section > nav > button {
+    width: 262px;
+    height: 205px;
+    margin: 29px 29px 0;
+    border-radius: 34px;
+    border: none;
+    cursor: pointer;
+}
 
