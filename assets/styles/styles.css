@@ -944,3 +944,40 @@ main > section:nth-child(4) > section:nth-child(3) > nav:first-child {
     border-radius: 25px;
 }
 
+main > section:nth-child(4) > section:nth-child(5) {
+    position: absolute;
+    width: 1330px;
+    top: 370px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+main > section:nth-child(4) > section:nth-child(5) > img:first-child {
+    position: relative;
+    width: 1330px;
+    top: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main > section:nth-child(4) > div:nth-child(4) {
+    position: absolute;
+    width: 576px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#skillsDashArrowShape {
+    position: relative;
+    width: 580px;
+    height: 356px;
+    fill: none;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
