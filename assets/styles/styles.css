@@ -1207,3 +1207,11 @@ main > section:nth-child(5) > section:nth-child(2) > aside:nth-child(3) {
     display: flex;
     align-items: center;
 }
+
+main > section:nth-child(5) > section:nth-child(2) > aside:nth-child(3) > nav:first-child {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 38px 0 38px 38px;
+}
