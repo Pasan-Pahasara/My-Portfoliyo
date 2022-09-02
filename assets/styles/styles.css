@@ -1042,3 +1042,15 @@ main > section:nth-child(4) > div:nth-child(11) {
     margin: 0 auto;
     border: 1px solid #CED2D5;
 }
+
+
+/*  gallery section
+   ========================================================================== */
+
+main > section:nth-child(5) {
+    position: relative;
+    top: 0;
+    height: 776px;
+    width: 100%;
+    background: #ECF0F3;;
+}
