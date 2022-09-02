@@ -1308,3 +1308,14 @@ main > section:nth-child(6) > section:first-child > div:nth-child(4) {
     left: 39.89%;
     border-radius: 3px;
 }
+
+/**
+* added section and display flex type project section
+*/
+main>section:nth-child(6)> section:nth-child(2){
+    display: flex;
+    margin-top: 55px;
+    align-items: center;
+    justify-content: center;
+}
+
