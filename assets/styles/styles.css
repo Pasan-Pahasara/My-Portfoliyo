@@ -1114,3 +1114,12 @@ main > section:nth-child(5) > section:nth-child(2) {
     top: 50px;
 }
 
+/**
+* added section display type flex and position type
+*/
+main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
