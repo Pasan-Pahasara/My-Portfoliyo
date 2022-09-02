@@ -1000,3 +1000,13 @@ main > section:nth-child(4) > div:nth-child(4) {
     top: 948px;
     fill: none;
 }
+
+/**
+* rectangle shape position skills section
+*/
+#skillRectangleShape {
+    position: absolute;
+    left: 300px;
+    top: 1090px;
+    fill: none;
+}
