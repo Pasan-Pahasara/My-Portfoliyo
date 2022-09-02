@@ -1193,9 +1193,17 @@ main > section:nth-child(5) > section:nth-child(2) > aside:first-child > nav:fir
 }
 
 /**
-* added previous button image and customized
+* added previous button image color and customized
 */
 main > section:nth-child(5) > section:nth-child(2) > aside:first-child > nav:first-child > button > i {
     color: #FFA500;
     font-size: 3em;
+}
+
+/**
+* added next button display type flex
+*/
+main > section:nth-child(5) > section:nth-child(2) > aside:nth-child(3) {
+    display: flex;
+    align-items: center;
 }
