@@ -1081,3 +1081,15 @@ main > section:nth-child(5) > section:first-child > h1 {
     margin-top: 5px;
     margin-bottom: 7px;
 }
+
+/**
+* title underline in gallery section
+*/
+main > section:nth-child(5) > section:first-child > div:nth-child(3) {
+    width: 89px;
+    height: 8px;
+    background: #FFA500 !important;
+    position: relative;
+    left: 43.99%;
+    border-radius: 3px;
+}
