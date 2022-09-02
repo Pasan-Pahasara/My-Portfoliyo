@@ -1235,3 +1235,17 @@ main > section:nth-child(5) > section:nth-child(2) > aside:nth-child(3) > nav:fi
     color: #FFA500;
     font-size: 3em;
 }
+
+/**
+* liner in gallery section
+*/
+main > section:nth-child(5) > div:nth-child(3) {
+    position: absolute;
+    width: 79vw;
+    height: 0px;
+    left: 0;
+    right: 0;
+    bottom: 14px;
+    margin: 0 auto;
+    border: 1px solid #CED2D5;
+}
