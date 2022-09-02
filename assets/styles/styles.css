@@ -1123,3 +1123,15 @@ main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) {
     justify-content: center;
 }
 
+/**
+* added first photo
+*/
+main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div:nth-child(1) {
+    width: 323px;
+    height: 404px;
+    margin-right: -57px;
+    background: url(../img/PSX_20220228_173821.jpg);
+    background-size: cover;
+}
+
+
