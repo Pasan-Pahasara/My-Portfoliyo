@@ -1260,3 +1260,11 @@ main > section:nth-child(6) {
     width: 100%;
     background: #ECF0F3;;
 }
+
+/**
+* title in project section
+*/
+main > section:nth-child(6) > section:first-child {
+    position: relative;
+    text-align: center;
+}
