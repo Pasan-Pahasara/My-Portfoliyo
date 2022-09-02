@@ -1369,3 +1369,11 @@ main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > sect
     cursor: pointer;
 }
 
+/**
+* added java application development projects image project section
+*/
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > section:nth-child(1) > nav:first-child > button:first-child {
+    background: url(../img/ApplicationDevelopment.png);
+    background-size: cover;
+}
+
