@@ -1028,3 +1028,17 @@ main > section:nth-child(4) > div:nth-child(10) {
     left: 1093px;
     top: 1073px;
 }
+
+/**
+* liner in skills section
+*/
+main > section:nth-child(4) > div:nth-child(11) {
+    position: absolute;
+    width: 79vw;
+    height: 0px;
+    left: 0;
+    right: 0;
+    bottom: 14px;
+    margin: 0 auto;
+    border: 1px solid #CED2D5;
+}
