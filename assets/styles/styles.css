@@ -991,3 +991,12 @@ main > section:nth-child(4) > div:nth-child(4) {
     fill: none;
 }
 
+/**
+* square shape position skills section
+*/
+#skillSquareShape {
+    position: absolute;
+    left: 941px;
+    top: 948px;
+    fill: none;
+}
