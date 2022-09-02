@@ -1268,3 +1268,12 @@ main > section:nth-child(6) > section:first-child {
     position: relative;
     text-align: center;
 }
+
+main > section:nth-child(6) > section:first-child > h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: initial;
+    font-size: 25px;
+    color: #FFA500 !important;
+    padding-top: 12px;
+    margin: 0;
+}
