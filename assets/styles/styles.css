@@ -1163,3 +1163,11 @@ main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div 
     filter: drop-shadow(-23px -23px 45px rgba(13, 39, 80, 0.15)) drop-shadow(28px 28px 50px rgba(13, 39, 80, 0.16));
     border-radius: 25px;
 }
+
+/**
+* added previous button display type flex
+*/
+main > section:nth-child(5) > section:nth-child(2) > aside:first-child {
+    display: flex;
+    align-items: center;
+}
