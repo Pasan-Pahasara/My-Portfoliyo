@@ -1377,3 +1377,11 @@ main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > sect
     background-size: cover;
 }
 
+/**
+* added web development projects image project section
+*/
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) > nav:first-child > button:first-child {
+    background: url(../img/WebDevelopment.jpg);
+    background-size: cover;
+}
+
