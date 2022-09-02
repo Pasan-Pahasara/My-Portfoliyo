@@ -1019,3 +1019,12 @@ main > section:nth-child(4) > div:nth-child(9) {
     left: 98px;
     top: 731px;
 }
+
+/**
+* third cube position skills section
+*/
+main > section:nth-child(4) > div:nth-child(10) {
+    position: absolute;
+    left: 1093px;
+    top: 1073px;
+}
