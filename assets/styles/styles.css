@@ -1134,4 +1134,14 @@ main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div:
     background-size: cover;
 }
 
+/**
+* added second photo
+*/
+main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div:nth-child(2) {
+    width: 380px;
+    height: 481px;
+    z-index: 1;
+    background: url(../img/IMG-20210611-WA0152.jpg);
+    background-size: cover;
+}
 
