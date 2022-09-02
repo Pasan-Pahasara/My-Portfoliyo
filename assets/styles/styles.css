@@ -1104,4 +1104,13 @@ main > section:nth-child(5) > section:first-child > div:nth-child(4) {
     border-radius: 3px;
 }
 
+/**
+* added section positions gallery section
+*/
+main > section:nth-child(5) > section:nth-child(2) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 50px;
+}
 
