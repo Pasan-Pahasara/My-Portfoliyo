@@ -1054,3 +1054,12 @@ main > section:nth-child(5) {
     width: 100%;
     background: #ECF0F3;;
 }
+
+/**
+* title in gallery section
+*/
+main > section:nth-child(5) > section:first-child {
+    position: relative;
+    text-align: center;
+}
+
