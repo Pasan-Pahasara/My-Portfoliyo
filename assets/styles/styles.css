@@ -1171,3 +1171,11 @@ main > section:nth-child(5) > section:nth-child(2) > aside:first-child {
     display: flex;
     align-items: center;
 }
+
+main > section:nth-child(5) > section:nth-child(2) > aside:first-child > nav:first-child {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 38px 38px 38px 0;
+}
