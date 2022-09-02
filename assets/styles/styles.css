@@ -1346,14 +1346,14 @@ main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > sect
     border-radius: 50px;
 }
 
-main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > section >h4{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
+/**
+* customized headings and headings positions project section
+*/
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > section > h4 {
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
-
     color: #F29E04;
 }
 
