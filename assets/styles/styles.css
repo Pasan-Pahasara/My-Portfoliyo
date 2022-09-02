@@ -1286,3 +1286,15 @@ main > section:nth-child(6) > section:first-child > h1 {
     margin-top: 5px;
     margin-bottom: 7px;
 }
+
+/**
+* title underline in project section
+*/
+main > section:nth-child(6) > section:first-child > div:nth-child(3) {
+    width: 89px;
+    height: 8px;
+    background: #FFA500 !important;
+    position: relative;
+    left: 39.89%;
+    border-radius: 3px;
+}
