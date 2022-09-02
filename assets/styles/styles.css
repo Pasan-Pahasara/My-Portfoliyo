@@ -1215,3 +1215,15 @@ main > section:nth-child(5) > section:nth-child(2) > aside:nth-child(3) > nav:fi
     height: 80px;
     margin: 38px 0 38px 38px;
 }
+
+/**
+* customized next buttons size, shadow and color gallery section
+*/
+main > section:nth-child(5) > section:nth-child(2) > aside:nth-child(3) > nav:first-child > button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    background: rgba(236, 240, 243, 0.85);
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+}
