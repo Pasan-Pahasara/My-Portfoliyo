@@ -1819,3 +1819,12 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div 
     width: 1440px;
     height: 90px;
 }
+
+/**
+* all contact details divs added flex-direction column and align-items center in contact section
+*/
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
