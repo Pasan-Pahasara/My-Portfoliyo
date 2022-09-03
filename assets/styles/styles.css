@@ -1677,14 +1677,14 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
 /**
 * added quote size in client section
 */
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(4)>i{
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(4) > i {
     font-size: 2em;
 }
 
 /**
 * added quote position in client section
 */
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(4){
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(4) {
     position: relative;
     bottom: 352px;
     left: 121px;
@@ -1704,3 +1704,16 @@ main > section:nth-child(6) > div:nth-child(7) {
     margin: 0 auto;
     border: 1px solid #CED2D5;
 }
+
+/*  contact section
+   ========================================================================== */
+
+main > section:nth-child(7) {
+    position: relative;
+    top: 0;
+    height: 1166px;
+    width: 100%;
+    background: #ECF0F3;;
+}
+
+
