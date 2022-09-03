@@ -1477,3 +1477,12 @@ main > section:nth-child(6) > section:nth-child(4) {
     align-items: center;
     justify-content: center;
 }
+
+/**
+* added cube shape project section
+*/
+main > section:nth-child(6) > div:nth-child(3) > div > div:nth-child(2) {
+    margin-top: 226px;
+    margin-right: -32px;
+    z-index: 3;
+}
