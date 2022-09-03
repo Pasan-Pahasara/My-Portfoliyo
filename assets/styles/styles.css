@@ -1631,3 +1631,12 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div {
     flex-direction: column;
     align-items: center;
 }
+
+/**
+* position first client image in client section
+*/
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > img:nth-child(3){
+    position: relative;
+    bottom: 407px;
+    z-index: 1;
+}
