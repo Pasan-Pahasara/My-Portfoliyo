@@ -1544,4 +1544,13 @@ main > section:nth-child(6) > section:nth-child(5)> h4 {
     margin: 0;
 }
 
+main > section:nth-child(6) > section:nth-child(5) > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000000 !important;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
 
