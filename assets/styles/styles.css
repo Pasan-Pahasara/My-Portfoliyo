@@ -1652,3 +1652,11 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
     color: #000000;
 }
 
+/**
+* added display type inline-flex and flex-direction column in client section
+*/
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2) > div{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 69px;
+}
