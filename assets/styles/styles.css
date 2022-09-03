@@ -1502,3 +1502,16 @@ main > section:nth-child(6) > section:nth-child(4) > div:first-child > div {
     position: absolute;
     margin-inline-start: 33px;
 }
+
+/**
+* added number count and customized
+*/
+main > section:nth-child(6) > section:nth-child(4) > div:first-child > div > p:nth-child(2) {
+    font-family: 'Lato';
+    font-size: 74px;
+    color: #000000 !important;
+    margin: 25px 0px 0px;
+    text-align: center;
+}
+
+
