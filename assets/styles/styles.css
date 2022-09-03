@@ -1604,3 +1604,13 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
     border-radius: 93px;
     z-index: 1;
 }
+
+/**
+* added position center and display type flex in client section
+*/
+main > section:nth-child(6) > section:nth-child(6) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -38px;
+}
