@@ -1885,3 +1885,12 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) > h4:n
     color: #302E4D;
 }
 
+/**
+* send me email section position center
+*/
+main > section:nth-child(7) > section:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
