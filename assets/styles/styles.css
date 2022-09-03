@@ -1403,6 +1403,17 @@ main > section:nth-child(6) > section:nth-child(2) > div:nth-child(2) {
     top: 575px;
 }
 
+/**
+* added scroll bar project section
+*/
+main > section:nth-child(6) > section:nth-child(2) > div:nth-child(2) > div:first-child {
+    width: 94px;
+    height: 14px;
+    background: #D9D9D9;
+    border-radius: 26px;
+    justify-content: center;
+    justify-items: center;
+}
 
 
 
