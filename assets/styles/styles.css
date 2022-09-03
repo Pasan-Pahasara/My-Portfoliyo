@@ -1614,3 +1614,11 @@ main > section:nth-child(6) > section:nth-child(6) {
     justify-content: center;
     margin-top: -38px;
 }
+
+/**
+* added display type inline-flex and added gap in client section
+*/
+main > section:nth-child(6) > section:nth-child(6) > div:first-child {
+    display: inline-flex;
+    gap: 60px;
+}
