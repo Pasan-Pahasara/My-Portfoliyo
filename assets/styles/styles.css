@@ -1556,7 +1556,7 @@ main > section:nth-child(6) > section:nth-child(5) > h1 {
 /**
 * title underline position and display flex type in project section
 */
-main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3){
+main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1580,3 +1580,15 @@ main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3) > div:nth-
     border-radius: 3px;
 }
 
+/**
+* added photo cover circles in client section
+*/
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:first-child {
+    width: 200px;
+    height: 197px;
+    background: #ECF0F3;
+    border: 12px solid #000000;
+    border-radius: 100%;
+    position: relative;
+    top: 97px;
+}
