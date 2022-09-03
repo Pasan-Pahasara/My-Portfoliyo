@@ -1535,3 +1535,13 @@ main > section:nth-child(6) > section:nth-child(5){
     margin-right: 853px;
 }
 
+main > section:nth-child(6) > section:nth-child(5)> h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: initial;
+    font-size: 25px;
+    color: #FFA500 !important;
+    padding-top: 12px;
+    margin: 0;
+}
+
+
