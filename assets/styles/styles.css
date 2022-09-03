@@ -1454,4 +1454,16 @@ main > section:nth-child(6) > div:nth-child(3) > div > div {
     flex-wrap: wrap;
 }
 
-
+/**
+* added project counts section and justify-content space around
+*/
+main > section:nth-child(6) > section:nth-child(4) > div:first-child {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 874px;
+    height: 177px;
+    background: #ECF0F3;
+    box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.16), inset -23px -23px 45px #FFFFFF;
+    border-radius: 25px;
+}
