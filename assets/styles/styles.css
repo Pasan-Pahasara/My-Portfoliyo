@@ -1673,3 +1673,10 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
     margin-bottom: 12px;
     color: #000000;
 }
+
+/**
+* added icon size in client section
+*/
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(4)>i{
+    font-size: 2em;
+}
