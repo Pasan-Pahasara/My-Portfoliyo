@@ -1438,4 +1438,14 @@ main > section:nth-child(6) > div:nth-child(3) {
     box-shadow: -23px -23px 45px rgba(0, 0, 0, 0.25), 28px 28px 50px rgba(13, 39, 80, 0.16);
 }
 
+/**
+* added project counting section position and display type flex
+*/
+main > section:nth-child(6) > div:nth-child(3) > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 748px;
+}
+
 
