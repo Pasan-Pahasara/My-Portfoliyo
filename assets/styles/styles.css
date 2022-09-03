@@ -1564,5 +1564,11 @@ main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3){
     gap: 15px;
 }
 
+main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3) > div:first-child {
+    width: 30px;
+    height: 8px;
+    background: #FFA500 !important;
+    border-radius: 3px;
+}
 
 
