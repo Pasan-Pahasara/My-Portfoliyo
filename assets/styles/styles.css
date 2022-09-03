@@ -1448,4 +1448,10 @@ main > section:nth-child(6) > div:nth-child(3) > div {
     gap: 748px;
 }
 
+main > section:nth-child(6) > div:nth-child(3) > div > div {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
