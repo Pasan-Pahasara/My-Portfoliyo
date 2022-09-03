@@ -1603,6 +1603,7 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
     box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 93px;
     z-index: 1;
+    text-align: center;
 }
 
 /**
@@ -1644,7 +1645,7 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > img
 /**
 * customized all clients names in client section
 */
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2) > div> h3:first-child {
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2) > div > h3:first-child {
     font-family: 'Poppins';
     font-size: 26px;
     text-align: center;
@@ -1655,8 +1656,20 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
 /**
 * added display type inline-flex and flex-direction column in client section
 */
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2) > div{
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2) > div {
     display: inline-flex;
     flex-direction: column;
     margin-top: 69px;
+}
+
+/**
+* customized all clients descriptions in client section
+*/
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2) > div > p:nth-child(2) {
+    width: 217px;
+    font-family: 'Inconsolata';
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #000000;
 }
