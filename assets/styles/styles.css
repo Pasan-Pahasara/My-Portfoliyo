@@ -1392,3 +1392,17 @@ main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > sect
     background: url(../img/PythonDevelopment.png);
     background-size: cover;
 }
+
+/**
+* introducing position to projects scroll bar project section
+*/
+main > section:nth-child(6) > section:nth-child(2) > div:nth-child(2) {
+    position: absolute;
+    width: 94px;
+    height: 14px;
+    top: 575px;
+}
+
+
+
+
