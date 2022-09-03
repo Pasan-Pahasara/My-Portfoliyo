@@ -1622,3 +1622,12 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child {
     display: inline-flex;
     gap: 60px;
 }
+
+/**
+* added cover circle flex direction column and center in client section
+*/
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
