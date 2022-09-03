@@ -1836,3 +1836,11 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
 }
+
+/**
+* customized all contact detail sections icons sizes and colors in contact section
+*/
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > i:first-child{
+    color: #FFA500;
+    font-size: 1.99em;
+}
