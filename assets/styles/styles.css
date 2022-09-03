@@ -1528,14 +1528,14 @@ main > section:nth-child(6) > section:nth-child(4) > div:first-child > div > p:n
 /**
 * title in clients section
 */
-main > section:nth-child(6) > section:nth-child(5){
+main > section:nth-child(6) > section:nth-child(5) {
     position: relative;
     text-align: center;
     margin-top: 47px;
     margin-right: 853px;
 }
 
-main > section:nth-child(6) > section:nth-child(5)> h4 {
+main > section:nth-child(6) > section:nth-child(5) > h4 {
     font-family: 'Lato', sans-serif;
     font-weight: initial;
     font-size: 25px;
@@ -1552,5 +1552,17 @@ main > section:nth-child(6) > section:nth-child(5) > h1 {
     margin-top: 5px;
     margin-bottom: 7px;
 }
+
+/**
+* title underline position and display flex type in project section
+*/
+main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 121px;
+    gap: 15px;
+}
+
 
 
