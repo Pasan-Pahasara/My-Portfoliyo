@@ -1592,3 +1592,15 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
     position: relative;
     top: 97px;
 }
+
+/**
+* added description boxes in client section
+*/
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2) {
+    width: 330px;
+    height: 330px;
+    background: #ECF0F3;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 93px;
+    z-index: 1;
+}
