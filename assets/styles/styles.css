@@ -1467,3 +1467,13 @@ main > section:nth-child(6) > section:nth-child(4) > div:first-child {
     box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.16), inset -23px -23px 45px #FFFFFF;
     border-radius: 25px;
 }
+
+/**
+* added project counts section positions justify-content center
+*/
+main > section:nth-child(6) > section:nth-child(4) {
+    display: flex;
+    margin-top: -96px;
+    align-items: center;
+    justify-content: center;
+}
