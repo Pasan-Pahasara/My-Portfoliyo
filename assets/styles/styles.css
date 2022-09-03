@@ -1840,7 +1840,7 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:
 /**
 * customized all contact detail sections icons sizes and colors in contact section
 */
-main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > i:first-child{
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > i:first-child {
     color: #FFA500;
     font-size: 1.99em;
 }
@@ -1853,3 +1853,14 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:
     font-size: 18px;
     margin: 10px 0 0;
 }
+
+/**
+* customized send me email section titles, display type and flex-direction in contact section
+*/
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+
