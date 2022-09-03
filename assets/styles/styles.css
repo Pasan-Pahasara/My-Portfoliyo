@@ -1863,4 +1863,14 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) {
     margin-top: 70px;
 }
 
+/**
+* Added send me email section first title
+*/
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) > h3:first-child {
+    font-family: 'Roboto', sans-serif;
+    font-size: 29px;
+    margin: 0px 0px 13px;
+    text-align: center;
+    color: #FFA500;
+}
 
