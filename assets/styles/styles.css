@@ -1778,3 +1778,13 @@ main > section:nth-child(7) > section:nth-child(2) > section:first-child{
     margin-top: 70px;
 }
 
+/**
+* customized first title
+*/
+main > section:nth-child(7) > section:nth-child(2) > section:first-child > h3:first-child {
+    font-family: 'Roboto', sans-serif;
+    font-size: 29px;
+    margin: 0px 0px 13px;
+    text-align: center;
+    color: #FFA500;
+}
