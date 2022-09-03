@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Lato:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 :root {
     --bg-black-900: #f2f2fc;
@@ -1767,3 +1768,13 @@ main > section:nth-child(7) > section:first-child > div:nth-child(3) > div:nth-c
     margin-right: 44px;
     border-radius: 3px;
 }
+
+/**
+* customized titles, display type and flex-direction in contact section
+*/
+main > section:nth-child(7) > section:nth-child(2) > section:first-child{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
