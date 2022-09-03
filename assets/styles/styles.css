@@ -1759,3 +1759,11 @@ main > section:nth-child(7) > section:first-child > div:nth-child(3) > div:first
     background: #FFA500 !important;
     border-radius: 3px;
 }
+
+main > section:nth-child(7) > section:first-child > div:nth-child(3) > div:nth-child(2) {
+    width: 44px;
+    height: 8px;
+    background: #FFA500 !important;
+    margin-right: 44px;
+    border-radius: 3px;
+}
