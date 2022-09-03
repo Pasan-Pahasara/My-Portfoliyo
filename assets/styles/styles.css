@@ -1415,5 +1415,16 @@ main > section:nth-child(6) > section:nth-child(2) > div:nth-child(2) > div:firs
     justify-items: center;
 }
 
+main > section:nth-child(6) > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+    position: absolute;
+    width: 39px;
+    height: 14px;
+    left: 26px;
+    top: 0px;
+    background: #FFA500;
+    border-radius: 26px;
+    justify-content: center;
+    justify-items: center;
+}
 
 
