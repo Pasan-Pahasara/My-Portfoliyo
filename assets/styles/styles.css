@@ -1817,7 +1817,6 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div 
     display: inline-flex;
     justify-content: space-evenly;
     width: 1440px;
-    height: 90px;
 }
 
 /**
@@ -1843,4 +1842,12 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > i:first-child{
     color: #FFA500;
     font-size: 1.99em;
+}
+
+/**
+* customized all contact detail sections descriptions fonts sizes in contact section
+*/
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > p:nth-child(3) {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
 }
