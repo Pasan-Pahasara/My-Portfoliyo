@@ -1525,3 +1525,13 @@ main > section:nth-child(6) > section:nth-child(4) > div:first-child > div > p:n
     text-align: center;
 }
 
+/**
+* title in clients section
+*/
+main > section:nth-child(6) > section:nth-child(5){
+    position: relative;
+    text-align: center;
+    margin-top: 47px;
+    margin-right: 853px;
+}
+
