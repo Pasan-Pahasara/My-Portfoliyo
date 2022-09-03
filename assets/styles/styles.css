@@ -1256,7 +1256,7 @@ main > section:nth-child(5) > div:nth-child(3) {
 main > section:nth-child(6) {
     position: relative;
     top: 0;
-    height: 1800px;
+    height: 1736px;
     width: 100%;
     background: #ECF0F3;;
 }
@@ -1689,4 +1689,18 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
     bottom: 352px;
     left: 121px;
     z-index: 1;
+}
+
+/**
+* liner in client section
+*/
+main > section:nth-child(6) > div:nth-child(7) {
+    position: absolute;
+    width: 79vw;
+    height: 0px;
+    left: 0;
+    right: 0;
+    bottom: 14px;
+    margin: 0 auto;
+    border: 1px solid #CED2D5;
 }
