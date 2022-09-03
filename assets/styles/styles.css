@@ -1741,3 +1741,14 @@ main > section:nth-child(7) > section:first-child > h1 {
     margin-top: 5px;
     margin-bottom: 7px;
 }
+
+/**
+* title underline position and display flex type in contact section
+*/
+main > section:nth-child(7) > section:first-child > div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    margin-right: 317px;
+    flex-direction: column;
+    gap: 12px;
+}
