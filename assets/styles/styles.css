@@ -1752,3 +1752,10 @@ main > section:nth-child(7) > section:first-child > div:nth-child(3) {
     flex-direction: column;
     gap: 12px;
 }
+
+main > section:nth-child(7) > section:first-child > div:nth-child(3) > div:first-child {
+    width: 89px;
+    height: 8px;
+    background: #FFA500 !important;
+    border-radius: 3px;
+}
