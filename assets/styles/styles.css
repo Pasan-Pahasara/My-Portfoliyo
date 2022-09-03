@@ -1805,7 +1805,7 @@ main > section:nth-child(7) > section:nth-child(2) > section:first-child > h4:nt
 */
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) {
     display: flex;
-    margin-top: 113px;
+    margin-top: 90px;
     align-items: center;
     justify-content: center;
 }
@@ -1834,6 +1834,7 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > h4:nth-child(2) {
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
+    margin: 10px 0 0;
 }
 
 /**
@@ -1850,4 +1851,5 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > p:nth-child(3) {
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
+    margin: 10px 0 0;
 }
