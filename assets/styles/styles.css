@@ -1486,3 +1486,10 @@ main > section:nth-child(6) > div:nth-child(3) > div > div:nth-child(2) {
     margin-right: -32px;
     z-index: 3;
 }
+
+main > section:nth-child(6) > section:nth-child(4) > div:first-child > div {
+    margin-block-start: 24px;
+    margin-inline-start: 36px;
+    width: 173px;
+    height: 153px;
+}
