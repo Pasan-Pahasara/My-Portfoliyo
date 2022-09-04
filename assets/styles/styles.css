@@ -1934,3 +1934,12 @@ main > section:nth-child(7) > section:nth-child(3) > form:first-child > div:nth-
     border: none;
     padding: 20px 0 0 20px;
 }
+
+/**
+* added display type flex and flex-direction column send message section in contact section
+*/
+main > section:nth-child(7) > section:nth-child(3) > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
