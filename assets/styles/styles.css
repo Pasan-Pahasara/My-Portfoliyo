@@ -160,6 +160,7 @@ main {
     position: relative;
     margin-top: 73px;
     width: 100%;
+    display: grid !important;
 }
 
 /*  home section
@@ -1888,9 +1889,23 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) > h4:n
 /**
 * send me email section position center
 */
-main > section:nth-child(7) > section:nth-child(3){
+main > section:nth-child(7) > section:nth-child(3) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 80px;
 }
+
+/**
+* customized name and email texts in contact section
+*/
+.contactDetails > input {
+    width: 525px;
+    height: 44px;
+    background: #F7F8FA;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 43px;
+    border: none;
+    padding: 0 0 0 20px;
+}
+

@@ -573,19 +573,23 @@
         <section>
             <form action="details" method="post">
                 <div>
-                    <input type="text" id="clientName" placeholder="Name" required>
-                </div>
-                <div>
-                    <input type="email" id="clientEmail" placeholder="Email" required>
+                    <div class="contactDetails">
+                        <input type="text" id="clientName" placeholder="Name" required>
+                    </div>
+                    <div class="contactDetails">
+                        <input type="email" id="clientEmail" placeholder="Email" required>
+                    </div>
                 </div>
                 <div>
                     <input type="text" id="clientSubject" placeholder="Subject" required>
                 </div>
                 <div>
-                    <textarea name="message" placeholder="Message" required></textarea>
+                    <textarea name="message" id="clientMsg" placeholder="Message" spellcheck="false" required></textarea>
                 </div>
                 <div>
-                    <button type="button">Contact Us</button>
+                    <button type="button">Contact Us
+                        <div><i class="fa-solid fa-circle-chevron-right"></i></div>
+                    </button>
                 </div>
             </form>
         </section>
