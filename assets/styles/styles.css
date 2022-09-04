@@ -1972,3 +1972,12 @@ main > section:nth-child(7) > section:nth-child(3) > form > div:nth-child(4) > b
     padding-left: 25px;
     padding-top: 14px;
 }
+
+main > section:nth-child(7) > section:nth-child(3) > form > div:nth-child(4) > button > div {
+    margin-top: -10px;
+    width: 40px;
+    height: 42px;
+    border-radius: 100%;
+    background: #F9FAFB;
+    box-shadow: inset -13px -13px 16px #FFFFFF, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
+}
