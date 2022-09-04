@@ -2105,3 +2105,9 @@ footer > section:nth-child(3){
     text-align: center;
 }
 
+/**
+* added color copyrights section text in footer
+*/
+footer > section:nth-child(3)>small:first-child{
+    color: #D3D3D3;
+}
