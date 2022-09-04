@@ -1981,3 +1981,10 @@ main > section:nth-child(7) > section:nth-child(3) > form > div:nth-child(4) > b
     background: #F9FAFB;
     box-shadow: inset -13px -13px 16px #FFFFFF, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
 }
+
+main > section:nth-child(7) > section:nth-child(3) > form > div:nth-child(4) > button > div > i {
+    position: relative;
+    left: 27.5%;
+    top: 27.19%;
+    color: #FFA500;
+}
