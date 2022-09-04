@@ -24,6 +24,10 @@
     box-sizing: border-box;
 }
 
+html{
+    display: grid;
+}
+
 /* Scrollbar
    ========================================================================== */
 
@@ -160,7 +164,6 @@ main {
     position: relative;
     margin-top: 73px;
     width: 100%;
-    display: grid !important;
 }
 
 /*  home section
@@ -1975,6 +1978,7 @@ main > section:nth-child(7) > section:nth-child(3) > form > div:nth-child(4) > b
     text-align: left;
     padding-left: 25px;
     padding-top: 14px;
+    cursor: pointer;
 }
 
 main > section:nth-child(7) > section:nth-child(3) > form > div:nth-child(4) > button > div {
@@ -2095,6 +2099,15 @@ footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-chi
     font-family: 'Poppins' ,sans-serif;
     font-size: 16px;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+/**
+* added hover menu list in footer section
+*/
+footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li:hover{
+    color: #FFA500;
+    transition: 0.5s all;
 }
 
 /**
@@ -2111,3 +2124,5 @@ footer > section:nth-child(3){
 footer > section:nth-child(3)>small:first-child{
     color: #D3D3D3;
 }
+
+
