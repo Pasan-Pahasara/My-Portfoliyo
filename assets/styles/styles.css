@@ -2074,5 +2074,15 @@ footer > section:first-child > div:first-child > nav:nth-child(2) > div {
     background: #464444;
     box-shadow: -4px -4px 12px rgba(236, 236, 236, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.16);
     border-radius: 14px;
+    text-align: center;
 }
-customized social media icons covers in contact section
+
+/**
+* customized social media icons and added color in contact section
+*/
+footer > section:first-child > div:first-child > nav:nth-child(2) > div > i {
+    font-size: 2.00em;
+    color: #909597;
+    padding-top: 10px;
+    cursor: pointer;
+}
