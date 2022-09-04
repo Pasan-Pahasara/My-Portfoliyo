@@ -2051,3 +2051,12 @@ footer > section:first-child > div:first-child {
     display: flex;
     flex-direction: column;
 }
+
+/**
+* added section added gap and justify-content space-evenly in contact section
+*/
+footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 37px
+}
