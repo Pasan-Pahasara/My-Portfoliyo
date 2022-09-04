@@ -1909,3 +1909,16 @@ main > section:nth-child(7) > section:nth-child(3) {
     padding: 0 0 0 20px;
 }
 
+/**
+* customized subject text in contact section
+*/
+main > section:nth-child(7) > section:nth-child(3) > form > div:nth-child(2) > input {
+    width: 1080px;
+    height: 44px;
+    background: #F7F8FA;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 43px;
+    border: none;
+    padding: 0 0 0 20px;
+}
+
