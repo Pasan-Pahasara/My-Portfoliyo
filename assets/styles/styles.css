@@ -2044,3 +2044,10 @@ footer > section:first-child > div:first-child > nav:nth-child(2) {
     justify-content: space-evenly;
 }
 
+/**
+* added section display type flex and flex-direction column in contact section
+*/
+footer > section:first-child > div:first-child {
+    display: flex;
+    flex-direction: column;
+}
