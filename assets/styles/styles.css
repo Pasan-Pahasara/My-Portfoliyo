@@ -1952,3 +1952,23 @@ main > section:nth-child(7) > section:nth-child(3) > form > div:first-child {
     flex-direction: row;
     gap: 29px;
 }
+
+/**
+* added button and customized it in contact section
+*/
+main > section:nth-child(7) > section:nth-child(3) > form > div:nth-child(4) > button {
+    display: flex;
+    gap: 27px;
+    width: 185px;
+    height: 49px;
+    background: #464444;
+    box-shadow: 28px 28px 50px rgba(151, 153, 155, 0.36);
+    border-radius: 46px;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 14px;
+}
