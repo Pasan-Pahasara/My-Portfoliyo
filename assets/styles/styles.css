@@ -2011,17 +2011,27 @@ footer {
 /**
 * customized h1 in footer
 */
-footer > section:first-child > h2:first-child {
+footer > section:first-child > div:first-child > h2:first-child {
     font-family: 'Ubuntu', sans-serif;
     font-size: 50px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 /**
 * customized span in footer
 */
-footer > section:first-child > h2:first-child > span {
+footer > section:first-child > div:first-child > h2:first-child > span {
     font-family: 'Ubuntu', sans-serif;
     font-size: 50px;
     color: #FFA500;
+}
+
+/**
+* added section display type flex and justify-content center in contact section
+*/
+footer > section:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
