@@ -2035,3 +2035,12 @@ footer > section:first-child {
     align-items: center;
     justify-content: center;
 }
+
+/**
+* added social media icons justify-content space-evenly in contact section
+*/
+footer > section:first-child > div:first-child > nav:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+}
+
