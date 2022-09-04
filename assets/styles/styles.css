@@ -1943,3 +1943,12 @@ main > section:nth-child(7) > section:nth-child(3) > div:first-child {
     flex-direction: column;
     align-items: center;
 }
+
+/**
+* added flex-direction row and gap name and email in contact section
+*/
+main > section:nth-child(7) > section:nth-child(3) > form > div:first-child {
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+}
