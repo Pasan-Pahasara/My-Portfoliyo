@@ -368,21 +368,6 @@ main > section:first-child > section > div:nth-child(5) {
     top: 131px;
 }
 
-/**
-* liner in home section
-*/
-main > section:first-child > section > div:nth-child(6) {
-    position: absolute;
-    width: 79vw;
-    height: 0px;
-    left: 0;
-    right: 0;
-    top: 695px;
-    bottom: 0;
-    margin: auto;
-    border: 1px solid #CED2D5;
-}
-
 /*  about section
    ========================================================================== */
 
@@ -641,20 +626,6 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) > button:fir
     cursor: pointer;
 }
 
-/**
-* liner in about section
-*/
-main > section:nth-child(2) > div:nth-child(7) {
-    position: absolute;
-    width: 79vw;
-    height: 0px;
-    left: 0;
-    right: 0;
-    bottom: 18px;
-    margin: 0 auto;
-    border: 1px solid #CED2D5;
-}
-
 /*  services section
    ========================================================================== */
 
@@ -813,20 +784,6 @@ main > section:nth-child(3) > div:nth-child(3) {
     right: 58px;
     margin: auto;
     top: 812px;
-}
-
-/**
-* liner in service section
-*/
-main > section:nth-child(3) > div:nth-child(4) {
-    position: absolute;
-    width: 79vw;
-    height: 0px;
-    left: 0;
-    right: 0;
-    bottom: 14px;
-    margin: 0 auto;
-    border: 1px solid #CED2D5;
 }
 
 /*  skills section
@@ -1027,21 +984,6 @@ main > section:nth-child(4) > div:nth-child(10) {
     top: 1073px;
 }
 
-/**
-* liner in skills section
-*/
-main > section:nth-child(4) > div:nth-child(11) {
-    position: absolute;
-    width: 79vw;
-    height: 0px;
-    left: 0;
-    right: 0;
-    bottom: 14px;
-    margin: 0 auto;
-    border: 1px solid #CED2D5;
-}
-
-
 /*  gallery section
    ========================================================================== */
 
@@ -1239,20 +1181,6 @@ main > section:nth-child(5) > section:nth-child(2) > aside:nth-child(3) > nav:fi
 main > section:nth-child(5) > section:nth-child(2) > aside:nth-child(3) > nav:first-child > button > i {
     color: #FFA500;
     font-size: 3em;
-}
-
-/**
-* liner in gallery section
-*/
-main > section:nth-child(5) > div:nth-child(3) {
-    position: absolute;
-    width: 79vw;
-    height: 0px;
-    left: 0;
-    right: 0;
-    bottom: 14px;
-    margin: 0 auto;
-    border: 1px solid #CED2D5;
 }
 
 /*  project section
@@ -1710,20 +1638,6 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
 main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2):hover {
     background-color: #F5D395;
     transition: all 1s;
-}
-
-/**
-* liner in client section
-*/
-main > section:nth-child(6) > div:nth-child(7) {
-    position: absolute;
-    width: 79vw;
-    height: 0px;
-    left: 0;
-    right: 0;
-    bottom: 14px;
-    margin: 0 auto;
-    border: 1px solid #CED2D5;
 }
 
 /*  contact section
