@@ -419,26 +419,33 @@ main > section:nth-child(2) > section:first-child > h1 {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 7px;
+    padding-bottom: 18px;
 }
 
-main > section:nth-child(2) > section:first-child > div:nth-child(3) {
-    width: 89px;
-    height: 8px;
-    background: #FFA500 !important;
-    position: relative;
-    left: 38.8%;
+main > section:nth-child(2) > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ddd;
+    bottom: 2px;
+    left: calc(50% - 60px);
+    border-radius: 2px;
+}
+
+main > section:nth-child(2) > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #FFA500;
+    bottom: 0;
+    left: calc(50% - 20px);
     border-radius: 3px;
 }
 
-main > section:nth-child(2) > section:first-child > div:nth-child(4) {
-    top: 13px;
-    width: 44px;
-    height: 8px;
-    background: #FFA500 !important;
-    position: relative;
-    left: 38.8%;
-    border-radius: 3px;
-}
 
 /**
 * first cube shape in about section
@@ -684,27 +691,33 @@ main > section:nth-child(3) > section:first-child > h1 {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 7px;
+    padding-bottom: 18px;
 }
 
 /**
 * title underline in service section
 */
-main > section:nth-child(3) > section:first-child > div:nth-child(3) {
-    width: 89px;
-    height: 8px;
-    background: #FFA500 !important;
-    position: relative;
-    left: 39%;
-    border-radius: 3px;
+main > section:nth-child(3) > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ddd;
+    bottom: 2px;
+    left: calc(50% - 60px);
+    border-radius: 2px;
 }
 
-main > section:nth-child(3) > section:first-child > div:nth-child(4) {
-    top: 13px;
-    width: 44px;
-    height: 8px;
-    background: #FFA500 !important;
-    position: relative;
-    left: 39%;
+main > section:nth-child(3) > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #FFA500;
+    bottom: 0;
+    left: calc(50% - 20px);
     border-radius: 3px;
 }
 
@@ -786,6 +799,7 @@ main > section:nth-child(3) > section:nth-child(2) >section> div > p:nth-child(3
     left: 0;
     right: 0;
     margin: auto;
+    font-size: 17px;
     text-align: center;
 }
 
@@ -851,27 +865,33 @@ main > section:nth-child(4) > section:first-child > h1 {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 7px;
+    padding-bottom: 18px;
 }
 
 /**
 * title underline in skills section
 */
-main > section:nth-child(4) > section:first-child > div:nth-child(3) {
-    width: 89px;
-    height: 8px;
-    background: #FFA500 !important;
-    position: relative;
-    left: 36.8%;
-    border-radius: 3px;
+main > section:nth-child(4) > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ddd;
+    bottom: 2px;
+    left: calc(50% - 60px);
+    border-radius: 2px;
 }
 
-main > section:nth-child(4) > section:first-child > div:nth-child(4) {
-    top: 13px;
-    width: 44px;
-    height: 8px;
-    background: #FFA500 !important;
-    position: relative;
-    left: 36.8%;
+main > section:nth-child(4) > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #FFA500;
+    bottom: 0;
+    left: calc(50% - 20px);
     border-radius: 3px;
 }
 
@@ -1059,27 +1079,33 @@ main > section:nth-child(5) > section:first-child > h1 {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 7px;
+    padding-bottom: 18px;
 }
 
 /**
 * title underline in gallery section
 */
-main > section:nth-child(5) > section:first-child > div:nth-child(3) {
-    width: 89px;
-    height: 8px;
-    background: #FFA500 !important;
-    position: relative;
-    left: 43.99%;
-    border-radius: 3px;
+main > section:nth-child(5) > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ddd;
+    bottom: 2px;
+    left: calc(50% - 60px);
+    border-radius: 2px;
 }
 
-main > section:nth-child(5) > section:first-child > div:nth-child(4) {
-    top: 13px;
-    width: 44px;
-    height: 8px;
-    background: #FFA500 !important;
-    position: relative;
-    left: 43.99%;
+main > section:nth-child(5) > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #FFA500;
+    bottom: 0;
+    left: calc(50% - 20px);
     border-radius: 3px;
 }
 
@@ -1265,27 +1291,33 @@ main > section:nth-child(6) > section:first-child > h1 {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 7px;
+    padding-bottom: 18px;
 }
 
 /**
 * title underline in project section
 */
-main > section:nth-child(6) > section:first-child > div:nth-child(3) {
-    width: 89px;
-    height: 8px;
-    background: #FFA500 !important;
-    position: relative;
-    left: 39.89%;
-    border-radius: 3px;
+main > section:nth-child(6) > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ddd;
+    bottom: 2px;
+    left: calc(50% - 60px);
+    border-radius: 2px;
 }
 
-main > section:nth-child(6) > section:first-child > div:nth-child(4) {
-    top: 13px;
-    width: 44px;
-    height: 8px;
-    background: #FFA500 !important;
-    position: relative;
-    left: 39.89%;
+main > section:nth-child(6) > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #FFA500;
+    bottom: 0;
+    left: calc(50% - 20px);
     border-radius: 3px;
 }
 
@@ -1730,31 +1762,33 @@ main > section:nth-child(7) > section:first-child > h1 {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 7px;
+    padding-bottom: 18px;
 }
 
 /**
 * title underline position and display flex type in contact section
 */
-main > section:nth-child(7) > section:first-child > div:nth-child(3) {
-    display: flex;
-    align-items: center;
-    margin-right: 317px;
-    flex-direction: column;
-    gap: 12px;
+main > section:nth-child(7) > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ddd;
+    bottom: 2px;
+    left: calc(50% - 60px);
+    border-radius: 2px;
 }
 
-main > section:nth-child(7) > section:first-child > div:nth-child(3) > div:first-child {
-    width: 89px;
-    height: 8px;
-    background: #FFA500 !important;
-    border-radius: 3px;
-}
-
-main > section:nth-child(7) > section:first-child > div:nth-child(3) > div:nth-child(2) {
-    width: 44px;
-    height: 8px;
-    background: #FFA500 !important;
-    margin-right: 44px;
+main > section:nth-child(7) > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #FFA500;
+    bottom: 0;
+    left: calc(50% - 20px);
     border-radius: 3px;
 }
 
