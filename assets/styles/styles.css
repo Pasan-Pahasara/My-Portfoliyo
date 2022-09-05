@@ -180,7 +180,7 @@ main > section:nth-child(1) {
 /**
 * description section
 */
-main > section:nth-child(1) > aside:nth-child(2) {
+main > section:nth-child(1) > section > aside:nth-child(2) {
     height: 433px;
     width: 582px;
     position: absolute;
@@ -189,7 +189,7 @@ main > section:nth-child(1) > aside:nth-child(2) {
     margin: auto;
 }
 
-main > section:nth-child(1) > aside:nth-child(2) > h3:first-child {
+main > section:nth-child(1) > section > aside:nth-child(2) > h3:first-child {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -199,7 +199,7 @@ main > section:nth-child(1) > aside:nth-child(2) > h3:first-child {
     color: #FFA500;
 }
 
-main > section:nth-child(1) > aside:nth-child(2) > h1:nth-child(2) {
+main > section:nth-child(1) > section > aside:nth-child(2) > h1:nth-child(2) {
     font-family: Poppins;
     font-style: normal;
     font-weight: 700;
@@ -209,7 +209,7 @@ main > section:nth-child(1) > aside:nth-child(2) > h1:nth-child(2) {
     color: #FFA500;
 }
 
-main > section:nth-child(1) > aside:nth-child(2) > h1:nth-child(2) > span {
+main > section:nth-child(1) > section > aside:nth-child(2) > h1:nth-child(2) > span {
     font-family: Poppins;
     font-style: normal;
     font-weight: 800;
@@ -217,7 +217,7 @@ main > section:nth-child(1) > aside:nth-child(2) > h1:nth-child(2) > span {
     color: #000000;
 }
 
-main > section:nth-child(1) > aside:nth-child(2) > h1:nth-child(3) {
+main > section:nth-child(1) > section > aside:nth-child(2) > h1:nth-child(3) {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -227,7 +227,7 @@ main > section:nth-child(1) > aside:nth-child(2) > h1:nth-child(3) {
     color: #FFA500;
 }
 
-main > section:nth-child(1) > aside:nth-child(2) > h1:nth-child(3) > span {
+main > section:nth-child(1) > section > aside:nth-child(2) > h1:nth-child(3) > span {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -239,7 +239,7 @@ main > section:nth-child(1) > aside:nth-child(2) > h1:nth-child(3) > span {
 * description section button
 */
 
-main > section:nth-child(1) > aside:nth-child(2) > button:nth-child(4) {
+main > section:nth-child(1) > section > aside:nth-child(2) > button:nth-child(4) {
     width: 206px;
     height: 68px;
     background-color: #FFA500;
@@ -255,7 +255,7 @@ main > section:nth-child(1) > aside:nth-child(2) > button:nth-child(4) {
     border-width: 0;
 }
 
-main > section:nth-child(1) > aside:nth-child(2) > button:nth-child(4) > div {
+main > section:nth-child(1) > section > aside:nth-child(2) > button:nth-child(4) > div {
     position: absolute;
     top: 210px;
     left: 141px;
@@ -267,7 +267,7 @@ main > section:nth-child(1) > aside:nth-child(2) > button:nth-child(4) > div {
     cursor: pointer;
 }
 
-main > section:nth-child(1) > aside:nth-child(2) > button:nth-child(4) > div:first-child > i:first-child {
+main > section:nth-child(1) > section > aside:nth-child(2) > button:nth-child(4) > div:first-child > i:first-child {
     height: 27px;
     width: 27px;
     position: absolute;
@@ -281,12 +281,12 @@ main > section:nth-child(1) > aside:nth-child(2) > button:nth-child(4) > div:fir
 /**
 * social links section
 */
-main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) {
+main > section:nth-child(1) > section > aside:nth-child(2) > section:nth-child(5) {
     position: relative;
     top: 14px;
 }
 
-main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) > h3 {
+main > section:nth-child(1) > section > aside:nth-child(2) > section:nth-child(5) > h3 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -294,12 +294,12 @@ main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) > h3 {
 }
 
 
-main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) > nav {
+main > section:nth-child(1) > section > aside:nth-child(2) > section:nth-child(5) > nav {
     display: flex;
     gap: 15px;
 }
 
-main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) > nav > div {
+main > section:nth-child(1) > section > aside:nth-child(2) > section:nth-child(5) > nav > div {
     width: 67px;
     height: 67px;
     background: rgba(236, 240, 243, 0.85);
@@ -307,7 +307,7 @@ main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) > nav > 
     border-radius: 15px;
 }
 
-main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) > nav:nth-child(2) > div > i {
+main > section:nth-child(1) > section > aside:nth-child(2) > section:nth-child(5) > nav:nth-child(2) > div > i {
     position: relative;
     left: 23%;
     top: 23%;
@@ -316,7 +316,7 @@ main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) > nav:nt
     cursor: pointer;
 }
 
-main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) > nav:nth-child(2) > div:nth-child(1) > i {
+main > section:nth-child(1) > section > aside:nth-child(2) > section:nth-child(5) > nav:nth-child(2) > div:nth-child(1) > i {
     font-size: 2.00em;
     top: 29%;
     left: 32%;
@@ -325,7 +325,7 @@ main > section:nth-child(1) > aside:nth-child(2) > section:nth-child(5) > nav:nt
 /**
 * first shape in home section
 */
-main > section:first-child > div:first-child {
+main > section:first-child > section > div:first-child {
     box-sizing: border-box;
     position: absolute;
     width: 34px;
@@ -339,7 +339,7 @@ main > section:first-child > div:first-child {
 /**
 * second shape in home section
 */
-main > section:first-child > div:nth-child(3) {
+main > section:first-child > section > div:nth-child(3) {
     box-sizing: border-box;
     border-radius: 100%;
     position: absolute;
@@ -353,7 +353,7 @@ main > section:first-child > div:nth-child(3) {
 /**
 * main image section in home section
 */
-main > section:first-child > aside:nth-child(4) {
+main > section:first-child > section > aside:nth-child(4) {
     position: absolute;
     right: 185px;
     top: -36px;
@@ -362,7 +362,7 @@ main > section:first-child > aside:nth-child(4) {
 /**
 * dash line in home section
 */
-main > section:first-child > div:nth-child(5) {
+main > section:first-child > section > div:nth-child(5) {
     position: absolute;
     right: 169px;
     top: 131px;
@@ -371,7 +371,7 @@ main > section:first-child > div:nth-child(5) {
 /**
 * liner in home section
 */
-main > section:first-child > div:nth-child(6) {
+main > section:first-child > section > div:nth-child(6) {
     position: absolute;
     width: 79vw;
     height: 0px;
@@ -719,38 +719,40 @@ main > section:nth-child(3) > section:first-child > div:nth-child(4) {
 /**
 * div tags customized service section
 */
-main > section:nth-child(3) > section:nth-child(2) > div {
+main > section:nth-child(3) > section:nth-child(2) >section> div {
     position: relative;
-    left: 0;
-    right: 0;
-    margin: auto auto 65px;
-    width: 356px;
-    height: 356px;
+    width: 320px;
+    height: 320px;
     background: #ECF0F3;
     box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 25px;
 }
 
+main > section:nth-child(3) > section:nth-child(2){
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
 /**
 * main section position and display flex service section
 */
-main > section:nth-child(3) > section:nth-child(2) {
-    position: absolute;
-    width: 1280px;
-    height: 711px;
-    top: 195px;
-    left: 0;
-    right: 0;
-    margin: auto;
+main > section:nth-child(3) > section:nth-child(2) >section {
+    width: 1095px;
     display: flex;
     flex-wrap: wrap;
+    gap: 66px;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
 }
 
 /**
 * images position service section
 */
-main > section:nth-child(3) > section:nth-child(2) > div > div:first-child {
+main > section:nth-child(3) > section:nth-child(2)  >section > div > div:first-child {
     position: absolute;
     top: 50px;
     left: 0;
@@ -763,7 +765,7 @@ main > section:nth-child(3) > section:nth-child(2) > div > div:first-child {
 /**
 * added images colors and sizes service section
 */
-main > section:nth-child(3) > section:nth-child(2) > div > div:first-child > i {
+main > section:nth-child(3) > section:nth-child(2) >section> div > div:first-child > i {
     color: #FFA500;
     font-size: 2.40em;
 }
@@ -771,7 +773,7 @@ main > section:nth-child(3) > section:nth-child(2) > div > div:first-child > i {
 /**
 * added headings and positions headings service section
 */
-main > section:nth-child(3) > section:nth-child(2) > div > h4:nth-child(2) {
+main > section:nth-child(3) > section:nth-child(2) >section> div > h4:nth-child(2) {
     position: absolute;
     top: 84px;
     left: 0;
@@ -785,7 +787,7 @@ main > section:nth-child(3) > section:nth-child(2) > div > h4:nth-child(2) {
 /**
 * added descriptions service section
 */
-main > section:nth-child(3) > section:nth-child(2) > div > p:nth-child(3) {
+main > section:nth-child(3) > section:nth-child(2) >section> div > p:nth-child(3) {
     position: absolute;
     width: 264px;
     top: 155px;
@@ -1812,7 +1814,7 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) {
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div {
     display: inline-flex;
     justify-content: space-evenly;
-    width: 1440px;
+    /*width: 1440px;*/
 }
 
 /**
