@@ -374,7 +374,6 @@ main > section:first-child > section > div:nth-child(5) {
 main > section:nth-child(2) {
     position: relative;
     top: 0;
-    height: 933px;
     width: 100%;
     background: rgba(236, 240, 243, 0.4);
 }
@@ -443,32 +442,19 @@ main > section:nth-child(2) > div:nth-child(2) {
     top: 98px;
 }
 
-/**
-* about image in about section
-*/
-main > section:nth-child(2) > aside:nth-child(3) > div:first-child {
-    position: absolute;
-    width: 338px;
-    height: 331px;
-    left: 173px;
-    top: 323px;
-}
 
 /**
 * about description in about section
 */
-main > section:nth-child(2) > aside:nth-child(4) {
-    position: absolute;
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) {
     width: 667px;
     height: 696px;
-    right: 201px;
-    top: 179px;
 }
 
 /**
 * description title in about section
 */
-main > section:nth-child(2) > aside:nth-child(4) > h2:first-child {
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > h2:first-child {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -481,7 +467,7 @@ main > section:nth-child(2) > aside:nth-child(4) > h2:first-child {
 /**
 * introducing description in about section
 */
-main > section:nth-child(2) > aside:nth-child(4) > p:nth-child(2), p:nth-child(3) {
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > p:nth-child(2), p:nth-child(3) {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 24px;
@@ -515,7 +501,7 @@ main > section:nth-child(2) > aside:nth-child(4) > p:nth-child(2), p:nth-child(3
 /**
 * my details position and introducing display type about section
 */
-main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) {
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) {
     position: absolute;
     width: 492px;
     display: flex;
@@ -525,7 +511,7 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) {
 /**
 * my details column 1 titles customized about section
 */
-main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column1 > p {
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p {
     font-family: Poppins;
     font-weight: 600;
     font-size: 22px;
@@ -537,7 +523,7 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column1 >
 /**
 * my details column 1 span customized about section
 */
-main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column1 > p > span {
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p > span {
     font-family: Poppins;
     font-weight: 400;
     font-size: 22px;
@@ -550,7 +536,7 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column1 >
 /**
 * my details column 2 titles customized about section
 */
-main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column2 > p {
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p {
     font-family: Poppins;
     font-weight: 600;
     font-size: 22px;
@@ -561,7 +547,7 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column2 >
 /**
 * introduced my details column 2 position about section
 */
-main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column2 {
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 {
     position: absolute;
     right: 0;
 }
@@ -569,7 +555,7 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column2 {
 /**
 * my details column 2 span customized about section
 */
-main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column2 > p > span {
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p > span {
     font-family: Poppins;
     font-weight: 400;
     font-size: 22px;
@@ -579,7 +565,7 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(4) > #column2 >
     display: inline-block;
 }
 
-main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) {
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) {
     position: absolute;
     top: 606px;
 }
@@ -587,7 +573,7 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) {
 /**
 * description section button position about section
 */
-main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) > button:first-child {
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child {
     width: 283px;
     height: 61px;
     background-color: #464444;
@@ -603,7 +589,7 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) > button:fir
     border-width: 0;
 }
 
-main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) > button:first-child > div {
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child > div {
     position: absolute;
     width: 55px;
     height: 53px;
@@ -615,7 +601,7 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) > button:fir
     cursor: pointer;
 }
 
-main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) > button:first-child > div:first-child > i:first-child {
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child > div:first-child > i:first-child {
     height: 27px;
     width: 27px;
     position: absolute;
@@ -624,6 +610,23 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) > button:fir
     bottom: 41.09%;
     color: #FFA500;
     cursor: pointer;
+}
+
+main > section:nth-child(2) > section:nth-child(3) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div:first-child {
+    width: 1100px;
+    display: flex;
+    gap: 92px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /*  services section
@@ -694,7 +697,7 @@ main > section:nth-child(3) > section:first-child > h1::after {
 /**
 * div tags customized service section
 */
-main > section:nth-child(3) > section:nth-child(2) >section> div {
+main > section:nth-child(3) > section:nth-child(2) > section > div {
     position: relative;
     width: 320px;
     height: 320px;
@@ -703,7 +706,7 @@ main > section:nth-child(3) > section:nth-child(2) >section> div {
     border-radius: 25px;
 }
 
-main > section:nth-child(3) > section:nth-child(2){
+main > section:nth-child(3) > section:nth-child(2) {
     position: relative;
     display: flex;
     align-items: center;
@@ -714,7 +717,7 @@ main > section:nth-child(3) > section:nth-child(2){
 /**
 * main section position and display flex service section
 */
-main > section:nth-child(3) > section:nth-child(2) >section {
+main > section:nth-child(3) > section:nth-child(2) > section {
     width: 1095px;
     display: flex;
     flex-wrap: wrap;
@@ -727,7 +730,7 @@ main > section:nth-child(3) > section:nth-child(2) >section {
 /**
 * images position service section
 */
-main > section:nth-child(3) > section:nth-child(2)  >section > div > div:first-child {
+main > section:nth-child(3) > section:nth-child(2) > section > div > div:first-child {
     position: absolute;
     top: 50px;
     left: 0;
@@ -740,7 +743,7 @@ main > section:nth-child(3) > section:nth-child(2)  >section > div > div:first-c
 /**
 * added images colors and sizes service section
 */
-main > section:nth-child(3) > section:nth-child(2) >section> div > div:first-child > i {
+main > section:nth-child(3) > section:nth-child(2) > section > div > div:first-child > i {
     color: #FFA500;
     font-size: 2.40em;
 }
@@ -748,7 +751,7 @@ main > section:nth-child(3) > section:nth-child(2) >section> div > div:first-chi
 /**
 * added headings and positions headings service section
 */
-main > section:nth-child(3) > section:nth-child(2) >section> div > h4:nth-child(2) {
+main > section:nth-child(3) > section:nth-child(2) > section > div > h4:nth-child(2) {
     position: absolute;
     top: 84px;
     left: 0;
@@ -762,7 +765,7 @@ main > section:nth-child(3) > section:nth-child(2) >section> div > h4:nth-child(
 /**
 * added descriptions service section
 */
-main > section:nth-child(3) > section:nth-child(2) >section> div > p:nth-child(3) {
+main > section:nth-child(3) > section:nth-child(2) > section > div > p:nth-child(3) {
     position: absolute;
     width: 264px;
     top: 155px;
