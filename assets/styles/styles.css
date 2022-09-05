@@ -25,7 +25,7 @@
     scroll-behavior: smooth;
 }
 
-html{
+html {
     display: grid;
 }
 
@@ -412,21 +412,15 @@ main > section:nth-child(2) > section:first-child > h4 {
     font-weight: initial;
     font-size: 25px;
     color: #FFA500 !important;
-    text-decoration: none;
     text-align: center;
-    border-radius: 3px;
     padding-top: 12px;
     margin: 0;
 }
 
 main > section:nth-child(2) > section:first-child > h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
+    font-family: Ubuntu, sans-serif;
     font-size: 50px;
-    color: #000000 !important;
-    text-decoration: none;
     text-align: center;
-    border-radius: 3px;
     margin-top: 5px;
     margin-bottom: 7px;
 }
@@ -687,21 +681,15 @@ main > section:nth-child(3) > section:first-child > h4 {
     font-weight: initial;
     font-size: 25px;
     color: #FFA500 !important;
-    text-decoration: none;
     text-align: center;
-    border-radius: 3px;
     padding-top: 12px;
     margin: 0;
 }
 
 main > section:nth-child(3) > section:first-child > h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
+    font-family: Ubuntu, sans-serif;
     font-size: 50px;
-    color: #000000 !important;
-    text-decoration: none;
     text-align: center;
-    border-radius: 3px;
     margin-top: 5px;
     margin-bottom: 7px;
 }
@@ -862,21 +850,15 @@ main > section:nth-child(4) > section:first-child > h4 {
     font-weight: initial;
     font-size: 25px;
     color: #FFA500 !important;
-    text-decoration: none;
     text-align: center;
-    border-radius: 3px;
     padding-top: 12px;
     margin: 0;
 }
 
 main > section:nth-child(4) > section:first-child > h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
+    font-family: Ubuntu, sans-serif;
     font-size: 50px;
-    color: #000000 !important;
-    text-decoration: none;
     text-align: center;
-    border-radius: 3px;
     margin-top: 5px;
     margin-bottom: 7px;
 }
@@ -1074,16 +1056,16 @@ main > section:nth-child(5) > section:first-child > h4 {
     font-weight: initial;
     font-size: 25px;
     color: #FFA500 !important;
+    text-align: center;
     padding-top: 12px;
     margin: 0;
 }
 
 
 main > section:nth-child(5) > section:first-child > h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
+    font-family: Ubuntu, sans-serif;
     font-size: 50px;
-    color: #000000 !important;
+    text-align: center;
     margin-top: 5px;
     margin-bottom: 7px;
 }
@@ -1280,15 +1262,15 @@ main > section:nth-child(6) > section:first-child > h4 {
     font-weight: initial;
     font-size: 25px;
     color: #FFA500 !important;
+    text-align: center;
     padding-top: 12px;
     margin: 0;
 }
 
 main > section:nth-child(6) > section:first-child > h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
+    font-family: Ubuntu, sans-serif;
     font-size: 50px;
-    color: #000000 !important;
+    text-align: center;
     margin-top: 5px;
     margin-bottom: 7px;
 }
@@ -1701,7 +1683,7 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
 /**
 * added hover in client section
 */
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2):hover{
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2):hover {
     background-color: #F5D395;
     transition: all 1s;
 }
@@ -1744,15 +1726,15 @@ main > section:nth-child(7) > section:first-child > h4 {
     font-weight: initial;
     font-size: 25px;
     color: #FFA500 !important;
+    text-align: center;
     padding-top: 12px;
     margin: 0;
 }
 
 main > section:nth-child(7) > section:first-child > h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
+    font-family: Ubuntu, sans-serif;
     font-size: 50px;
-    color: #000000 !important;
+    text-align: center;
     margin-top: 5px;
     margin-bottom: 7px;
 }
@@ -2106,7 +2088,7 @@ footer > section:first-child > div:first-child > nav:nth-child(2) > div > i {
 * added list color and font size in footer section
 */
 footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li {
-    font-family: 'Poppins' ,sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #FFFFFF;
     cursor: pointer;
@@ -2115,7 +2097,7 @@ footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-chi
 /**
 * added hover menu list in footer section
 */
-footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li:hover{
+footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li:hover {
     color: #FFA500;
     transition: 0.5s all;
 }
@@ -2123,7 +2105,7 @@ footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-chi
 /**
 * customized copyrights section in footer
 */
-footer > section:nth-child(3){
+footer > section:nth-child(3) {
     background: #343030;
     text-align: center;
 }
@@ -2131,7 +2113,7 @@ footer > section:nth-child(3){
 /**
 * added color copyrights section text in footer
 */
-footer > section:nth-child(3)>small:first-child{
+footer > section:nth-child(3) > small:first-child {
     color: #D3D3D3;
 }
 
