@@ -632,7 +632,6 @@ main > section:nth-child(2) > aside:nth-child(4) > div:nth-child(5) > button:fir
 main > section:nth-child(3) {
     position: relative;
     top: 0;
-    height: 1050px;
     width: 100%;
     background: #ECF0F3;;
 }
@@ -1189,7 +1188,6 @@ main > section:nth-child(5) > section:nth-child(2) > aside:nth-child(3) > nav:fi
 main > section:nth-child(6) {
     position: relative;
     top: 0;
-    height: 1736px;
     width: 100%;
     background: #ECF0F3;;
 }
@@ -1551,27 +1549,34 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
 * added position center and display type flex in client section
 */
 main > section:nth-child(6) > section:nth-child(6) {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -38px;
+    margin-top: 80px;
 }
 
 /**
 * added display type inline-flex and added gap in client section
 */
 main > section:nth-child(6) > section:nth-child(6) > div:first-child {
-    display: inline-flex;
-    gap: 60px;
+    width: 1128px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+    align-items: center;
+    justify-content: center;
 }
 
 /**
 * added cover circle flex direction column and center in client section
 */
 main > section:nth-child(6) > section:nth-child(6) > div:first-child > div {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*height: 400px;*/
 }
 
 /**
@@ -1646,7 +1651,6 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
 main > section:nth-child(7) {
     position: relative;
     top: 0;
-    height: 1166px;
     width: 100%;
     background: #ECF0F3;;
 }
@@ -1753,7 +1757,7 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) {
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div {
     display: inline-flex;
     justify-content: space-evenly;
-    /*width: 1440px;*/
+    width: 1004px;
 }
 
 /**
@@ -1912,6 +1916,7 @@ main > section:nth-child(7) > section:nth-child(3) > form > div:nth-child(4) > b
     padding-left: 25px;
     padding-top: 14px;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
 main > section:nth-child(7) > section:nth-child(3) > form > div:nth-child(4) > button > div {
@@ -1934,9 +1939,11 @@ main > section:nth-child(7) > section:nth-child(3) > form > div:nth-child(4) > b
 * added form flex-direction column and gap in contact section
 */
 main > section:nth-child(7) > section:nth-child(3) > form {
+    width: 1079px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 29px;
+    align-items: center;
 }
 
 /*  footer
