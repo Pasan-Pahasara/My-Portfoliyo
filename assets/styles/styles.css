@@ -26,7 +26,7 @@
 }
 
 html {
-    display: grid;
+    /*display: grid;*/
 }
 
 /* Scrollbar
@@ -399,12 +399,8 @@ main > section:nth-child(2) {
 */
 main > section:nth-child(2) > section:first-child {
     position: relative;
-    height: 70px;
-    width: 1062px;
-    left: 0;
-    top: 0;
-    right: 0;
-    margin: auto;
+    text-align: center;
+    padding-top: 68px;
 }
 
 main > section:nth-child(2) > section:first-child > h4 {
@@ -668,12 +664,8 @@ main > section:nth-child(3) {
 */
 main > section:nth-child(3) > section:first-child {
     position: relative;
-    height: 70px;
-    width: 1062px;
-    left: 0;
-    top: 0;
-    right: 0;
-    margin: auto;
+    text-align: center;
+    padding-top: 68px;
 }
 
 main > section:nth-child(3) > section:first-child > h4 {
@@ -839,12 +831,8 @@ main > section:nth-child(4) {
 */
 main > section:nth-child(4) > section:first-child {
     position: relative;
-    height: 70px;
-    width: 1062px;
-    left: 0;
-    top: 0;
-    right: 0;
-    margin: auto;
+    text-align: center;
+    padding-top: 68px;
 }
 
 main > section:nth-child(4) > section:first-child > h4 {
@@ -1051,6 +1039,7 @@ main > section:nth-child(5) {
 main > section:nth-child(5) > section:first-child {
     position: relative;
     text-align: center;
+    padding-top: 68px;
 }
 
 main > section:nth-child(5) > section:first-child > h4 {
@@ -1257,6 +1246,7 @@ main > section:nth-child(6) {
 main > section:nth-child(6) > section:first-child {
     position: relative;
     text-align: center;
+    padding-top: 68px;
 }
 
 main > section:nth-child(6) > section:first-child > h4 {
@@ -1721,6 +1711,7 @@ main > section:nth-child(7) {
 main > section:nth-child(7) > section:first-child {
     position: relative;
     text-align: center;
+    padding-top: 68px;
 }
 
 main > section:nth-child(7) > section:first-child > h4 {
