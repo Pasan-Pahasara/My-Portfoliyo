@@ -513,24 +513,21 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
 */
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p {
     font-family: Poppins;
-    font-weight: 600;
-    font-size: 22px;
+    font-size: 19px;
     color: var(--text-black-900) !important;
-    border-bottom: 1px solid #CED2D5;
-    mask-border-mode: revert;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p > i:first-child {
+    color: #FFA500;
+    font-size: 1em;
+    margin-right: 10px;
 }
 
 /**
 * my details column 1 span customized about section
 */
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p > span {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 22px;
     color: var(--text-black-700) !important;
-    padding-top: 2px;
-    padding-bottom: 5px;
-    display: inline-block;
 }
 
 /**
@@ -538,10 +535,14 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
 */
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p {
     font-family: Poppins;
-    font-weight: 600;
-    font-size: 22px;
+    font-size: 19px;
     color: var(--text-black-900) !important;
-    border-bottom: 1px solid #CED2D5;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p > i:first-child {
+    color: #FFA500;
+    font-size: 1em;
+    margin-right: 10px;
 }
 
 /**
@@ -556,13 +557,7 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
 * my details column 2 span customized about section
 */
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p > span {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 22px;
     color: var(--text-black-700) !important;
-    padding-top: 2px;
-    padding-bottom: 5px;
-    display: inline-block;
 }
 
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) {
