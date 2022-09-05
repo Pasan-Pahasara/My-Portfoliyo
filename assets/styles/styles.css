@@ -439,7 +439,7 @@ main > section:nth-child(2) > div:nth-child(2) {
     width: 150px;
     height: 150px;
     left: 120px;
-    top: 98px;
+    top: 173px;
 }
 
 
@@ -483,7 +483,7 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
     height: 74px;
     fill: none;
     left: 0px;
-    top: 715px;
+    top: 730px;
 }
 
 /**
@@ -495,7 +495,7 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
     height: 157px;
     fill: none;
     right: 0;
-    top: 739px;
+    bottom: 25px;
 }
 
 /**
