@@ -1090,6 +1090,14 @@ main > section:nth-child(5) > section:nth-child(2) > section:first-child > div:f
     image-resolution: normal;
 }
 
+/**
+ * Customized 02 Image
+ */
+main > section:nth-child(5) > section:nth-child(2) > section:first-child > div:nth-child(2){
+    background: url("../img/gallery/img_2.jpg") center;
+    background-size: cover;
+}
+
 /*  project section
    ========================================================================== */
 
