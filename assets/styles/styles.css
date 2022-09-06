@@ -1059,6 +1059,18 @@ main > section:nth-child(5) > section:nth-child(2) {
     top: 50px;
 }
 
+/**
+* added section display type grid
+*/
+main > section:nth-child(5) > section:nth-child(2) > section:first-child {
+    width: 1100px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px;
+}
+
 /*  project section
    ========================================================================== */
 
