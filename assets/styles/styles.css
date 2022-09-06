@@ -987,7 +987,6 @@ main > section:nth-child(4) > div:nth-child(10) {
 main > section:nth-child(5) {
     position: relative;
     top: 0;
-    height: 776px;
     width: 100%;
     background: #ECF0F3;;
 }
@@ -1056,7 +1055,8 @@ main > section:nth-child(5) > section:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 50px;
+    margin-top: 60px;
+    padding-bottom: 7px;
 }
 
 /**
