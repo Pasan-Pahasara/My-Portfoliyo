@@ -1071,6 +1071,14 @@ main > section:nth-child(5) > section:nth-child(2) > section:first-child {
     gap: 9px;
 }
 
+/**
+* customized all divs
+*/
+main > section:nth-child(5) > section:nth-child(2) > section:first-child > div {
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+    border-radius: 15px;
+}
+
 /*  project section
    ========================================================================== */
 
