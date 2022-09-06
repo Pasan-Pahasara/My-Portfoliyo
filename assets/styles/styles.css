@@ -1124,6 +1124,14 @@ main > section:nth-child(5) > section:nth-child(2) > section:first-child > div:n
     background-size: cover;
 }
 
+/**
+ * Customized 06 Image
+ */
+main > section:nth-child(5) > section:nth-child(2) > section:first-child > div:nth-child(6){
+    background: url("../img/gallery/img_6.jpg") center;
+    background-size: cover;
+}
+
 /*  project section
    ========================================================================== */
 
