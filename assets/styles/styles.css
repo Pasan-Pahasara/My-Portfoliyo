@@ -1048,6 +1048,17 @@ main > section:nth-child(5) > section:first-child > h1::after {
     border-radius: 3px;
 }
 
+/**
+* added section positions gallery section
+*/
+main > section:nth-child(5) > section:nth-child(2) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+}
+
 /*  project section
    ========================================================================== */
 
