@@ -897,27 +897,25 @@ main > section:nth-child(4) > section:nth-child(3) > nav:first-child {
 }
 
 main > section:nth-child(4) > section:nth-child(5) {
-    position: absolute;
-    width: 1330px;
-    top: 370px;
-    left: 0;
-    right: 0;
-    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 244px;
     z-index: 1;
 }
 
-main > section:nth-child(4) > section:nth-child(5) > img:first-child {
-    position: relative;
-    width: 1330px;
-    top: auto;
-    left: 0;
-    right: 0;
-    margin: auto;
+main > section:nth-child(4) > section:nth-child(5) > div:first-child{
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 main > section:nth-child(4) > div:nth-child(4) {
     position: absolute;
     width: 576px;
+    top: 126px;
     left: 0;
     right: 0;
     margin: auto;
@@ -2024,10 +2022,6 @@ footer > section:first-child > div:first-child > nav:nth-child(2) > div > a > i 
     padding-top: 10px;
     cursor: pointer;
 }
-
-/*footer > section:first-child > div:first-child > nav:nth-child(2) > div > a > i:hover{*/
-/*    color: #FFA500;*/
-/*}*/
 
 /**
 * added list color and font size in footer section
