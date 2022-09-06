@@ -1098,6 +1098,16 @@ main > section:nth-child(5) > section:nth-child(2) > section:first-child > div:n
     background-size: cover;
 }
 
+/**
+ * Customized 03 Image grid-column and grid-row
+ */
+main > section:nth-child(5) > section:nth-child(2) > section:first-child > div:nth-child(3){
+    grid-column: 4/5;
+    grid-row: 1/4;
+    background: url("../img/gallery/img_3.jpg") center;
+    background-size: cover;
+}
+
 /*  project section
    ========================================================================== */
 
