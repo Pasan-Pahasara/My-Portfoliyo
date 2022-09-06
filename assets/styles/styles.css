@@ -1998,17 +1998,36 @@ footer > section:first-child > div:first-child > nav:nth-child(2) > div {
     box-shadow: -4px -4px 12px rgba(236, 236, 236, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.16);
     border-radius: 14px;
     text-align: center;
+    cursor: pointer;
+}
+
+/**
+* added social media icons hover effects in footer
+*/
+footer > section:first-child > div:first-child > nav:nth-child(2) > div:hover {
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+}
+
+footer > section:first-child > div:first-child > nav:nth-child(2) > div:hover > a > i:hover {
+    transition: all 0.5s ease;
+    color: #FFA500 !important;
 }
 
 /**
 * customized social media icons and added color in footer section
 */
-footer > section:first-child > div:first-child > nav:nth-child(2) > div > i {
+footer > section:first-child > div:first-child > nav:nth-child(2) > div > a > i {
     font-size: 2.00em;
     color: #909597;
     padding-top: 10px;
     cursor: pointer;
 }
+
+/*footer > section:first-child > div:first-child > nav:nth-child(2) > div > a > i:hover{*/
+/*    color: #FFA500;*/
+/*}*/
 
 /**
 * added list color and font size in footer section
