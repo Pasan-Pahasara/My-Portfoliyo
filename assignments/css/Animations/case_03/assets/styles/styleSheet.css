@@ -1,0 +1,87 @@
+/*!
+ * @author : Pasan Pahasara
+ * @since : 0.1.0
+ **/
+
+/**
+ * added background color.
+ */
+body{
+    background-color: #cfcfcf;
+}
+
+/**
+ * customized and position main section.
+ */
+main {
+    width: 900px;
+    height: 480px;
+    box-shadow: 1px 3px 5px 1px #736060;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden; /*if the content overflow from the container we can hide it or we can give them a scroll bar to handle it*/
+}
+
+/**
+ * customized section and introducing animation.
+ */
+main > section {
+    height: 100%;
+    width: 400%;
+    display: flex;
+    animation-name: slider-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+/**
+ * customized div sizes.
+ */
+main > section > div {
+    height: 100%;
+    width: 100%;
+}
+
+/**
+ * introducing images for divs.
+ */
+main > section > div:nth-child(1) {
+    background: url("../img/1.png") center;
+    background-size: cover;
+}
+main > section > div:nth-child(2) {
+    background: url("../img/2.jpg") center;
+    background-size: cover;
+}
+main > section > div:nth-child(3) {
+    background: url("../img/3.jpg") center;
+    background-size: cover;
+}
+main > section > div:nth-child(4) {
+    background: url("../img/4.jpg") center;
+    background-size: cover;
+}
+
+/**
+ * introducing animations keyframes.
+ */
+@keyframes slider-animation {
+    0%,20%{
+        transform: translateX(0);
+    }
+    30%,50% {
+        transform: translateX(-25%);
+    }
+    60%,80% {
+        transform: translateX(-50%);
+    }
+    90%,100% {
+        transform: translateX(-75%);
+    }
+}
