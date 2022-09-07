@@ -210,15 +210,19 @@ main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h
 main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) {
     font-family: Poppins;
     font-size: 50px;
+    color: #000000;
     margin-top: 16px;
     margin-bottom: 16px;
-    color: #FFA500;
 }
 
 main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) > span {
     font-family: Poppins;
     font-size: 50px;
-    color: #000000;
+    color: #FFA500;
+}
+
+.typed-cursor {
+    display: none;
 }
 
 /*
@@ -2043,7 +2047,7 @@ footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-chi
 /**
 * added hover menu list in footer section
 */
-footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li > a:hover {
+footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li > a:hover  {
     color: #FFA500;
     transition: 0.5s all;
 }

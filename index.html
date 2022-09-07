@@ -53,7 +53,7 @@
                 <aside>
                     <h3>Hello</h3>
                     <h1><span>I'm</span> Pasan Pahasara</h1>
-                    <h1><span>a</span> Developer</h1>
+                    <h1>a <span class="typing"></span>|</h1>
                     <button>Hire Me
                         <div><i class="fa-solid fa-circle-chevron-right"></i></div>
                     </button>
@@ -647,5 +647,14 @@
     </aside>
     <section><small>@2022 Pasan Pahasara, Inc. All rights reserved</small></section>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script>
+    let typed =new Typed(".typing",{
+        strings:["","Developer","Freelancer","Designer"],
+        typeSpeed:150,
+        backSpeed: 100,
+        loop:true
+    })
+</script>
 </body>
 </html>
