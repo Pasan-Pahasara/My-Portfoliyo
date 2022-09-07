@@ -49,3 +49,11 @@ main > section:nth-child(2) > div {
 main > section:nth-child(2) > div:nth-child(1) {
     height: 38vh;
 }
+
+/**
+* customized road image sizes.
+*/
+main > section:nth-child(2) > div:nth-child(2) {
+    height: 260px;
+    top: 200px;
+}
