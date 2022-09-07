@@ -126,3 +126,19 @@ main > div:nth-child(4) > img:nth-child(2) {
         margin-left: -270vw;
     }
 }
+
+/**
+* introducing car wheel animations keyframes.
+*/
+@keyframes carWheel {
+    0% {
+        transform: rotate(0deg);
+
+    }
+    50% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
