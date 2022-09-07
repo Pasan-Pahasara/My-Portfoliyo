@@ -1,0 +1,42 @@
+/*!
+ * @author : Pasan Pahasara
+ * @since : 0.1.0
+ **/
+
+/**
+ * customized div and introducing animation.
+ */
+div {
+    width: 10px;
+    height: 10px;
+    border: 4px solid #B93C44;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin:auto;
+
+    animation-name: my-animation;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/**
+ * introducing animations keyframes.
+ */
+@keyframes my-animation {
+    0% {
+        width: 10px;
+        height: 10px;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+        border: 10px solid #B93C44;
+    }
+
+}
