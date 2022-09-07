@@ -42,3 +42,10 @@ main > section:nth-child(2) > div {
     width: max-content;
     height: max-content;
 }
+
+/**
+* customized city image height.
+*/
+main > section:nth-child(2) > div:nth-child(1) {
+    height: 38vh;
+}
