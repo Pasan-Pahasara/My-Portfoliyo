@@ -1,0 +1,12 @@
+/*!
+ * @author : Pasan Pahasara
+ * @since : 0.1.0
+ **/
+
+/**
+ * introducing body section overflow hidden.
+ */
+body {
+    overflow: hidden;
+}
+
