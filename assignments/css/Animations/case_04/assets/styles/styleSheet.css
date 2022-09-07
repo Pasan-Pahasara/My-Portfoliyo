@@ -20,3 +20,16 @@ main > div:first-child {
     background-size: cover;
     position: relative;
 }
+
+/**
+* customized section and introducing city animation.
+*/
+main > section:nth-child(2) {
+    width: max-content;
+    position: absolute;
+    height: 300px;
+    top: 290px;
+    animation-name: cityAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
