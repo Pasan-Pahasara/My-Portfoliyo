@@ -113,3 +113,16 @@ main > div:nth-child(4) > img:nth-child(2) {
     width: 75px;
     height: 75px;
 }
+
+
+/**
+* introducing city animations keyframes.
+*/
+@keyframes cityAnimation {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: -270vw;
+    }
+}
