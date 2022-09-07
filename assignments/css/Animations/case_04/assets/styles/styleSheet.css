@@ -33,3 +33,12 @@ main > section:nth-child(2) {
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
+
+/**
+* introducing city and road images display type flex.
+*/
+main > section:nth-child(2) > div {
+    display: flex;
+    width: max-content;
+    height: max-content;
+}
