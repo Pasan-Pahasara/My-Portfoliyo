@@ -85,3 +85,13 @@ main > div:nth-child(4) {
     margin: auto;
     position: absolute;
 }
+
+/**
+* customized div and introducing car wheel animation.
+*/
+main > div:nth-child(4) > img {
+    animation-name: carWheel;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
+}
