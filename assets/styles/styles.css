@@ -1354,6 +1354,18 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* customized card-details and position project section
+*/
+.card_detail {
+    position: relative;
+    height: 290px;
+    z-index: 1;
+    left: 30px;
+    text-align: center;
+    padding-top: 39px;
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
