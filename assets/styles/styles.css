@@ -956,6 +956,10 @@ main > section:nth-child(4) > section:nth-child(5) > div:first-child {
     flex-wrap: wrap;
 }
 
+main > section:nth-child(4) > section:nth-child(5) > div:first-child>img{
+    width: 100vw;
+}
+
 main > section:nth-child(4) > div:nth-child(4) {
     position: absolute;
     width: 576px;
