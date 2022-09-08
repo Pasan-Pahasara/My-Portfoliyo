@@ -44,13 +44,43 @@ html {
     background: #FFA500;
 }
 
+/*///////////////////////////////////////////*/
+#scroll_up_btn {
+    position: fixed;
+    opacity: 40%;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #FFA500;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+#scroll_up_btn > i {
+    font-size: 19px;
+    color: #fff;
+    line-height: 0;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+}
+
+#scroll_up_btn:hover {
+    color: #FFA500 !important;
+    opacity: 100%;
+    transform: translateY(-10px);
+}
+
+/*//////////////////////////////////////////*/
 header {
     position: fixed;
     background: #ECF0F3;
     width: 100%;
     top: 0;
     height: 73px;
-    z-index: 2;
+    z-index: 999;
 }
 
 #heading1 {
@@ -787,6 +817,16 @@ main > section:nth-child(3) > div:nth-child(3) {
     top: 812px;
 }
 
+/*//////////////////////////////////////////////////////////////*/
+main > section:nth-child(3) > section:nth-child(2) > section:first-child > div:hover {
+    transition: all 0.8s ease;
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+    box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+
+/*/////////////////////////////////////////////////////////*/
 /*  skills section
    ========================================================================== */
 
@@ -908,7 +948,7 @@ main > section:nth-child(4) > section:nth-child(5) {
     z-index: 1;
 }
 
-main > section:nth-child(4) > section:nth-child(5) > div:first-child{
+main > section:nth-child(4) > section:nth-child(5) > div:first-child {
     width: 1100px;
     display: flex;
     align-items: center;
@@ -1237,113 +1277,6 @@ main > section:nth-child(6) > section:nth-child(2) {
     justify-content: center;
 }
 
-/**
-* added box and customized display flex type project section
-*/
-main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    gap: 33px;
-    width: 1106px;
-    height: 432px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0px 0px 22px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 75px;
-}
-
-/**
-* added box and customized project section
-*/
-main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > section {
-    width: 321px;
-    height: 313px;
-    margin-top: 33px;
-    box-shadow: inset -23px -23px 45px #FFFFFF, inset 28px 28px 50px rgba(13, 39, 80, 0.16);
-    border-radius: 50px;
-}
-
-/**
-* customized headings and headings positions project section
-*/
-main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > section > h4 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    color: #F29E04;
-}
-
-/**
-* customized images sizes project section
-*/
-main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > section > nav > button {
-    width: 262px;
-    height: 205px;
-    margin: 29px 29px 0;
-    border-radius: 34px;
-    border: none;
-    cursor: pointer;
-}
-
-/**
-* added java application development projects image project section
-*/
-main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > section:nth-child(1) > nav:first-child > button:first-child {
-    background: url(../img/ApplicationDevelopment.png);
-    background-size: cover;
-}
-
-/**
-* added web development projects image project section
-*/
-main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) > nav:first-child > button:first-child {
-    background: url(../img/WebDevelopment.jpg);
-    background-size: cover;
-}
-
-/**
-* added python projects image project section
-*/
-main > section:nth-child(6) > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > nav:first-child > button:first-child {
-    background: url(../img/PythonDevelopment.png);
-    background-size: cover;
-}
-
-/**
-* introducing position to projects scroll bar project section
-*/
-main > section:nth-child(6) > section:nth-child(2) > div:nth-child(2) {
-    position: absolute;
-    width: 94px;
-    height: 14px;
-    top: 575px;
-}
-
-/**
-* added scroll bar project section
-*/
-main > section:nth-child(6) > section:nth-child(2) > div:nth-child(2) > div:first-child {
-    width: 94px;
-    height: 14px;
-    background: #D9D9D9;
-    border-radius: 26px;
-    justify-content: center;
-    justify-items: center;
-}
-
-main > section:nth-child(6) > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
-    position: absolute;
-    width: 39px;
-    height: 14px;
-    left: 26px;
-    top: 0px;
-    background: #FFA500;
-    border-radius: 26px;
-    justify-content: center;
-    justify-items: center;
-}
 
 /**
 * added project counting section
@@ -2047,7 +1980,7 @@ footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-chi
 /**
 * added hover menu list in footer section
 */
-footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li > a:hover  {
+footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li > a:hover {
     color: #FFA500;
     transition: 0.5s all;
 }
