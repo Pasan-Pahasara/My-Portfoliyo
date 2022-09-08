@@ -1277,6 +1277,17 @@ main > section:nth-child(6) > section:nth-child(2) {
     justify-content: center;
 }
 
+/**
+* added display flex and wrap project section
+*/
+.wrapper {
+    width: 1100px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 /**
 * added project counting section
