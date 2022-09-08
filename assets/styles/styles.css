@@ -1316,6 +1316,14 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* customized image sizes project section
+*/
+.card-thumb img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
