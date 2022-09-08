@@ -1390,6 +1390,15 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* added hover heading, description and icon project section
+*/
+.card-inner:hover .card_detail h4,
+.card-inner:hover .card_detail p,
+.card-inner:hover .card_detail a {
+    color: #fff;
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
