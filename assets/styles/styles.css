@@ -1324,6 +1324,27 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* customized icon wrapper project section
+*/
+.card-thumb span {
+    width: 80px;
+    height: 80px;
+    background-color: #FFA500;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+    transform: translateY(50%);
+    transition: .5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
