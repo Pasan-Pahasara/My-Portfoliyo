@@ -1422,6 +1422,15 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* customized icon project section
+*/
+.card_detail a {
+    font-size: 27px;
+    color: #FFA500;
+    transition: .5s;
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
