@@ -1301,6 +1301,13 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* added image padding project section
+*/
+.card-inner {
+    padding-right: 30px;
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
