@@ -1366,6 +1366,23 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* customized card and position project section
+*/
+.card_detail::before {
+    position: absolute;
+    content: " ";
+    background-color: #ECF0F3;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -200px;
+    z-index: -1;
+    transition: .5s;
+    border-radius: 0 15px 138px 15px;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
