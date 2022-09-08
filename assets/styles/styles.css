@@ -1308,6 +1308,14 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* position image project section
+*/
+.card-thumb {
+    position: relative;
+    z-index: 2;
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
