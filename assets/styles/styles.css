@@ -1383,6 +1383,13 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* added hover and card-inner, card-detail color change project section
+*/
+.card-inner:hover .card_detail::before {
+    background-color: #FFA500;
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
