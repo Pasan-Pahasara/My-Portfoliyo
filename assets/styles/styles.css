@@ -1410,6 +1410,18 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* customized description project section
+*/
+.card_detail p {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+    transition: .5s;
+    margin: 0 20px 20px;
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
