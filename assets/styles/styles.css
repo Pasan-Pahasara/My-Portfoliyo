@@ -1290,6 +1290,17 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* position card project section
+*/
+.card {
+    position: relative;
+    width: 339px;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
