@@ -1345,6 +1345,15 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* added hover and color change project section
+*/
+.card-inner:hover .card-thumb span {
+    background-color: #fff;
+    color: #FFA500;
+    box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.16), -23px -23px 45px #FFFFFF,;
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
