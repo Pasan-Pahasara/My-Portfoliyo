@@ -1399,6 +1399,17 @@ main > section:nth-child(6) > section:nth-child(2) {
 }
 
 /**
+* customized heading project section
+*/
+.card_detail h4 {
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #444;
+    margin: 1px 50px 15px;
+    transition: .5s;
+}
+
+/**
 * added project counting section
 */
 main > section:nth-child(6) > div:nth-child(3) {
