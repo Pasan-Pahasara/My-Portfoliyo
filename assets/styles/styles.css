@@ -956,7 +956,7 @@ main > section:nth-child(4) > section:nth-child(5) > div:first-child {
     flex-wrap: wrap;
 }
 
-main > section:nth-child(4) > section:nth-child(5) > div:first-child>img{
+main > section:nth-child(4) > section:nth-child(5) > div:first-child > img {
     width: 100vw;
 }
 
@@ -1276,7 +1276,7 @@ main > section:nth-child(6) > section:first-child > h1::after {
 */
 main > section:nth-child(6) > section:nth-child(2) {
     display: flex;
-    margin-top: 55px;
+    margin-top: 60px;
     align-items: center;
     justify-content: center;
 }
@@ -1461,15 +1461,23 @@ main > section:nth-child(6) > div:nth-child(3) > div > div {
     flex-wrap: wrap;
 }
 
+main > section:nth-child(6) > section:nth-child(4) > div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1100px;
+}
+
+
 /**
 * added project counts section and justify-content space around
 */
-main > section:nth-child(6) > section:nth-child(4) > div:first-child {
-    display: inline-flex;
-    justify-content: space-around;
+main > section:nth-child(6) > section:nth-child(4) > div:first-child > div:first-child {
+    display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 874px;
-    height: 177px;
+    width: 68%;
     background: #ECF0F3;
     box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.16), inset -23px -23px 45px #FFFFFF;
     border-radius: 25px;
@@ -1494,7 +1502,7 @@ main > section:nth-child(6) > div:nth-child(3) > div > div:nth-child(2) {
     z-index: 3;
 }
 
-main > section:nth-child(6) > section:nth-child(4) > div:first-child > div {
+main > section:nth-child(6) > section:nth-child(4) > div:first-child > div:first-child > div {
     margin-block-start: 24px;
     margin-inline-start: 36px;
     width: 173px;
@@ -1508,12 +1516,13 @@ main > section:nth-child(6) > section:nth-child(4) > div:first-child > div {
 .headingDots {
     position: absolute;
     margin-inline-start: 33px;
+    width: 5.375em;
 }
 
 /**
 * added number count and customized
 */
-main > section:nth-child(6) > section:nth-child(4) > div:first-child > div > p:nth-child(2) {
+main > section:nth-child(6) > section:nth-child(4) > div:first-child > div:first-child > div > p:nth-child(2) {
     font-family: 'Lato';
     font-size: 74px;
     color: #000000 !important;
@@ -1524,7 +1533,7 @@ main > section:nth-child(6) > section:nth-child(4) > div:first-child > div > p:n
 /**
 * added description and customized
 */
-main > section:nth-child(6) > section:nth-child(4) > div:first-child > div > p:nth-child(3) {
+main > section:nth-child(6) > section:nth-child(4) > div:first-child > div:first-child > div > p:nth-child(3) {
     font-family: 'Lato';
     font-size: 20px;
     color: #000000 !important;
@@ -2155,5 +2164,6 @@ footer > section:nth-child(3) {
 footer > section:nth-child(3) > small:first-child {
     color: #D3D3D3;
 }
+
 
 
