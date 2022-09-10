@@ -2549,4 +2549,12 @@ footer > section:nth-child(3) > small:first-child {
         top: 1200px;
         transition: all 2s;
     }
+
+    /*gallery section*/
+    main > section:nth-child(5) > section:nth-child(2) > section:first-child {
+        width: 900px;
+        height: 500px;
+        display: grid;
+        transition: all 2s;
+    }
 }
