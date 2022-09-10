@@ -2425,3 +2425,85 @@ footer > section:nth-child(3) > small:first-child {
         transition: all 2s;
     }
 }
+
+@media (max-width: 1179px){
+    /*home section*/
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h3:first-child {
+        font-size: 26px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(2) > span {
+        font-size: 45px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) > span {
+        font-size: 45px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(2) {
+        font-size: 45px;
+        margin-top: 9px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) {
+        font-size: 40px;
+        margin-top: 9px;
+        margin-bottom: 12px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) {
+        font-size: 40px;
+        margin-top: 9px;
+        margin-bottom: 12px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > button:nth-child(4) {
+        width: 177px;
+        height: 57px;
+        font-size: 22px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > button:nth-child(4) > div {
+        top: 4px;
+        left: 120px;
+        height: 50px;
+        width: 52px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > h3 {
+        font-size: 18px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav > div {
+        width: 55px;
+        height: 55px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div:nth-child(1) > i {
+        font-size: 1.7em;
+        left: 32%;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div > i {
+        left: 23%;
+        top: 26%;
+        font-size: 1.9em;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav {
+        justify-content: center;
+        transition: all 2s;
+    }
+}
