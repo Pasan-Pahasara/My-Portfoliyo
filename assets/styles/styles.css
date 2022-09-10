@@ -2287,4 +2287,17 @@ footer > section:nth-child(3) > small:first-child {
     main > section:nth-child(3) > div:nth-child(3) {
         top: 2359px;
     }
+
+    /*project section*/
+    .card {
+        width: 592px;
+    }
+
+    .card-thumb img {
+        height: 50%;
+    }
+
+    .card_detail {
+        height: 250px;
+    }
 }
