@@ -656,6 +656,9 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-left: 67px;
+    margin-right: 67px;
+    transition: all 2s;
 }
 
 /*  services section
@@ -741,6 +744,9 @@ main > section:nth-child(3) > section:nth-child(2) {
     align-items: center;
     justify-content: center;
     margin-top: 80px;
+    margin-left: 70px;
+    margin-right: 69px;
+    transition: all 2s;
 }
 
 /**
@@ -753,7 +759,8 @@ main > section:nth-child(3) > section:nth-child(2) > section {
     gap: 66px;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 2;
+    transition: all 2s;
 }
 
 /**
@@ -815,6 +822,8 @@ main > section:nth-child(3) > div:nth-child(3) {
     right: 58px;
     margin: auto;
     top: 812px;
+    z-index: 1;
+    transition: all 2s;
 }
 
 /*//////////////////////////////////////////////////////////////*/
@@ -1110,8 +1119,8 @@ main > section:nth-child(5) > section:nth-child(2) {
 */
 main > section:nth-child(5) > section:nth-child(2) > section:first-child {
     width: 1100px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 70px;
+    margin-right: 70px;
     height: 600px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -1292,6 +1301,8 @@ main > section:nth-child(6) > section:nth-child(2) {
     gap: 40px;
     align-items: center;
     justify-content: center;
+    margin-left: 67px;
+    margin-right: 67px;
     flex-wrap: wrap;
 }
 
@@ -1463,7 +1474,7 @@ main > section:nth-child(6) > div:nth-child(3) > div > div {
     flex-wrap: wrap;
 }
 
-main > section:nth-child(6) > section:nth-child(4) > div:first-child{
+main > section:nth-child(6) > section:nth-child(4) > div:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1931,7 +1942,7 @@ main > section:nth-child(7) > section:nth-child(3) {
 /**
 * customized subject text in contact section
 */
-main > section:nth-child(7) > section:nth-child(3) > form >fieldset> div:nth-child(2) > input {
+main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(2) > input {
     width: 81vw;
     height: 44px;
     background: #F7F8FA;
@@ -1944,7 +1955,7 @@ main > section:nth-child(7) > section:nth-child(3) > form >fieldset> div:nth-chi
 /**
 * customized message textarea in contact section
 */
-main > section:nth-child(7) > section:nth-child(3) > form:first-child >fieldset> div:nth-child(3) > textarea {
+main > section:nth-child(7) > section:nth-child(3) > form:first-child > fieldset > div:nth-child(3) > textarea {
     width: 81vw;
     height: 184px;
     background: #F7F8FA;
@@ -1954,7 +1965,7 @@ main > section:nth-child(7) > section:nth-child(3) > form:first-child >fieldset>
     padding: 20px 0 0 20px;
 }
 
-main > section:nth-child(7) > section:nth-child(3) > form >fieldset> div:nth-child(3) {
+main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(3) {
     position: relative;
 }
 
@@ -1970,7 +1981,7 @@ main > section:nth-child(7) > section:nth-child(3) > div:first-child {
 /**
 * added flex-direction row and gap name and email in contact section
 */
-main > section:nth-child(7) > section:nth-child(3) > form >fieldset> div:first-child {
+main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:first-child {
     display: flex;
     flex-direction: row;
     gap: 2.9vw;
@@ -1979,7 +1990,7 @@ main > section:nth-child(7) > section:nth-child(3) > form >fieldset> div:first-c
 /**
 * added button and customized it in contact section
 */
-main > section:nth-child(7) > section:nth-child(3) > form >fieldset> div:nth-child(4) > button {
+main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button {
     display: flex;
     gap: 27px;
     width: 185px;
@@ -1998,7 +2009,7 @@ main > section:nth-child(7) > section:nth-child(3) > form >fieldset> div:nth-chi
     margin-bottom: 50px;
 }
 
-main > section:nth-child(7) > section:nth-child(3) > form >fieldset> div:nth-child(4) > button > div {
+main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button > div {
     margin-top: -10px;
     width: 40px;
     height: 42px;
@@ -2007,7 +2018,7 @@ main > section:nth-child(7) > section:nth-child(3) > form >fieldset> div:nth-chi
     box-shadow: inset -13px -13px 16px #FFFFFF, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
 }
 
-main > section:nth-child(7) > section:nth-child(3) > form >fieldset> div:nth-child(4) > button > div > i {
+main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button > div > i {
     position: relative;
     left: 27.5%;
     top: 27.19%;
@@ -2021,7 +2032,7 @@ main > section:nth-child(7) > section:nth-child(3) > form {
     display: inline-block;
 }
 
-main > section:nth-child(7) > section:nth-child(3) > form >fieldset{
+main > section:nth-child(7) > section:nth-child(3) > form > fieldset {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2030,8 +2041,8 @@ main > section:nth-child(7) > section:nth-child(3) > form >fieldset{
     border: none;
 }
 
-    /*  footer
-       ========================================================================== */
+/*  footer
+   ========================================================================== */
 
 footer {
     position: relative;
@@ -2174,3 +2185,42 @@ footer > section:nth-child(3) > small:first-child {
 #aboutCube2 {
     display: none;
 }
+
+@media (max-width: 1231px) {
+    /*about section*/
+    main > section:first-child > section:first-child > div:first-child {
+        width: 1100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+        margin-top: 69px;
+        row-gap: 15px;
+        transition: all 2s;
+    }
+
+    #aboutWave {
+        display: block;
+        position: absolute;
+        width: 352px;
+        height: 74px;
+        fill: none;
+        left: 0px;
+        top: 588px;
+        transition: all 2s;
+    }
+
+    #aboutCube2 {
+        display: block;
+        position: absolute;
+        width: 114px;
+        height: 157px;
+        fill: none;
+        right: 160px;
+        top: 433px;
+        transition: all 2s;
+        z-index: -1;
+    }
+}
+
