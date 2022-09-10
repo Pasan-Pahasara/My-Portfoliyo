@@ -2336,4 +2336,29 @@ footer > section:nth-child(3) > small:first-child {
         left: 73px;
         transition: all 2s;
     }
+
+    /*home section*/
+    main > section:first-child > section:first-child > div:first-child {
+        width: 888px;
+        gap: 16px;
+        transition: all 2s;
+    }
+
+    main > section:first-child > section > div:first-child > aside:nth-child(2) > div:first-child {
+        width: 360px;
+        height: 397px;
+        transition: all 2s;
+    }
+    main > section:first-child > section:first-child > div:first-child {
+        width: 756px;
+        flex-direction: column-reverse;
+        margin-top: 0;
+        gap: 0;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) {
+        margin-bottom: 44px;
+        transition: all 2s;
+    }
 }
