@@ -2539,4 +2539,14 @@ footer > section:nth-child(3) > small:first-child {
         transition: all 2s;
         z-index: -1;
     }
+
+    /*services section*/
+    main > section:nth-child(3) > section:nth-child(2) > section {
+        transition: all 2s;
+    }
+
+    main > section:nth-child(3) > div:nth-child(3) {
+        top: 1200px;
+        transition: all 2s;
+    }
 }
