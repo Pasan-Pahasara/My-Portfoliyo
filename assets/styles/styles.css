@@ -2362,3 +2362,61 @@ footer > section:nth-child(3) > small:first-child {
         transition: all 2s;
     }
 }
+
+@media (max-width: 1024px) {
+    /*contact section*/
+    main > section:nth-child(7) > section:nth-child(2) > section:first-child > h3:first-child {
+        font-size: 25px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:first-child > h4:nth-child(2) {
+        font-size: 19px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) {
+        margin-top: 68px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div {
+        width: 760px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > i:first-child {
+        font-size: 1.5em;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > h4:nth-child(2) {
+        font-size: 17px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > p:nth-child(3) {
+        font-size: 16px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) > h3:first-child {
+        font-size: 25px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) > h4:nth-child(2) {
+        font-size: 19px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) {
+        margin-top: 65px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(3) {
+        margin-top: 46px;
+        transition: all 2s;
+    }
+}
