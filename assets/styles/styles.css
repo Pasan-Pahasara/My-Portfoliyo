@@ -2582,4 +2582,15 @@ footer > section:nth-child(3) > small:first-child {
         font-size: 15px;
         transition: all 2s;
     }
+
+    /*home section*/
+    main > section:first-child > section > div:first-child > aside:nth-child(2) > div:first-child {
+        width: 380px;
+        height: 487px;
+    }
+
+    main > section:first-child > section:first-child > div:first-child {
+        margin-top: 2px;
+        transition: all 2s;
+    }
 }
