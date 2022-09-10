@@ -2240,5 +2240,30 @@ footer > section:nth-child(3) > small:first-child {
         display: grid;
         transition: all 2s;
     }
+
+    /*project section*/
+    .wrapper {
+        width: 900px;
+        gap: 28px;
+        row-gap: 60px;
+        transition: all 2s;
+    }
+
+    .card {
+        width: 430px;
+        transition: all 2s;
+    }
+
+    .card_detail h4 {
+        margin: 22px 50px 15px;
+        transition: .5s;
+    }
+
+    .card_detail p {
+        font-family: 'Poppins';
+        color: #666;
+        font-size: 15px;
+        transition: all 2s;
+    }
 }
 
