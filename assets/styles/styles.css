@@ -2301,3 +2301,39 @@ footer > section:nth-child(3) > small:first-child {
         height: 250px;
     }
 }
+
+@media (max-width: 996px) {
+    /*header*/
+    .menu {
+        display: none;
+        transition: all 2s;
+    }
+
+    #header-Nav {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin-right: 52px;
+        background: none;
+        border: none;
+        transition: all 2s;
+    }
+
+    #header-Nav i {
+        font-size: 1.8em;
+        color: #FFA500;
+        transition: all 2s;
+    }
+
+    .headingSecondShape {
+        right: -82px;
+        transition: all 2s;
+    }
+
+    #heading1{
+        left: 73px;
+        transition: all 2s;
+    }
+}
