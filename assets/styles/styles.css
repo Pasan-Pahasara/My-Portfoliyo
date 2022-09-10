@@ -2361,6 +2361,11 @@ footer > section:nth-child(3) > small:first-child {
         margin-bottom: 44px;
         transition: all 2s;
     }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav {
+        justify-content: center;
+        transition: all 2s;
+    }
 }
 
 @media (max-width: 1024px) {
