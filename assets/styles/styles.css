@@ -2612,3 +2612,21 @@ footer > section:nth-child(3) > small:first-child {
     }
 }
 
+@media (max-width: 608px) {
+    /*about section*/
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 {
+        display: none;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) {
+        width: 195px;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > div:first-child > p:nth-child(6) {
+        display: block;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > div:first-child > p:nth-child(7) {
+        display: block;
+    }
+}
