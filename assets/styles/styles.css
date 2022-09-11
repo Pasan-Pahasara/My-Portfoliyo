@@ -2238,7 +2238,6 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
     display: none;
 }
 
-
 @media (max-width: 1231px) {
     /*about section*/
     main > section:first-child > section:first-child > div:first-child {
@@ -3188,6 +3187,13 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
 
     main > section:nth-child(4) > section:first-child > h4 {
         font-size: 21px;
+    }
+}
+
+@media (max-width: 375px) {
+    /*skills section*/
+    #skillHeadings {
+        gap: 62px;
     }
 }
 
