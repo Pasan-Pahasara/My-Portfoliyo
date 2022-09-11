@@ -2954,7 +2954,10 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
 }
 
 @media (max-width: 567px) {
-
+    /*skills section*/
+    #skillHeadings {
+        gap: 128px;
+    }
 }
 
 @media (max-width: 425px) {
