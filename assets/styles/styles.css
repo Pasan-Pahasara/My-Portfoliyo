@@ -3190,3 +3190,18 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         font-size: 21px;
     }
 }
+
+@media (max-width: 320px) {
+    /*skills section*/
+    #skillHeadings {
+        gap: 54px;
+    }
+
+    #btnEducation {
+        font-size: 14px;
+    }
+
+    #btnWork {
+        font-size: 14px;
+    }
+}
