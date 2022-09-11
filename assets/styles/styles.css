@@ -2694,7 +2694,27 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
 }
 
 @media (max-width: 724px){
+    /*project section*/
+    .card {
+        width: 359px;
+    }
 
+    .card_detail {
+        height: 228px;
+    }
+
+    .card_detail::before {
+        top: -168px;
+    }
+
+    .card_detail h4 {
+        margin: 15px 40px 15px;
+        font-size: 21px;
+    }
+
+    .card_detail p {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 622px) {
@@ -3071,5 +3091,11 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
 
     main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) > h4:nth-child(2) {
         font-size: 17px;
+    }
+
+    /*gallery section*/
+    main > section:nth-child(5) > section:nth-child(2) > section:first-child {
+        margin-left: 25px;
+        margin-right: 25px;
     }
 }
