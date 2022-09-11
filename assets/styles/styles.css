@@ -2506,7 +2506,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
     /*header*/
     .menu {
         display: none;
-        transition: all 2s;
+        transition: all .5s;
     }
 
     #header-Nav {
@@ -2518,23 +2518,23 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         margin-right: 52px;
         background: none;
         border: none;
-        transition: all 2s;
+        transition: all .5s;
     }
 
     #header-Nav i {
         font-size: 1.8em;
         color: #FFA500;
-        transition: all 2s;
+        transition: all .5s;
     }
 
     .headingSecondShape {
         right: -82px;
-        transition: all 2s;
+        transition: all .5s;
     }
 
     #heading1 {
         left: 73px;
-        transition: all 2s;
+        transition: all .5s;
     }
 
     /*home section*/
@@ -3228,6 +3228,12 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
 
     #skillHeadings {
         gap: 70px;
+    }
+
+    /*footer section*/
+    footer > section:nth-child(3) > small:first-child {
+        font-size: 10px;
+        transition: all .5s;
     }
 }
 
