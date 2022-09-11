@@ -2911,6 +2911,11 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         font-size: 14px;
     }
 
+    main > section:nth-child(3) > div:nth-child(3) {
+        top: 2082px;
+        right: 12px;
+    }
+
     /*about section*/
     #aboutWave {
       display: none;
