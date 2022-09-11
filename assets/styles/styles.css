@@ -2046,7 +2046,7 @@ main > section:nth-child(7) > section:nth-child(3) > form > fieldset {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: normal;
     gap: 29px;
     border: none;
 }
@@ -2715,5 +2715,91 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
 
     footer > section:first-child > div:first-child > nav:nth-child(3) {
         margin-bottom: 5px;
+    }
+
+    /*contact section*/
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div {
+        width: max-content;
+        display: flex;
+        row-gap: 23px;
+        flex-direction: column;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > i:first-child {
+        font-size: 22px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > h4:nth-child(2) {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > p:nth-child(3) {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) {
+        margin-top: 32px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button {
+        margin-bottom: 20px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) {
+        margin-top: 35px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:first-child {
+        flex-direction: column;
+        gap: 29px;
+        transition: all 2s;
+    }
+
+    .contactDetails > input {
+        width: 81vw;
+        border-radius: 23px;
+        font-size: 14px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(2) > input {
+        border-radius: 23px;
+        font-size: 14px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(3) > form:first-child > fieldset > div:nth-child(3) > textarea {
+        border-radius: 23px;
+        font-size: 14px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(7) > section:nth-child(3) > form > fieldset {
+        align-items: normal;
+    }
+
+    main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button {
+        gap: 20px;
+        width: 137px;
+        height: 37px;
+        font-size: 12px;
+        padding-top: 13px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button > div {
+        margin-top: -9px;
+        width: 30px;
+        height: 30px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button > div > i {
+        left: 31.5%;
+        top: 29.19%;
+    }
+
+    main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button {
+        margin-bottom: 16px;
     }
 }
