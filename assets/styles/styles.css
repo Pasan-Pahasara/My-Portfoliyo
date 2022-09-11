@@ -2726,6 +2726,22 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         width: 88vw;
         transition: all 2s;
     }
+
+    /*skills section*/
+    #skillHeadings {
+        gap: 170px;
+        transition: all .5s;
+    }
+
+    #btnEducation {
+        font-size: 17px;
+        transition: all .5s;
+    }
+
+    #btnWork {
+        font-size: 17px;
+        transition: all .5s;
+    }
 }
 
 @media (max-width: 724px) {
