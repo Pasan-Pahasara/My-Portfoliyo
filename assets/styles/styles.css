@@ -2693,6 +2693,10 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
     }
 }
 
+@media (max-width: 724px){
+
+}
+
 @media (max-width: 622px) {
     /*footer section*/
     footer > section:first-child > div:first-child {
@@ -2882,3 +2886,28 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
 
 }
 
+@media (max-width: 425px) {
+    /*service section*/
+    main > section:nth-child(3) > section:nth-child(2) > section > div {
+        width: 274px;
+        height: 274px;
+    }
+
+    main > section:nth-child(3) > section:nth-child(2) > section > div > div:first-child > i {
+        font-size: 1.90em;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(3) > section:nth-child(2) > section > div > h4:nth-child(2) {
+        top: 96px;
+        margin: 0 0 10px;
+        font-family: 'Inter';
+        font-size: 20px;
+    }
+
+    main > section:nth-child(3) > section:nth-child(2) > section > div > p:nth-child(3) {
+        top: 132px;
+        width: 223px;
+        font-size: 14px;
+    }
+}
