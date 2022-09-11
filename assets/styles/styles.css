@@ -3252,6 +3252,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
     }
 
     main > section:nth-child(5) > section:nth-child(2) > section:first-child > div:nth-child(5) {
+        display: block;
         grid-row: 2/3;
         grid-column: 1/5;
     }
@@ -3261,6 +3262,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
     }
 
     main > section:nth-child(5) > section:nth-child(2) > section:first-child > div:nth-child(7) {
+        display: block;
         grid-row: 3/4;
         grid-column: 1/5;
     }
