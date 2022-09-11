@@ -2196,6 +2196,14 @@ footer > section:nth-child(3) > small:first-child {
     display: none;
 }
 
+footer > section:first-child > div:first-child > h2:nth-child(4) {
+    display: none;
+}
+
+footer > section:first-child > div:first-child > h2:nth-child(4) > span {
+    display: none;
+}
+
 @media (max-width: 845px) {
     /*about section*/
     main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > p:nth-child(2), p:nth-child(3) {
@@ -2665,5 +2673,47 @@ footer > section:nth-child(3) > small:first-child {
 
     main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > div:first-child > p:nth-child(7) {
         display: block;
+    }
+}
+
+@media (max-width: 622px) {
+    /*footer section*/
+    footer > section:first-child > div:first-child {
+        flex-direction: column-reverse;
+    }
+
+    footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 21px;
+    }
+
+    footer > section:first-child > div:first-child > h2:nth-child(4) {
+        display: inline-block;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 40px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    footer > section:first-child > div:first-child > h2:nth-child(4) > span {
+        display: inline-block;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 40px;
+        color: #FFA500;
+    }
+
+    footer > section:first-child > div:first-child > h2:first-child {
+         display: none;
+    }
+    
+    footer > section:first-child > div:first-child > nav:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    footer > section:first-child > div:first-child > nav:nth-child(3) {
+        margin-bottom: 5px;
     }
 }
