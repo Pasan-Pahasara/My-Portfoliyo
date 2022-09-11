@@ -2433,6 +2433,43 @@ footer > section:nth-child(3) > small:first-child {
         margin-top: 46px;
         transition: all 2s;
     }
+
+    /*footer section*/
+    footer > section:first-child > div:first-child > h2:first-child {
+        font-size: 40px;
+        transition: all 2s;
+    }
+
+    footer > section:first-child > div:first-child > h2:first-child > span {
+        font-size: 40px;
+        transition: all 2s;
+    }
+
+    footer > section:first-child > div:first-child > nav:nth-child(2) {
+        gap: 20px;
+        transition: all 2s;
+    }
+
+    footer > section:first-child > div:first-child > nav:nth-child(2) > div {
+        width: 35px;
+        height: 35px;
+        transition: all 2s;
+    }
+
+    footer > section:first-child > div:first-child > nav:nth-child(2) > div > a > i {
+        font-size: 20px;
+        transition: all 2s;
+    }
+
+    footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child {
+        gap: 29px;
+        transition: all 2s;
+    }
+
+    footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li {
+        font-size: 13px;
+        transition: all 2s;
+    }
 }
 
 @media (max-width: 1179px) {
