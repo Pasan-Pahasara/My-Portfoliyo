@@ -852,7 +852,6 @@ main > section:nth-child(3) > section:nth-child(2) > section:first-child > div:h
 main > section:nth-child(4) {
     position: relative;
     top: 0;
-    height: 1355px;
     width: 100%;
     background: #ECF0F3;;
 }
@@ -959,15 +958,14 @@ main > section:nth-child(4) > section:nth-child(3) > nav:first-child {
     border-radius: 25px;
 }
 
-main > section:nth-child(4) > section:nth-child(5) {
+main > section:nth-child(4) > section:nth-child(6) {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 244px;
     z-index: 1;
 }
 
-main > section:nth-child(4) > section:nth-child(5) > div:first-child {
+main > section:nth-child(4) > section:nth-child(6) > div:first-child {
     width: 1100px;
     display: flex;
     align-items: center;
@@ -975,7 +973,7 @@ main > section:nth-child(4) > section:nth-child(5) > div:first-child {
     flex-wrap: wrap;
 }
 
-main > section:nth-child(4) > section:nth-child(5) > div:first-child > img {
+main > section:nth-child(4) > section:nth-child(6) > div:first-child > img {
     width: 100vw;
 }
 
@@ -1046,8 +1044,44 @@ main > section:nth-child(4) > div:nth-child(10) {
     top: 1073px;
 }
 
+#skillHeadings {
+    display: flex;
+    justify-content: center;
+    gap: 232px;
+    margin-top: 40px;
+    font-family: Ubuntu, sans-serif;
+}
+
+#btnEducation {
+    color: hsl(250, 8%, 45%);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+#btnWork {
+    color: hsl(250, 8%, 45%);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+#eduIcon {
+    padding-right: 5px;
+}
+
+#workIcon {
+    padding-right: 9px;
+}
+
 /*  gallery section
-   ========================================================================== */
+========================================================================== */
 
 main > section:nth-child(5) {
     position: relative;
@@ -1062,7 +1096,7 @@ main > section:nth-child(5) {
 main > section:nth-child(5) > section:first-child {
     position: relative;
     text-align: center;
-    padding-top: 68px;
+    padding-top: 0;
 }
 
 main > section:nth-child(5) > section:first-child > h4 {
@@ -2612,6 +2646,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         top: 537px;
         transition: all 2s;
     }
+
     #aboutWave {
         width: 269px;
         height: 64px;
@@ -2693,7 +2728,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
     }
 }
 
-@media (max-width: 724px){
+@media (max-width: 724px) {
     /*project section*/
     .card {
         width: 359px;
@@ -2946,7 +2981,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
 
     /*about section*/
     #aboutWave {
-      display: none;
+        display: none;
     }
 
     main > section:nth-child(2) > section:nth-child(3) > div:first-child {
@@ -3014,7 +3049,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         top: 31%;
     }
 
-    main > section:first-child> section:first-child> div:first-child>aside:first-child>section:nth-child(5)>h3:first-child{
+    main > section:first-child > section:first-child > div:first-child > aside:first-child > section:nth-child(5) > h3:first-child {
         display: none;
     }
 
