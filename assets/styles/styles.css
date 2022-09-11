@@ -3001,4 +3001,37 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         width: 317px;
         height: 382px;
     }
+
+    /*project section*/
+    .card {
+        width: 272px;
+    }
+
+    .card_detail {
+        height: 238px;
+    }
+
+    .card_detail::before {
+        top: -143px;
+    }
+
+    .card_detail h4 {
+        margin: 0px 5px 17px;
+        font-size: 17px;
+    }
+
+    .card_detail p {
+        font-size: 12px;
+        margin: 0px 20px 20px;
+    }
+
+    .card_detail a {
+        font-size: 20px;
+    }
+
+    .card-thumb span {
+        width: 60px;
+        height: 60px;
+        font-size: 21px;
+    }
 }
