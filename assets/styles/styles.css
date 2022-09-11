@@ -2802,4 +2802,43 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
     main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button {
         margin-bottom: 16px;
     }
+
+    /*about section*/
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child {
+        gap: 58px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(2) {
+        left: 53px;
+        top: 202px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(2) > img:first-child {
+        width: 99px;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > div:first-child > img:first-child {
+        width: 232px;
+    }
+
+    #aboutWave {
+        width: 207px;
+        height: 74px;
+        left: 0px;
+        top: 478px;
+    }
+
+    #aboutCube2 {
+        right: 50px;
+        top: 387px;
+    }
+
+    main > section:nth-child(2) > div:nth-child(7) > img:first-child {
+        width: 99px;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > h2:first-child {
+        font-size: 27px;
+    }
 }
+
