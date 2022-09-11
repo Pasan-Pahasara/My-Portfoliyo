@@ -663,6 +663,14 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child {
     transition: all 2s;
 }
 
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > div:first-child > p:nth-child(6) {
+    display: none;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > div:first-child > p:nth-child(7) {
+    display: none;
+}
+
 /*  services section
    ========================================================================== */
 
@@ -2332,7 +2340,7 @@ footer > section:nth-child(3) > small:first-child {
         transition: all 2s;
     }
 
-    #heading1{
+    #heading1 {
         left: 73px;
         transition: all 2s;
     }
@@ -2349,6 +2357,7 @@ footer > section:nth-child(3) > small:first-child {
         height: 397px;
         transition: all 2s;
     }
+
     main > section:first-child > section:first-child > div:first-child {
         width: 756px;
         flex-direction: column-reverse;
@@ -2426,7 +2435,7 @@ footer > section:nth-child(3) > small:first-child {
     }
 }
 
-@media (max-width: 1179px){
+@media (max-width: 1179px) {
     /*home section*/
     main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h3:first-child {
         font-size: 26px;
@@ -2594,3 +2603,12 @@ footer > section:nth-child(3) > small:first-child {
         transition: all 2s;
     }
 }
+
+@media (max-width: 768px) {
+    /*about section*/
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) {
+        width: 88vw;
+        transition: all 2s;
+    }
+}
+
