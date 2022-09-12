@@ -1723,13 +1723,12 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
     border: 12px solid #000000;
     border-radius: 100%;
     position: relative;
-    top: 97px;
 }
 
 /**
 * added description boxes in client section
 */
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2) {
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) {
     width: 330px;
     height: 330px;
     background: #ECF0F3;
@@ -1738,6 +1737,7 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
     z-index: 1;
     text-align: center;
     cursor: pointer;
+    margin-top: -245px;
 }
 
 /**
@@ -1771,22 +1771,21 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*height: 400px;*/
 }
 
 /**
 * position first client image in client section
 */
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > img:nth-child(3) {
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > img:nth-child(2) {
     position: relative;
-    bottom: 407px;
-    z-index: 1;
+    bottom: 174px;
+    z-index: 2;
 }
 
 /**
 * customized all clients names in client section
 */
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2) > div > h3:first-child {
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div > h3:first-child {
     font-family: 'Poppins';
     font-size: 26px;
     text-align: center;
@@ -1797,7 +1796,7 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
 /**
 * added display type inline-flex and flex-direction column in client section
 */
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2) > div {
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div {
     display: inline-flex;
     flex-direction: column;
     margin-top: 69px;
@@ -1806,7 +1805,7 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
 /**
 * customized all clients descriptions in client section
 */
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2) > div > p:nth-child(2) {
+main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div > p:nth-child(2) {
     width: 217px;
     font-family: 'Inconsolata';
     font-weight: 600;
@@ -1827,7 +1826,7 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
 */
 main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(4) {
     position: relative;
-    bottom: 352px;
+    bottom: 199px;
     left: 121px;
     z-index: 1;
 }
