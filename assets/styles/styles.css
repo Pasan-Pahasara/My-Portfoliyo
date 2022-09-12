@@ -2802,6 +2802,10 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         transition: all .5s;
     }
 
+    #languages {
+        font-size: 17px;
+        transition: all .5s;
+    }
     /*gallery section*/
     main > section:nth-child(5) > section:nth-child(2) > section:first-child > div:first-child {
         grid-row: 1/2;
