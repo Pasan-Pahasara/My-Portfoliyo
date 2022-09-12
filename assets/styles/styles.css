@@ -1755,12 +1755,14 @@ main > section:nth-child(6) > section:nth-child(6) {
 * added display type inline-flex and added gap in client section
 */
 main > section:nth-child(6) > section:nth-child(6) > div:first-child {
-    width: 1128px;
+    width: 1089px;
+    margin-left: 67px;
+    margin-right: 67px;
     display: flex;
     flex-wrap: wrap;
-    gap: 65px;
-    align-items: center;
+    gap: 49px;
     justify-content: center;
+    align-items: center;
 }
 
 /**
@@ -2386,6 +2388,23 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
     main > section:first-child > section:first-child > div:first-child {
         margin-top: 2px;
         transition: all 2s;
+    }
+
+    /*client section*/
+    main > section:nth-child(6) > section:nth-child(6) > div:first-child {
+        width: 1087px;
+        row-gap: 16px;
+        transition: all .5s;
+    }
+
+    main > section:nth-child(6) > section:nth-child(6) {
+        margin-top: 45px;
+        transition: all .5s;
+    }
+
+    /*contact section*/
+    main > section:nth-child(7) > section:first-child {
+        padding-top: 10px;
     }
 }
 
