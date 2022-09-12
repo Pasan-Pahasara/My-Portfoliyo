@@ -1080,6 +1080,66 @@ main > section:nth-child(4) > div:nth-child(10) {
     padding-right: 9px;
 }
 
+#lan-heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 29px;
+}
+
+#languages{
+    color: hsl(250, 8%, 45%);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+#lanIcon{
+    padding-right: 9px;
+}
+
+#icon-section{
+    align-items: center;
+    justify-content: center;
+    width: 79%;
+    margin-left: 11%;
+    margin-right: 11%;
+}
+
+.slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+
+.slider .slide-track {
+    animation: 50s linear infinite;
+    animation-name: slider-animation;
+    animation-direction: normal;
+    display: flex;
+    animation-delay: .5s;
+    width: calc(100px * 14);
+}
+
+.slider .slide {
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes slider-animation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 /*  gallery section
 ========================================================================== */
 
