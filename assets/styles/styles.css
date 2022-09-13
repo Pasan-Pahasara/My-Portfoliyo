@@ -3336,26 +3336,25 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
 
     /*client section*/
     main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:first-child {
-        width: 164px;
-        height: 170px;
+        width: 157px;
+        height: 165px;
         border: 9px solid #000000;
     }
 
-
     main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > img:nth-child(2) {
-        bottom: 154px;
+        bottom: 148px;
         z-index: 2;
-        width: 129px;
+        width: 123px;
     }
 
     main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) {
         width: 265px;
-        height: 265px;
-        margin-top: -245px;
+        height: 255px;
+        margin-top: -216px;
     }
 
     main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div {
-        margin-top: 78px;
+        margin-top: 59px;
     }
 
     main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div > h3:first-child {
@@ -3375,7 +3374,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
     }
 
     main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(4) {
-        bottom: 140px;
+        bottom: 149px;
         left: 99px;
     }
 
