@@ -3317,6 +3317,55 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         font-size: 10px;
         transition: all .5s;
     }
+
+    /*client section*/
+    main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:first-child {
+        width: 164px;
+        height: 170px;
+        border: 9px solid #000000;
+    }
+
+
+    main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > img:nth-child(2) {
+        bottom: 154px;
+        z-index: 2;
+        width: 129px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) {
+        width: 265px;
+        height: 265px;
+        margin-top: -245px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div {
+        margin-top: 78px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div > h3:first-child {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div > p:nth-child(2) {
+        width: 177px;
+        font-size: 13px;
+        margin-bottom: 12px;
+        margin-top: 9px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div > div:nth-child(3)>img {
+        height: 16px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(4) {
+        bottom: 140px;
+        left: 99px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(4) > i {
+        font-size: 1.3em;
+    }
 }
 
 @media (max-width: 375px) {
