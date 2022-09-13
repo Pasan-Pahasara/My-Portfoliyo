@@ -1665,7 +1665,6 @@ main > section:nth-child(6) > section:nth-child(5) {
     position: relative;
     text-align: center;
     margin-top: 47px;
-    margin-right: 853px;
 }
 
 main > section:nth-child(6) > section:nth-child(5) > h4 {
@@ -1678,7 +1677,7 @@ main > section:nth-child(6) > section:nth-child(5) > h4 {
 }
 
 main > section:nth-child(6) > section:nth-child(5) > h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-weight: bold;
     font-size: 50px;
     color: #000000 !important;
@@ -1693,7 +1692,7 @@ main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 121px;
+    margin-right: 101px;
     gap: 15px;
 }
 
@@ -3379,6 +3378,26 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
 
     main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(4) > i {
         font-size: 1.3em;
+    }
+
+    main > section:nth-child(6) > section:nth-child(5) > h4 {
+        font-size: 21px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(5) > h1 {
+        font-size: 43px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3) {
+        margin-right: 68px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3) > div:first-child {
+        height: 6px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3) > div:nth-child(2) {
+        height: 6px;
     }
 }
 
