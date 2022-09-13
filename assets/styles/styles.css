@@ -1788,8 +1788,8 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > img
 * customized all clients names in client section
 */
 main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div > h3:first-child {
-    font-family: 'Poppins';
-    font-size: 26px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
     text-align: center;
     margin-bottom: 0;
     color: #000000;
@@ -1809,11 +1809,10 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
 */
 main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div > p:nth-child(2) {
     width: 217px;
-    font-family: 'Inconsolata';
-    font-weight: 600;
-    font-size: 18px;
-    margin-bottom: 12px;
-    color: #000000;
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #666;
 }
 
 /**
