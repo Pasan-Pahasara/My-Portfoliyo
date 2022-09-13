@@ -974,7 +974,7 @@ main > section:nth-child(4) > section:nth-child(6) > div:first-child {
 }
 
 main > section:nth-child(4) > section:nth-child(6) > div:first-child > img {
-    width: 100vw;
+    width: 98vw;
 }
 
 main > section:nth-child(4) > div:nth-child(4) {
