@@ -1080,13 +1080,13 @@ main > section:nth-child(4) > div:nth-child(10) {
     padding-right: 9px;
 }
 
-#lan-heading{
+#lan-heading {
     display: flex;
     justify-content: center;
     margin-bottom: 29px;
 }
 
-#languages{
+#languages {
     color: hsl(250, 8%, 45%);
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
@@ -1097,11 +1097,11 @@ main > section:nth-child(4) > div:nth-child(10) {
     position: relative;
 }
 
-#lanIcon{
+#lanIcon {
     padding-right: 9px;
 }
 
-#icon-section{
+#icon-section {
     align-items: center;
     justify-content: center;
     width: 79%;
@@ -1836,9 +1836,24 @@ main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div
 /**
 * added hover in client section
 */
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(2):hover {
-    background-color: #F5D395;
-    transition: all 1s;
+.client-inner .wrap-client:hover .client-details h3, .client-inner .wrap-client:hover .client-details p {
+    color: #fff !important;
+    transition: all .5s;
+}
+
+.client-inner:hover .client-quote i {
+    color: #fff;
+    transition: all .5s;
+}
+
+.client-inner:hover .client-circle {
+    border-color: #FFA500 !important;
+    transition: all .5s;
+}
+
+.client-inner .wrap-client:hover {
+    background-color: #FFA500 !important;
+    transition: all .5s;
 }
 
 /*  contact section
@@ -2824,6 +2839,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         font-size: 17px;
         transition: all .5s;
     }
+
     /*gallery section*/
     main > section:nth-child(5) > section:nth-child(2) > section:first-child > div:first-child {
         grid-row: 1/2;
@@ -3354,7 +3370,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         margin-top: 9px;
     }
 
-    main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div > div:nth-child(3)>img {
+    main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div > div:nth-child(3) > img {
         height: 16px;
     }
 
