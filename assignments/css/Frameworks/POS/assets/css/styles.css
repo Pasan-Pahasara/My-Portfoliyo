@@ -1,0 +1,37 @@
+main{
+    height: 80vh;
+}
+
+.red-button {
+    background: #E94F5B;
+    border: #E94F5B;
+}
+
+.red-text{
+    color: #E94F5B;
+}
+
+.green-text{
+    color: #01BCA2;
+}
+
+.green-hd{
+   background: #01BCA2;
+}
+
+.green-ww-bg{
+    background: #55efc4;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1em;
+}
+
+.orange-ww-bg{
+    background: #ff7675;
+    color: #FFFFFF;
+    border: none;
+}
+
+i:hover{
+    cursor: pointer;
+}
