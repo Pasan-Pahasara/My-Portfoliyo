@@ -61,7 +61,7 @@
 <body class="container-fluid">
 
 <main class="row justify-content-center">
-    <div class="row justify-content-evenly h-50">
+    <div class="row justify-content-evenly" style="height: max-content">
         <!--invoice section-->
         <div class="col-10 col-md-5 col-lg-4 p-3 mt-5 bg-white shadow-lg rounded-5">
             <h3 class="text-center bg-success p-2 text-light rounded-5">Invoice</h3>
@@ -132,7 +132,7 @@
                 </div>
             </div>
             <div class="row mt-1">
-                <div class="col-12 col-md-6 col-lg-12">
+                <div class="col-12 col-md-12 col-lg-12">
                     <label for="buyQty" class="form-label">Ordered Qty :</label>
                     <input class="form-control small" id="buyQty" type="text">
                 </div>
@@ -143,7 +143,30 @@
             </div>
         </div>
         <!--total section-->
-        <div class="col-10 col-md-10 col-lg-3 p-3 mt-5 bg-white shadow-lg rounded-5"></div>
+        <div class="col-10 col-md-10 col-lg-3 p-3 mt-5 bg-white shadow-lg rounded-5" style="height: max-content">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <h3 class="text-start p-2 text-danger rounded-5">Total : <span class="text-center text-dark p-2"> Rs. 1500.00/= </span>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="cash" class="form-label">Cash (Rs.)</label>
+                    <input class="form-control" id="cash" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="discount" class="form-label">Discount</label>
+                    <input class="form-control" id="discount" type="number" role="spinbutton">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 h-25">
+                    <label for="balance" class="form-label">Balance (Rs.)</label>
+                    <input class="form-control" disabled id="balance" type="text">
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 <!-- JS For Bootstrap -->
