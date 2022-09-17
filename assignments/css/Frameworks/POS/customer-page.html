@@ -87,7 +87,7 @@
     <div class="row">
         <nav class="navbar">
             <div class="container-fluid justify-content-center gap-2 d-flex flex-xxl-row">
-                <button type="button" class="btn btn-success">Update</button>
+                <button type="button" class="btn btn-success"data-bs-toggle="modal" data-bs-target="#updateModal" data-bs-whatever="@mdo">Update</button>
                 <button type="button" class="btn btn-danger">Delete</button>
             </div>
         </nav>
@@ -189,6 +189,43 @@
             </div>
         </div>
 
+        <!-- Modal Fade -->
+        <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header green-hd">
+                        <h5 class="modal-title text-white" id="updateModalLabel">Update Customer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <!-- Form -->
+                        <form>
+                            <div>
+                                <label for="customerID" class="col-form-label">Customer ID:</label>
+                                <input type="text" class="form-control" id="customerID">
+                            </div>
+                            <div>
+                                <label for="customerName" class="col-form-label">Customer Name:</label>
+                                <input type="text" class="form-control" id="customerName">
+                            </div>
+                            <div>
+                                <label for="customerAddress" class="col-form-label">Customer Address:</label>
+                                <input type="text" class="form-control" id="customerAddress">
+                            </div>
+                            <div>
+                                <label for="customerSalary" class="col-form-label">Customer Salary:</label>
+                                <input type="text" class="form-control" id="customerSalary">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="reset" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
+                        <button type="submit" class="btn btn-success">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 <!-- JS For Bootstrap -->
