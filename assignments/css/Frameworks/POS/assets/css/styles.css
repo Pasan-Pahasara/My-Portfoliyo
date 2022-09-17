@@ -35,3 +35,7 @@ main{
 i:hover{
     cursor: pointer;
 }
+
+.h-70 {
+    height: 70%!important;
+}
