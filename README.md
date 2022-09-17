@@ -3,7 +3,8 @@ This is My Personal Web Project.
 
 
 
-![Screenshot 2022-07-28 162556](https://user-images.githubusercontent.com/88943660/181510949-16e2f30d-c0a8-40c4-b075-0e31a5a05342.jpg)
+![Screenshot 2022-09-18 013148](https://user-images.githubusercontent.com/88943660/190874585-f9661524-ff5e-493e-90d7-1da504fa4d45.jpg)
+
 #
 * GitHub URL : https://github.com/Pasan-Pahasara
 * GitHub Page URL : https://pasan-pahasara.github.io/My-Portfoliyo/
