@@ -105,6 +105,42 @@
         <!--items section-->
         <div class="col-10 col-md-5 col-lg-4 p-3 mt-5 bg-white shadow-lg rounded-5">
             <h3 class="text-center bg-success p-2 text-light rounded-5">Items</h3>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="itemCode" class="form-label">Item Code :</label>
+                    <select aria-label="Default select example" class="form-select" id="itemCode">
+                        <option selected>-Select Item-</option>
+                        <option value="1">I001</option>
+                        <option value="2">I002</option>
+                        <option value="3">I003</option>
+                        <option value="4">I004</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="itemName" class="form-label">Item Name :</label>
+                    <input class="form-control" disabled id="itemName" type="text">
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="itemPrice" class="form-label">Unit Price :</label>
+                    <input class="form-control" disabled id="itemPrice" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="qtyOnHand" class="form-label">Qty On Hand :</label>
+                    <input class="form-control" disabled id="qtyOnHand" type="text">
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-12">
+                    <label for="buyQty" class="form-label">Ordered Qty :</label>
+                    <input class="form-control small" id="buyQty" type="text">
+                </div>
+                <!--                <div class="col-12 col-md-6 col-lg-6">-->
+                <!--                    <button class="btn btn-primary rounded-2" type="submit">Add To Cart</button>-->
+                <!--                    <button class="btn btn-danger rounded-2" type="submit">Clear</button>-->
+                <!--                </div>-->
+            </div>
         </div>
         <!--total section-->
         <div class="col-10 col-md-10 col-lg-3 p-3 mt-5 bg-white shadow-lg rounded-5"></div>
