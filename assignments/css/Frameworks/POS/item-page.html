@@ -61,8 +61,28 @@
 <body class="container-fluid">
 
 <main class="d-flex row align-items-center justify-content-center">
+    <!-- Search bar -->
+    <div class="row">
+        <nav class="navbar">
+            <div class="container-fluid d-flex flex-md-column flex-sm-row">
+                <form class="d-flex flex-column flex-sm-row" role="search">
+                    <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Input Item Name/Code Here"
+                           aria-label="Search">
+                    <button class="orange-ww-bg rounded-2 dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        Name
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
 
-    </section>
 </main>
 <!-- JS For Bootstrap -->
 <script src="assets/js/bootstrap.min.js"></script>
