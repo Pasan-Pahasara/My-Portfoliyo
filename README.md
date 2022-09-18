@@ -14,6 +14,13 @@ This is My Personal Web Project.
 * Mock-Up URL : https://www.figma.com/proto/Q7MBhezjxgCFIYnjqf2xsy/MyPortfoliyo?page-id=0%3A1&node-id=184%3A2&viewport=520%2C1840%2C0.34&scaling=scale-down-width&starting-point-node-id=184%3A2
 * Linked-In URL : https://www.linkedin.com/in/pasan-pahasara-356a75165/
 #
+
+# Web Pos System
+This is Framework Assigment
+
+#
+* Wire-Frame URL : https://wireframe.cc/4kLkXl
+#
                                         
 ###### If you think my code is good pleace drop a Star <img src="https://github.com/Pasan-Pahasara/md-alpha/blob/main/star.webp" width="40px">
 
