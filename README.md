@@ -20,6 +20,7 @@ This is Framework Assigment
 
 #
 * Wire-Frame URL : https://wireframe.cc/4kLkXl
+* Mock-Up URL : https://www.figma.com/file/gH2fuiUXiMCCXV7izGhqMN/Web-Pos-System?node-id=0%3A1
 #
                                         
 ###### If you think my code is good pleace drop a Star <img src="https://github.com/Pasan-Pahasara/md-alpha/blob/main/star.webp" width="40px">
