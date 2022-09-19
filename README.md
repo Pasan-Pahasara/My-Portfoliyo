@@ -19,6 +19,7 @@ This is My Personal Web Project.
 This is Framework Assigment
 
 #
+* Site Map URL : https://www.gloomaps.com/QAp329svFm
 * Wire-Frame URL : https://wireframe.cc/4kLkXl
 * Mock-Up URL : https://www.figma.com/file/gH2fuiUXiMCCXV7izGhqMN/Web-Pos-System?node-id=0%3A1
 #
