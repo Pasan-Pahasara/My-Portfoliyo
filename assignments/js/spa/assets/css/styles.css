@@ -1,3 +1,15 @@
+/**
+ * Customized Scrollbar.
+ */
+::-webkit-scrollbar {
+    width: 4px;
+    background: #3f3838;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #01BCA2;
+}
+
 main{
     height: 80vh;
 }
