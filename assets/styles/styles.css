@@ -321,7 +321,7 @@ main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > s
     border-radius: 15px;
 }
 
-main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div > i {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div > a > i {
     position: relative;
     left: 23%;
     top: 23%;
@@ -330,10 +330,17 @@ main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > s
     cursor: pointer;
 }
 
-main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div:nth-child(1) > i {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div:nth-child(1) > a > i {
     font-size: 2.00em;
     top: 29%;
     left: 32%;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav > div:hover ,a > i:hover{
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+    color: #FFA500 !important;
 }
 
 /**
