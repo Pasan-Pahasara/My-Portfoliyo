@@ -34,15 +34,15 @@
                             Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="pages/customer-page.html"><i
+                        <a class="nav-link" aria-current="page" href="#customerSection"><i
                                 class="bi bi-people-fill"></i> Customers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="pages/item-page.html"><i
+                        <a class="nav-link" aria-current="page" href="#itemSection"><i
                                 class="bi bi-handbag-fill"></i> Items</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="pages/place-order-page.html"><i
+                        <a class="nav-link" aria-current="page" href="#placeOrderSection"><i
                                 class="bi bi-cart-check-fill"></i>
                             Place Orders</a>
                     </li>
@@ -64,7 +64,7 @@
 </header>
 <body>
 <!--home section-->
-<main>
+<main id="homeSection">
     <!-- Swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -83,7 +83,7 @@
     </div>
 </main>
 <!--customer section-->
-<main class="d-flex row align-items-center justify-content-center">
+<main id="customerSection"class="d-flex row align-items-center justify-content-center">
     <!-- Search bar -->
     <div class="row">
         <nav class="navbar">
@@ -252,7 +252,7 @@
     </section>
 </main>
 <!--item section-->
-<main class="d-flex row align-items-center justify-content-center">
+<main id="itemSection" class="d-flex row align-items-center justify-content-center">
     <!-- Search bar -->
     <div class="row">
         <nav class="navbar">
@@ -421,7 +421,7 @@
     </section>
 </main>
 <!--place order section-->
-<main class="row justify-content-center">
+<main id="placeOrderSection" class="row justify-content-center">
     <div class="row justify-content-evenly h-50">
         <!--invoice section-->
         <div class="col-10 col-md-5 col-lg-4 p-3 mt-5 bg-white shadow-lg rounded-5" style="height: max-content">
@@ -600,6 +600,27 @@
         </section>
     </div>
 </main>
-
+<!-- JS For Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        autoplay: {
+            delay: 2600,
+            disableOnInteraction: false,
+        },
+        mousewheel: true,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
 </body>
 </html>
