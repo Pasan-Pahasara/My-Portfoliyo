@@ -2491,13 +2491,13 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         transition: all 2s;
     }
 
-    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div:nth-child(1) > i {
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div:nth-child(1) > a > i {
         font-size: 1.7em;
         left: 32%;
         transition: all 2s;
     }
 
-    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div > i {
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div > a > i {
         left: 23%;
         top: 26%;
         font-size: 1.9em;
