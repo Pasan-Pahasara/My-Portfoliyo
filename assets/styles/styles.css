@@ -2671,23 +2671,23 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
     /*about section*/
     main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > p:nth-child(2), p:nth-child(3) {
         font-size: 14px;
-        transition: all 2s;
+        transition: all .5s;
     }
 
     main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p {
         font-size: 14px;
-        transition: all 2s;
+        transition: all .5s;
     }
 
     main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p {
         font-size: 14px;
-        transition: all 2s;
+        transition: all .5s;
     }
 
     main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) {
         margin-left: 10px;
         margin-right: 10px;
-        transition: all 2s;
+        transition: all .5s;
     }
 
     main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child {
@@ -2713,7 +2713,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
 
     main > section:nth-child(2) > section:nth-child(3) {
         margin-top: 60px;
-        transition: all 2s;
+        transition: all .5s;
     }
 
     main > section:nth-child(2) > div:nth-child(2) > img:first-child {
@@ -2753,7 +2753,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
 
     main > section:nth-child(2) > section:nth-child(3) > div:first-child {
         gap: 77px;
-        transition: all 2s;
+        transition: all .5s;
     }
 
     #aboutLineCircle {
@@ -3224,7 +3224,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         border-radius: 15px;
     }
 
-    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div > i {
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div > a > i {
         left: 26%;
         top: 26%;
         font-size: 1.2em;
@@ -3236,7 +3236,7 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
         height: 382px;
     }
 
-    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div:nth-child(1) > i {
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div:nth-child(1) > a > i {
         font-size: 1.2em;
     }
 
