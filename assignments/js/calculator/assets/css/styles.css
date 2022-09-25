@@ -30,3 +30,12 @@ input:focus{
     opacity: 70%;
     border: none;
 }
+
+.equalsButton{
+    height: 230.5px;
+    width: 50px;
+    background: #20CEB2;
+    color: #FFFFFF;
+    opacity: 70%;
+    border: none;
+}
