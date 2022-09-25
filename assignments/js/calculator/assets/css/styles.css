@@ -19,3 +19,6 @@ input:focus{
     border: none;
 }
 
+#buttons{
+    background-image: linear-gradient(to left bottom, #b2cdd6, #b5e6ff, #c9e2ff, #b3aec2, #a392ad);
+}
