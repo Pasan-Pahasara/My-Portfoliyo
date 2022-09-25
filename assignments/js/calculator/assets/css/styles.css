@@ -22,3 +22,11 @@ input:focus{
 #buttons{
     background-image: linear-gradient(to left bottom, #b2cdd6, #b5e6ff, #c9e2ff, #b3aec2, #a392ad);
 }
+
+.buttons{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    opacity: 70%;
+    border: none;
+}
