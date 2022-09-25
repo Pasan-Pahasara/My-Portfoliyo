@@ -9,11 +9,11 @@
     border: none;
 }
 
-input:focus{
+input:focus {
     border: none;
 }
 
-.mathematicalLogics{
+.mathematicalLogics {
     height: 50px;
     width: 50px;
     background: #9354bc;
@@ -23,11 +23,11 @@ input:focus{
     border: none;
 }
 
-#buttons{
+#buttons {
     background-image: linear-gradient(to left bottom, #b2cdd6, #b5e6ff, #c9e2ff, #b3aec2, #a392ad);
 }
 
-.buttons{
+.buttons {
     height: 50px;
     width: 50px;
     background-color: white;
@@ -37,7 +37,7 @@ input:focus{
     border: none;
 }
 
-.equalsButton{
+.equalsButton {
     height: 230.5px;
     width: 50px;
     background: #20CEB2;
@@ -50,7 +50,7 @@ input:focus{
 .mathematicalLogics:hover {
     -webkit-transform: scale(0.96);
     transform: scale(0.96);
-    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.68);
+    box-shadow: 1px 3px 5px 1px #000000 !important;
     color: #f0f0f0;
     font-weight: bold;
 }
@@ -58,13 +58,13 @@ input:focus{
 .buttons:hover {
     -webkit-transform: scale(0.96);
     transform: scale(0.96);
-    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.68);
+    box-shadow: 1px 3px 5px 1px #736060 !important;
     font-weight: bold;
 }
 
 .equalsButton:hover {
     -webkit-transform: scale(0.96);
     transform: scale(0.96);
-    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.68);
+    box-shadow: 1px 3px 5px 1px #736060 !important;
     font-weight: bold;
 }
