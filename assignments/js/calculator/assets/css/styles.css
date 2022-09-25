@@ -62,3 +62,9 @@ input:focus{
     font-weight: bold;
 }
 
+.equalsButton:hover {
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.68);
+    font-weight: bold;
+}
