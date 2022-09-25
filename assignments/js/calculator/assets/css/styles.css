@@ -6,6 +6,10 @@
     border: none;
 }
 
+input:focus{
+    border: none;
+}
+
 .mathematicalLogics{
     height: 50px;
     width: 50px;
