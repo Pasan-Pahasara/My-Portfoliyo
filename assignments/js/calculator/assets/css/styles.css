@@ -2,6 +2,10 @@
  * @author : Pasan Pahasara
  * @since : 0.1.0
  **/
+.display {
+    border: none;
+}
+
 .mathematicalLogics{
     height: 50px;
     width: 50px;
