@@ -2,6 +2,9 @@
  * @author : Pasan Pahasara
  * @since : 0.1.0
  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 .display {
     border: none;
 }
@@ -14,6 +17,7 @@ input:focus{
     height: 50px;
     width: 50px;
     background: #9354bc;
+    font-family: Ubuntu, sans-serif;
     color: #FFFFFF;
     opacity: 70%;
     border: none;
@@ -27,6 +31,8 @@ input:focus{
     height: 50px;
     width: 50px;
     background-color: white;
+    font-family: Ubuntu, sans-serif;
+    padding-top: 5px;
     opacity: 70%;
     border: none;
 }
@@ -35,6 +41,7 @@ input:focus{
     height: 230.5px;
     width: 50px;
     background: #20CEB2;
+    font-family: Ubuntu, sans-serif;
     color: #FFFFFF;
     opacity: 70%;
     border: none;
