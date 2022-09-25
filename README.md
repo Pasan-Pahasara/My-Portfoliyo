@@ -6,22 +6,30 @@ This is My Personal Web Project.
 ![Screenshot 2022-09-18 013148](https://user-images.githubusercontent.com/88943660/190874585-f9661524-ff5e-493e-90d7-1da504fa4d45.jpg)
 
 #
-* GitHub URL : https://github.com/Pasan-Pahasara
-* GitHub Page URL : https://pasan-pahasara.github.io/My-Portfoliyo/
-* InfinityFree URL : http://pasan-pahasara.epizy.com/?i=1
-* Site Map URL : https://www.gloomaps.com/PAJyxq4CM3
-* Wire-Frame URL : https://wireframe.cc/UxncUa
-* Mock-Up URL : https://www.figma.com/proto/Q7MBhezjxgCFIYnjqf2xsy/MyPortfoliyo?page-id=0%3A1&node-id=184%3A2&viewport=520%2C1840%2C0.34&scaling=scale-down-width&starting-point-node-id=184%3A2
-* Linked-In URL : https://www.linkedin.com/in/pasan-pahasara-356a75165/
+* 🔗 <a href="https://github.com/Pasan-Pahasara" target="_blank">GitHub</a>
+
+* 🔗 <a href="https://pasan-pahasara.github.io/My-Portfoliyo/" target="_blank">GitHub Page</a>
+
+* 🔗 <a href="http://pasan-pahasara.epizy.com/?i=1" target="_blank">InfinityFree</a>
+
+* 🔗 <a href="https://www.gloomaps.com/PAJyxq4CM3" target="_blank">Site-Map</a>
+
+* 🔗 <a href="https://wireframe.cc/UxncUa" target="_blank">Wire-Frame</a>
+
+* 🔗 <a href="https://www.figma.com/proto/Q7MBhezjxgCFIYnjqf2xsy/MyPortfoliyo?page-id=0%3A1&node-id=184%3A2&viewport=520%2C1840%2C0.34&scaling=scale-down-width&starting-point-node-id=184%3A2" target="_blank">Mock-Up</a>
+
+* 🔗 <a href="https://www.linkedin.com/in/pasan-pahasara-356a75165/" target="_blank">Linked-In</a>
+
+
 #
 
 # Web Pos System
 This is Framework Assigment
 
 #
-* Site Map URL : https://www.gloomaps.com/QAp329svFm
-* Wire-Frame URL : https://wireframe.cc/4kLkXl
-* Mock-Up URL : https://www.figma.com/file/gH2fuiUXiMCCXV7izGhqMN/Web-Pos-System?node-id=0%3A1
+* 🔗 <a href="https://www.gloomaps.com/QAp329svFm" target="_blank">Site-Map</a>
+* 🔗 <a href="https://wireframe.cc/4kLkXl" target="_blank">Wire-Frame</a>
+* 🔗 <a href="https://www.figma.com/file/gH2fuiUXiMCCXV7izGhqMN/Web-Pos-System?node-id=0%3A1" target="_blank">Mock-Up</a>
 #
                                         
 ###### If you think my code is good pleace drop a Star <img src="https://github.com/Pasan-Pahasara/md-alpha/blob/main/star.webp" width="40px">
