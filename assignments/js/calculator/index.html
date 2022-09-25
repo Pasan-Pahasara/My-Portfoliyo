@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
     <meta name="viewport" content="width=device-width initial-scale=1">
+    <link href="assets/css/styles.css" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="d-flex container-fluid align-items-center justify-content-center">
+<body class="d-flex container-fluid align-items-center justify-content-center" style="height: 98vh; width: 97vw">
 
 <!-- Calculator body -->
-<main class="rounded-5 opacity-75 shadow-lg p-2 bg-dark" style="height: 600px; width: 320px">
-
+<main class="rounded-5 opacity-75 shadow-lg p-2 bg-dark" style="height: 560px; width: 320px">
+    <!--Display-->
+    <section class="d-flex h-50 flex-column align-items-center justify-content-evenly">
+        <div class="display h-50 w-100 d-flex align-items-end justify-content-end mt-5">
+            <input class="text-secondary mb-2 h1 w-100 text-end border-0 bg-dark" disabled placeholder="0"
+                   style="font-size: 50px">
+        </div>
+    </section>
 </main>
 
 <!-- JS For Bootstrap -->
