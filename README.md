@@ -30,8 +30,18 @@ This is Framework Assigment
 * 🔗 <a href="https://www.gloomaps.com/QAp329svFm" target="_blank">Site-Map</a>
 * 🔗 <a href="https://wireframe.cc/4kLkXl" target="_blank">Wire-Frame</a>
 * 🔗 <a href="https://www.figma.com/file/gH2fuiUXiMCCXV7izGhqMN/Web-Pos-System?node-id=0%3A1" target="_blank">Mock-Up</a>
+* 🔗 <a href="https://pasan-pahasara.github.io/My-Portfoliyo/assignments/js/spa/" target="_blank">GitHub Page</a>
 #
-                                        
+              
+#
+
+# Calculator
+This is Framework Assigment
+
+#
+* 🔗 <a href="https://pasan-pahasara.github.io/My-Portfoliyo/assignments/js/calculator/" target="_blank">GitHub Page</a>
+#
+
 ###### If you think my code is good pleace drop a Star <img src="https://github.com/Pasan-Pahasara/md-alpha/blob/main/star.webp" width="40px">
 
 ![GitHub issues](https://img.shields.io/github/issues/Pasan-Pahasara/My-Portfoliyo?&labelColor=black&color=eb3b5a&label=Issues&logo=issues&logoColor=black&style=for-the-badge)
