@@ -36,3 +36,9 @@ equalTo.addEventListener('click', function () {
     }
 });
 
+/*clear all number*/
+clear.addEventListener('click', function () {
+    result.innerHTML = "";
+    history.innerHTML = "";
+    value = "";
+});
