@@ -202,6 +202,8 @@
 <script src="../assets/js/bootstrap.min.js"></script>
 <!--jQuery-->
 <script src="../assets/jQuery/jquery-3.6.1.min.js"></script>
+<!--SweetAlert-->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     let customers = [];
     $("#newCustomer").click(function () {
@@ -217,6 +219,13 @@
             salary: customerSalary
         };
         customers.push(customerObject);
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your Customer has been saved',
+            showConfirmButton: false,
+            timer: 1500
+        })
         loadAllCustomers();
     });
 
