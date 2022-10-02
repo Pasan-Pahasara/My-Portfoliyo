@@ -238,6 +238,7 @@
 <!--jQuery-->
 <script src="../assets/jQuery/jquery-3.6.1.min.js"></script>
 <script>
+    let customers = [];
     $("#newCustomer").click(function () {
         let customerID = $("#customer-id").val();
         let customerName = $("#customer-name").val();
@@ -250,6 +251,8 @@
             address: customerAddress,
             salary: customerSalary
         };
+        customers.push(customerObject);
+        console.log(customers);
     });
 </script>
 </body>
