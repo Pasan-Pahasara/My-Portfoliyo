@@ -109,43 +109,8 @@
                     <th scope="col">Salary</th>
                 </tr>
                 </thead>
-                <tbody class="">
-                <tr>
-                    <td>C001</td>
-                    <td>Maneesha Gunawardhana</td>
-                    <td>Galle</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <td>C002</td>
-                    <td>Nimesh Piyumantha</td>
-                    <td>Colombo</td>
-                    <td>25000</td>
-                </tr>
-                <tr>
-                    <td>C003</td>
-                    <td>Ravindu Thilakshana</td>
-                    <td>Galle</td>
-                    <td>40000</td>
-                </tr>
-                <tr>
-                    <td>C004</td>
-                    <td>Ashan Sandeepa</td>
-                    <td>Panadura</td>
-                    <td>35000</td>
-                </tr>
-                <tr>
-                    <td>C005</td>
-                    <td>Sadun Iduranga</td>
-                    <td>Galle</td>
-                    <td>50000</td>
-                </tr>
-                <tr>
-                    <td>C006</td>
-                    <td>Dakshina Tharuka</td>
-                    <td>Galle</td>
-                    <td>45000</td>
-                </tr>
+                <tbody id="tblCustomer">
+
                 </tbody>
             </table>
         </div>
@@ -188,7 +153,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
-                        <button type="button" class="btn btn-success" id="newCustomer">Save</button>
+                        <button type="button" id="newCustomer" class="btn btn-success">Save</button>
                     </div>
                 </div>
             </div>
@@ -252,8 +217,19 @@
             salary: customerSalary
         };
         customers.push(customerObject);
-        console.log(customers);
+        loadAllCustomers();
     });
+
+    //load all customers function
+    function loadAllCustomers() {
+        $("#tblCustomer").empty();
+
+        // get all customer records from the array
+        for (var customer of customers) {
+            var row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
+            $("#tblCustomer").append(row);
+        }
+    }
 </script>
 </body>
 </html>
