@@ -219,6 +219,7 @@
             salary: customerSalary
         };
         customers.push(customerObject);
+        //customer saved alert
         Swal.fire({
             position: 'top-end',
             icon: 'success',
@@ -227,6 +228,7 @@
             timer: 1500
         })
         loadAllCustomers();
+        bindRowClickEvents();
     });
 
     //load all customers function
@@ -238,6 +240,21 @@
             var row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
             $("#tblCustomer").append(row);
         }
+    }
+
+    //setting all table records details values to text fields
+    function bindRowClickEvents() {
+        $("#tblCustomer>tr").click(function () {
+            let id = $(this).children(":eq(0)").text();
+            let name = $(this).children(":eq(1)").text();
+            let address = $(this).children(":eq(2)").text();
+            let salary = $(this).children(":eq(3)").text();
+
+            $('#customer-id').val(id);
+            $('#customer-name').val(name);
+            $('#customer-address').val(address);
+            $('#customer-salary').val(salary);
+        });
     }
 </script>
 </body>
