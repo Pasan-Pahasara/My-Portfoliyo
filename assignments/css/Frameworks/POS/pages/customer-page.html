@@ -239,10 +239,17 @@
 <script src="../assets/jQuery/jquery-3.6.1.min.js"></script>
 <script>
     $("#newCustomer").click(function () {
-        $("#customer-id").val();
-        $("#customer-name").val();
-        $("#customer-address").val();
-        $("#customer-salary").val();
+        let customerID = $("#customer-id").val();
+        let customerName = $("#customer-name").val();
+        let customerAddress = $("#customer-address").val();
+        let customerSalary = $("#customer-salary").val();
+
+        let customerObject = {
+            id: customerID,
+            name: customerName,
+            address: customerAddress,
+            salary: customerSalary
+        };
     });
 </script>
 </body>
