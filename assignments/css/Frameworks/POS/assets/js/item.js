@@ -18,4 +18,12 @@ $("#newItem").click(function () {
         salary: itemQuantity
     };
     items.push(itemObject);
+    //item saved alert
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Your Item has been saved',
+        showConfirmButton: false,
+        timer: 1500
+    })
 });
