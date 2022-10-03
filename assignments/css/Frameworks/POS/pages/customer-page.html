@@ -264,6 +264,30 @@
         });
     }
 
+    //text fields focus
+    $("#customer-id").on('keydown', function (event) {
+        if (event.key === 'Enter') {
+            $("#customer-name").focus();
+        }
+    });
+
+    $("#customer-name").on('keydown', function (event) {
+        if (event.key === 'Enter') {
+            $("#customer-address").focus();
+        }
+    });
+
+    $("#customer-address").on('keydown', function (event) {
+        if (event.key === 'Enter') {
+            $("#customer-salary").focus();
+        }
+    });
+
+    $("#customer-salary").on('keydown', function (event) {
+        if (event.key === 'Enter') {
+            $("#newCustomer").focus();
+        }
+    });
 </script>
 </body>
 </html>
