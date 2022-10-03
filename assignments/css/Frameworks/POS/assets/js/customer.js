@@ -137,6 +137,14 @@ $("#customer-id,#customer-name,#customer-address,#customer-salary").on('keydown'
     }
 });
 
+//clear text fields
+function clearTextFields() {
+    $('#customer-id').val('');
+    $('#customer-name').val('');
+    $('#customer-address').val('');
+    $('#customer-salary').val('');
+    $('#customer-id').focus();
+}
 
 
 
