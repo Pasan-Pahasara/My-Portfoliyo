@@ -88,8 +88,17 @@ $("#customer-id").on('keyup', function (event) {
 });
 
 $("#customer-name").on('keyup', function (event) {
-    if (event.key === 'Enter') {
-        $("#customer-address").focus();
+    let input = $("#customer-name").val();
+    if (regCusName.test(input)) {
+        $("#customer-name").css('border', '2px solid green');
+        $("#error").text("");
+
+        if (event.key === 'Enter') {
+            $("#customer-address").focus();
+        }
+    } else {
+        $("#customer-name").css('border', '2px solid red')
+        $("#error").text("Wrong format: Pahasara");
     }
 });
 
