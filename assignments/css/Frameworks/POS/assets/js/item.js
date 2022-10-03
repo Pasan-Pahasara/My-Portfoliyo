@@ -27,6 +27,7 @@ $("#newItem").click(function () {
         timer: 1500
     })
     loadAllItems();
+    dblRowClickEvents();
 });
 
 //load all items function
@@ -38,4 +39,11 @@ function loadAllItems() {
         var row = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.price}</td><td>${item.quantity}</td></tr>`;
         $("#tblItem").append(row);
     }
+}
+
+//double clicked delete function
+function dblRowClickEvents() {
+    $("#tblItem>tr").on('dblclick', function () {
+        $(this).remove(); //select the row which runs the event at the moment and then delete it
+    });
 }
