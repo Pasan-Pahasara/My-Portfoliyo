@@ -5,8 +5,15 @@
 
 //add new item
 $("#newItem").click(function () {
-    $("#item-id").val();
-    $("#item-name").val();
-    $("#item-price").val();
-    $("#item-quantity").val();
+    let itemID = $("#item-id").val();
+    let itemName = $("#item-name").val();
+    let itemPrice = $("#item-price").val();
+    let itemQuantity = $("#item-quantity").val();
+
+    let itemObject = {
+        id: itemID,
+        name: itemName,
+        address: itemPrice,
+        salary: itemQuantity
+    };
 });
