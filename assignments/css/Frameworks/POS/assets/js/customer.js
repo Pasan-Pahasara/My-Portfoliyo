@@ -81,44 +81,52 @@ $("#customer-id").on('keyup', function (event) {
         if (event.key === 'Enter') {
             $("#customer-name").focus();
         }
-    } else {
+    }else {
         $("#customer-id").css('border', '2px solid red');
         $("#error").text("Wrong format: C00-001");
     }
 });
 
 $("#customer-name").on('keyup', function (event) {
-    let input = $("#customer-name").val();
-    if (regCusName.test(input)) {
+    let input =$("#customer-name").val();
+    if(regCusName.test(input)) {
         $("#customer-name").css('border', '2px solid green');
         $("#error").text("");
 
         if (event.key === 'Enter') {
             $("#customer-address").focus();
         }
-    } else {
-        $("#customer-name").css('border', '2px solid red')
+    }else {
+        $("#customer-name").css('border','2px solid red')
         $("#error").text("Wrong format: Pahasara");
     }
 });
 
 $("#customer-address").on('keyup', function (event) {
-    let input = $("#customer-address").val();
-    if (regCusAddress.test(input)) {
-        $("#customer-address").css('border', '2px solid green');
+    let input =$("#customer-address").val();
+    if(regCusAddress.test(input)){
+        $("#customer-address").css('border','2px solid green');
         $("#error").text("");
         if (event.key === 'Enter') {
             $("#customer-salary").focus();
         }
-    } else {
-        $("#customer-address").css('border', '2px solid red');
+    }else {
+        $("#customer-address").css('border','2px solid red');
         $("#error").text("Wrong format: 256/b Galle");
     }
 });
 
 $("#customer-salary").on('keyup', function (event) {
-    if (event.key === 'Enter') {
-        $("#newCustomer").focus();
+    let input=$("#customer-salary").val();
+    if(regCusSalary.test(input)) {
+        $("#customer-salary").css('border', '2px solid green');
+        $("#error").text("");
+        if (event.key === 'Enter') {
+            $("#newCustomer").focus();
+        }
+    }else {
+        $("#customer-salary").css('border','2px solid red')
+        $("#error").text("Wrong format: Rs.10000.00");
     }
 });
 
@@ -128,5 +136,7 @@ $("#customer-id,#customer-name,#customer-address,#customer-salary").on('keydown'
         event.preventDefault();
     }
 });
+
+
 
 
