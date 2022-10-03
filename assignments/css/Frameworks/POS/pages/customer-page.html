@@ -288,6 +288,13 @@
             $("#newCustomer").focus();
         }
     });
+
+    //disable tab key focus
+    $("#customer-id,#customer-name,#customer-address,#customer-salary").on('keydown', function (event) {
+        if (event.key === 'Tab') {
+            event.preventDefault();
+        }
+    });
 </script>
 </body>
 </html>
