@@ -68,12 +68,22 @@ function dblRowClickEvents() {
 let regCusID = /^(C00-)[0-9]{3,4}$/;
 let regCusName = /^[A-z ]{3,20}$/;
 let regCusAddress = /^[A-z0-9/ ]{6,30}$/;
-let regCusSalary = /^(R.S)[0-9]{4,9}$/;
+let regCusSalary = /[0-9]{100}$/;
 
 //text fields focus and regex
 $("#customer-id").on('keyup', function (event) {
-    if (event.key === 'Enter') {
-        $("#customer-name").focus();
+    let input = $("#customer-id").val();
+
+    if (regCusID.test(input)) {
+        $("#customer-id").css('border', '2px solid green');
+        $("#error").text("");
+
+        if (event.key === 'Enter') {
+            $("#customer-name").focus();
+        }
+    } else {
+        $("#customer-id").css('border', '2px solid red');
+        $("#error").text("Wrong format: C00-001");
     }
 });
 
