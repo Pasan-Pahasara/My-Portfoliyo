@@ -91,7 +91,7 @@
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal"
                         data-bs-whatever="@mdo">Update
                 </button>
-                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="button" id="btnDelete" class="btn btn-danger">Delete</button>
             </div>
         </nav>
     </div>
@@ -230,6 +230,7 @@
         loadAllCustomers();
         bindRowClickEvents();
         dblRowClickEvents();
+        clearTextFields();
     });
 
     //load all customers function
@@ -260,7 +261,42 @@
 
     function dblRowClickEvents() {
         $("#tblCustomer>tr").on('dblclick', function () {
+            // const swalWithBootstrapButtons = Swal.mixin({
+            //     customClass: {
+            //         confirmButton: 'btn btn-success',
+            //         cancelButton: 'btn btn-danger'
+            //
+            //     },
+            //     buttonsStyling: true
+            // })
+            //
+            // swalWithBootstrapButtons.fire({
+            //     title: 'Are you sure?',
+            //     text: "You won't be able to revert this!",
+            //     icon: 'warning',
+            //     showCancelButton: true,
+            //     confirmButtonText: 'Yes, delete it!',
+            //     cancelButtonText: 'No, cancel!',
+            //     reverseButtons: true,
+            // }).then((result) => {
+            //     if (result.isConfirmed) {
             $(this).remove(); //select the row which runs the event at the moment and then delete it
+            //             swalWithBootstrapButtons.fire(
+            //                 'Deleted!',
+            //                 'Your file has been deleted.',
+            //                 'success'
+            //             )
+            //         } else if (
+            //             /* Read more about handling dismissals below */
+            //             result.dismiss === Swal.DismissReason.cancel
+            //         ) {
+            //             swalWithBootstrapButtons.fire(
+            //                 'Cancelled',
+            //                 'Your imaginary file is safe :)',
+            //                 'error'
+            //             )
+            //         }
+            //     })
         });
     }
 
@@ -295,6 +331,14 @@
             event.preventDefault();
         }
     });
+
+    //clear text fields
+    function clearTextFields() {
+        $('#customer-id').val('');
+        $('#customer-name').val('');
+        $('#customer-address').val('');
+        $('#customer-salary').val('');
+    }
 </script>
 </body>
 </html>
