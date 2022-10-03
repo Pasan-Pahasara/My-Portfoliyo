@@ -103,8 +103,16 @@ $("#customer-name").on('keyup', function (event) {
 });
 
 $("#customer-address").on('keyup', function (event) {
-    if (event.key === 'Enter') {
-        $("#customer-salary").focus();
+    let input = $("#customer-address").val();
+    if (regCusAddress.test(input)) {
+        $("#customer-address").css('border', '2px solid green');
+        $("#error").text("");
+        if (event.key === 'Enter') {
+            $("#customer-salary").focus();
+        }
+    } else {
+        $("#customer-address").css('border', '2px solid red');
+        $("#error").text("Wrong format: 256/b Galle");
     }
 });
 
@@ -120,6 +128,5 @@ $("#customer-id,#customer-name,#customer-address,#customer-salary").on('keydown'
         event.preventDefault();
     }
 });
-
 
 
