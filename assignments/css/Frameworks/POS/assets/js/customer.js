@@ -29,6 +29,7 @@ $("#newCustomer").click(function () {
     loadAllCustomers();
     bindRowClickEvents();
     dblRowClickEvents();
+    clearTextFields();
 });
 
 //load all customers function
