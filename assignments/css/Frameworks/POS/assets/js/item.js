@@ -3,6 +3,7 @@
  * @since : 0.1.0
  **/
 
+let items = [];
 //add new item
 $("#newItem").click(function () {
     let itemID = $("#item-id").val();
@@ -16,4 +17,5 @@ $("#newItem").click(function () {
         address: itemPrice,
         salary: itemQuantity
     };
+    items.push(itemObject);
 });
