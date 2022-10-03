@@ -14,8 +14,8 @@ $("#newItem").click(function () {
     let itemObject = {
         id: itemID,
         name: itemName,
-        address: itemPrice,
-        salary: itemQuantity
+        price: itemPrice,
+        quantity: itemQuantity
     };
     items.push(itemObject);
     //item saved alert
@@ -26,4 +26,16 @@ $("#newItem").click(function () {
         showConfirmButton: false,
         timer: 1500
     })
+    loadAllItems();
 });
+
+//load all items function
+function loadAllItems() {
+    $("#tblItem").empty();
+
+    // get all item records from the array
+    for (var item of items) {
+        var row = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.price}</td><td>${item.quantity}</td></tr>`;
+        $("#tblItem").append(row);
+    }
+}
