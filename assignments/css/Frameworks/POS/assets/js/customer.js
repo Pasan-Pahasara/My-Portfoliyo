@@ -69,7 +69,7 @@ function dblRowClickEvents() {
 let regCusID = /^(C00-)[0-9]{3,4}$/;
 let regCusName = /^[A-z ]{3,20}$/;
 let regCusAddress = /^[A-z0-9/ ]{6,30}$/;
-let regCusSalary = /[0-9]{100}$/;
+let regCusSalary = /^(R.S)[0-9]{4,9}$/;
 
 //text fields focus and regex
 $("#customer-id").on('keyup', function (event) {
