@@ -229,6 +229,7 @@
         })
         loadAllCustomers();
         bindRowClickEvents();
+        dblRowClickEvents();
     });
 
     //load all customers function
@@ -256,6 +257,13 @@
             $('#customer-salary').val(salary);
         });
     }
+
+    function dblRowClickEvents() {
+        $("#tblCustomer>tr").on('dblclick', function () {
+            $(this).remove(); //select the row which runs the event at the moment and then delete it
+        });
+    }
+
 </script>
 </body>
 </html>
