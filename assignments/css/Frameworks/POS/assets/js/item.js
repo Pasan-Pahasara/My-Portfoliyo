@@ -47,3 +47,9 @@ function dblRowClickEvents() {
         $(this).remove(); //select the row which runs the event at the moment and then delete it
     });
 }
+
+//regex patterns
+let regItemCode = /^(I00-)[0-9]{3,4}$/;
+let regItemName = /^[A-z ]{3,20}$/;
+let regItemPrice = /^[0-9]{1,10}$/;
+let regItemQtyOnHand = /^[0-9]{1,3}$/;
