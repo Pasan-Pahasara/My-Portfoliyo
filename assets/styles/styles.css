@@ -25,10 +25,6 @@
     scroll-behavior: smooth;
 }
 
-html {
-    /*display: grid;*/
-}
-
 /* Scrollbar
    ========================================================================== */
 
@@ -44,7 +40,9 @@ html {
     background: #FFA500;
 }
 
-/*///////////////////////////////////////////*/
+/**
+ * Scroll Up Button.
+ */
 #scroll_up_btn {
     position: fixed;
     opacity: 40%;
@@ -60,7 +58,7 @@ html {
 
 #scroll_up_btn > i {
     font-size: 19px;
-    color: #fff;
+    color: #fff !important;
     line-height: 0;
     position: absolute;
     right: 10px;
