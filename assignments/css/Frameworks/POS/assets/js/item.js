@@ -28,6 +28,7 @@ $("#newItem").click(function () {
     })
     loadAllItems();
     dblRowClickEvents();
+    clearTextFields();
 });
 
 //load all items function
@@ -120,3 +121,12 @@ $("#item-id,#item-name,#item-price,#item-quantity").on('keydown', function (even
         event.preventDefault();
     }
 });
+
+//clear text fields
+function clearTextFields() {
+    $('#item-id').val('');
+    $('#item-name').val('');
+    $('#item-price').val('');
+    $('#item-quantity').val('');
+    $('#item-id').focus();
+}
