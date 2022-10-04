@@ -22,6 +22,37 @@
     background: #FFA500;
 }
 
+/**
+ * Customized Scroll Up Button.
+ */
+#scroll_up_btn {
+    position: fixed;
+    opacity: 40%;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #FFA500;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+#scroll_up_btn > i {
+    font-size: 19px;
+    color: #fff;
+    line-height: 0;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+}
+
+#scroll_up_btn:hover {
+    color: #FFA500 !important;
+    opacity: 100%;
+    transform: translateY(-10px);
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     background-color: #ECF0F3;
