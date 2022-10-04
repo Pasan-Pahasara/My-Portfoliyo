@@ -99,3 +99,17 @@ $("#item-price").on('keyup', function (event) {
         $("#error2").text("Wrong format: 10");
     }
 });
+
+$("#item-quantity").on('keyup', function (event) {
+    let input=$("#item-quantity").val();
+    if(regItemQtyOnHand.test(input)) {
+        $("#item-quantity").css('border', '2px solid green');
+        $("#error2").text("");
+        if (event.key === 'Enter') {
+            $("#newItem").focus();
+        }
+    }else {
+        $("#item-quantity").css('border','2px solid red')
+        $("#error2").text("Wrong format: 150");
+    }
+});
