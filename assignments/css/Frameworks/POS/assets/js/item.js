@@ -53,3 +53,20 @@ let regItemCode = /^(I00-)[0-9]{3,4}$/;
 let regItemName = /^[A-z ]{3,20}$/;
 let regItemPrice = /^[0-9]{1,10}$/;
 let regItemQtyOnHand = /^[0-9]{1,3}$/;
+
+//text fields focus and regex
+$("#item-id").on('keyup', function (event) {
+    let input = $("#item-id").val();
+
+    if (regItemCode.test(input)) {
+        $("#item-id").css('border', '2px solid green');
+        $("#error2").text("");
+
+        if (event.key === 'Enter') {
+            $("#item-id").focus();
+        }
+    }else {
+        $("#item-id").css('border', '2px solid red');
+        $("#error2").text("Wrong format: I00-001");
+    }
+});
