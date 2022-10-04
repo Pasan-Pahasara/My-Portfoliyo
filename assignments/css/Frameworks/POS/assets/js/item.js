@@ -113,3 +113,10 @@ $("#item-quantity").on('keyup', function (event) {
         $("#error2").text("Wrong format: 150");
     }
 });
+
+//disable tab key focus
+$("#item-id,#item-name,#item-price,#item-quantity").on('keydown', function (event) {
+    if (event.key === 'Tab') {
+        event.preventDefault();
+    }
+});
