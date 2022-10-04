@@ -63,10 +63,39 @@ $("#item-id").on('keyup', function (event) {
         $("#error2").text("");
 
         if (event.key === 'Enter') {
-            $("#item-id").focus();
+            $("#item-name").focus();
         }
     }else {
         $("#item-id").css('border', '2px solid red');
         $("#error2").text("Wrong format: I00-001");
+    }
+});
+
+$("#item-name").on('keyup', function (event) {
+    let input =$("#item-name").val();
+    if(regItemName.test(input)) {
+        $("#item-name").css('border', '2px solid green');
+        $("#error2").text("");
+
+        if (event.key === 'Enter') {
+            $("#item-price").focus();
+        }
+    }else {
+        $("#item-name").css('border','2px solid red')
+        $("#error2").text("Wrong format: Pizza");
+    }
+});
+
+$("#item-price").on('keyup', function (event) {
+    let input =$("#item-price").val();
+    if(regItemPrice.test(input)){
+        $("#item-price").css('border','2px solid green');
+        $("#error2").text("");
+        if (event.key === 'Enter') {
+            $("#item-quantity").focus();
+        }
+    }else {
+        $("#item-price").css('border','2px solid red');
+        $("#error2").text("Wrong format: 10");
     }
 });
