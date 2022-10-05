@@ -28,8 +28,8 @@ $("#newCustomer").click(function () {
     })
     loadAllCustomers();
     bindRowClickEvents();
-    dblRowClickEvents();
-    clearTextFields();
+    dblCusRowClickEvents();
+    clearCusTextFields();
 });
 
 //load all customers function
@@ -59,10 +59,9 @@ function bindRowClickEvents() {
 }
 
 //double clicked delete function
-function dblRowClickEvents() {
+function dblCusRowClickEvents() {
     $("#tblCustomer>tr").on('dblclick', function () {
         $(this).remove(); //select the row which runs the event at the moment and then delete it
-        // alert('historic');
     });
 }
 
@@ -140,7 +139,7 @@ $("#customer-id,#customer-name,#customer-address,#customer-salary").on('keydown'
 });
 
 //clear text fields
-function clearTextFields() {
+function clearCusTextFields() {
     $('#customer-id').val('');
     $('#customer-name').val('');
     $('#customer-address').val('');
