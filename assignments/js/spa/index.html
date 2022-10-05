@@ -117,16 +117,16 @@
         <div class="row">
             <nav class="navbar">
                 <div class="container-fluid justify-content-center gap-2 d-flex flex-xxl-row">
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal"
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#customerUpdateModal"
                             data-bs-whatever="@mdo">Update
                     </button>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" id="btnDelete" class="btn btn-danger">Delete</button>
                 </div>
             </nav>
         </div>
 
         <section
-                class="d-flex flex-column h-50 col-10 col-xl-9 bg-white shadow-lg rounded-5 align-items-center justify-content-around">
+                class="d-flex flex-column h-50 col-10 col-xl-9 bg-white shadow-lg rounded-5 align-items-center justify-content-around pt-4">
             <!-- Table -->
             <div class="d-flex overflow-auto h-70 w-75 rounded-2">
                 <table class="table table-striped table-hover">
@@ -138,49 +138,14 @@
                         <th scope="col">Salary</th>
                     </tr>
                     </thead>
-                    <tbody class="">
-                    <tr>
-                        <td>C001</td>
-                        <td>Maneesha Gunawardhana</td>
-                        <td>Galle</td>
-                        <td>10000</td>
-                    </tr>
-                    <tr>
-                        <td>C002</td>
-                        <td>Nimesh Piyumantha</td>
-                        <td>Colombo</td>
-                        <td>25000</td>
-                    </tr>
-                    <tr>
-                        <td>C003</td>
-                        <td>Ravindu Thilakshana</td>
-                        <td>Galle</td>
-                        <td>40000</td>
-                    </tr>
-                    <tr>
-                        <td>C004</td>
-                        <td>Ashan Sandeepa</td>
-                        <td>Panadura</td>
-                        <td>35000</td>
-                    </tr>
-                    <tr>
-                        <td>C005</td>
-                        <td>Sadun Iduranga</td>
-                        <td>Galle</td>
-                        <td>50000</td>
-                    </tr>
-                    <tr>
-                        <td>C006</td>
-                        <td>Dakshina Tharuka</td>
-                        <td>Galle</td>
-                        <td>45000</td>
-                    </tr>
+                    <tbody id="tblCustomer">
+
                     </tbody>
                 </table>
             </div>
 
             <!-- Adding Customers Button -->
-            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#customerModal"
                     data-bs-whatever="@mdo"><i class="bi bi-plus"></i>
                 New Customer
             </button>
@@ -216,9 +181,10 @@
                                 </div>
                             </form>
                         </div>
+                        <p><small class="text-danger p-2 ps-3" id="error"></small></p>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
-                            <button type="button" class="btn btn-success">Save</button>
+                            <button type="button" id="newCustomer" class="btn btn-success">Save</button>
                         </div>
                     </div>
                 </div>
@@ -602,6 +568,8 @@
 <!--SweetAlert-->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!--Customer JS-->
+<script src="./assets/js/customer.js"></script>
+<!--Item JS-->
 <script src="./assets/js/item.js"></script>
 <!-- Initialize Swiper -->
 <script>
