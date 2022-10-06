@@ -67,8 +67,8 @@
         <nav class="navbar">
             <div class="container-fluid d-flex flex-md-column flex-sm-row">
                 <form class="d-flex flex-column flex-sm-row" role="search">
-                    <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Input Name/NIC"
-                           aria-label="Search" id="txtSearch">
+                    <input class="form-control me-2 mb-2 mb-lg-0" type="search" id="customerSearchBar"  placeholder="Input Name/NIC"
+                           aria-label="Search">
                     <button class="orange-ww-bg rounded-2 dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                         Name
@@ -78,7 +78,7 @@
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-success" id="btnCustomerSearch" type="button">Search</button>
                 </form>
             </div>
         </nav>
@@ -192,7 +192,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="reset" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
-                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="button" class="btn btn-success">Save</button>
                     </div>
                 </div>
             </div>

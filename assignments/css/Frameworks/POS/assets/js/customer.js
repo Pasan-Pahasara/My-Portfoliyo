@@ -147,5 +147,14 @@ function clearTextFields() {
     $('#customer-id').focus();
 }
 
+//search id and load table
+$("#btnCustomerSearch").click(function () {
+    var searchCusID = customers.find(({id}) => id === $("#customerSearchBar").val());
 
+    $("#tblCustomer").empty();
+
+    // get all customer records from the array
+    var row = `<tr><td>${searchCusID.id}</td><td>${searchCusID.name}</td><td>${searchCusID.address}</td><td>${searchCusID.salary}</td></tr>`;
+    $("#tblCustomer").append(row);
+});
 
