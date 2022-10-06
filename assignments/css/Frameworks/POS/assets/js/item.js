@@ -130,3 +130,14 @@ function clearTextFields() {
     $('#item-quantity').val('');
     $('#item-id').focus();
 }
+
+//search id and load table
+$("#btnItemSearch").click(function () {
+    var searchID = items.find(({id}) => id === $("#itemSearchBar").val());
+
+    $("#tblItem").empty();
+
+    // get all item records from the array
+        var row = `<tr><td>${searchID.id}</td><td>${searchID.name}</td><td>${searchID.price}</td><td>${searchID.quantity}</td></tr>`;
+        $("#tblItem").append(row);
+});
