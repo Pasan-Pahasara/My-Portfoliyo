@@ -3449,6 +3449,11 @@ footer > section:first-child > div:first-child > h2:nth-child(4) > span {
     main > section:nth-child(5) > section:nth-child(2) > section:first-child > div:nth-child(8) {
         display: none;
     }
+    /*home section*/
+    main > section:first-child > section > div:first-child > aside:nth-child(2) > div:first-child {
+        width: 300px;
+        height: 382px;
+    }
 }
 
 @media (max-width: 320px) {
