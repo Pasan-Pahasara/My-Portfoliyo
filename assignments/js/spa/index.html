@@ -567,62 +567,13 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <!--SweetAlert-->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--Data Arrays JS-->
+<script src="./db/DB.js"></script>
+<!--Dashboard JS -->
+<script src="./controller/DashboardController.js"></script>
 <!--Customer JS-->
-<script src="./assets/js/customer.js"></script>
+<script src="./controller/CustomerController.js"></script>
 <!--Item JS-->
-<script src="./assets/js/item.js"></script>
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
-        autoplay: {
-            delay: 2600,
-            disableOnInteraction: false,
-        },
-        mousewheel: true,
-        keyboard: {
-            enabled: true,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-
-    $(document).ready(function () {
-        $('#homeSection').attr('style', 'display : flex !important')
-        $('#customerSection').attr('style', 'display : none !important')
-        $('#itemSection').attr('style', 'display : none !important')
-        $('#placeOrderSection').attr('style', 'display : none !important')
-    });
-
-    $('#homeBtn').click(function () {
-        $('#homeSection').attr('style', 'display : flex !important')
-        $('#customerSection').attr('style', 'display : none !important')
-        $('#itemSection').attr('style', 'display : none !important')
-        $('#placeOrderSection').attr('style', 'display : none !important')
-    })
-
-    $('#customersBtn').click(function () {
-        $('#homeSection').attr('style', 'display : none !important')
-        $('#customerSection').attr('style', 'display : flex !important')
-        $('#itemSection').attr('style', 'display : none !important')
-        $('#placeOrderSection').attr('style', 'display : none !important')
-    })
-
-    $('#itemsBtn').click(function () {
-        $('#homeSection').attr('style', 'display : none !important')
-        $('#customerSection').attr('style', 'display : none !important')
-        $('#itemSection').attr('style', 'display : flex !important')
-        $('#placeOrderSection').attr('style', 'display : none !important')
-    })
-
-    $('#placeOrderBtn').click(function () {
-        $('#homeSection').attr('style', 'display : none !important')
-        $('#customerSection').attr('style', 'display : none !important')
-        $('#itemSection').attr('style', 'display : none !important')
-        $('#placeOrderSection').attr('style', 'display : flex !important')
-    })
-</script>
+<script src="./controller/ItemController.js"></script>
 </body>
 </html>

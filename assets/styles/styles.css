@@ -32,6 +32,7 @@
  * Customized Scrollbar.
  */
 ::-webkit-scrollbar {
+    display: none;
     width: 6px;
     background: #3f3838;
 }

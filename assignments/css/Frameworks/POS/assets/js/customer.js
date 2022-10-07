@@ -69,7 +69,7 @@ function dblRowClickEvents() {
 let regCusID = /^(C00-)[0-9]{3,4}$/;
 let regCusName = /^[A-z ]{3,20}$/;
 let regCusAddress = /^[A-z0-9/ ]{6,30}$/;
-let regCusSalary = /^(R.S)[0-9]{4,9}$/;
+let regCusSalary = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 
 //text fields focus and regex
 $("#customer-id").on('keyup', function (event) {
@@ -127,7 +127,7 @@ $("#customer-salary").on('keyup', function (event) {
         }
     }else {
         $("#customer-salary").css('border','2px solid red')
-        $("#error").text("Wrong format: Rs.10000.00");
+        $("#error").text("Wrong format: 100 or 100.00");
     }
 });
 
