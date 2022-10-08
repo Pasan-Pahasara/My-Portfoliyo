@@ -14,6 +14,7 @@
  * Customized Scrollbar.
  */
 ::-webkit-scrollbar {
+    display: none;
     width: 6px;
     background: #3f3838;
 }
@@ -74,7 +75,6 @@ a:hover {
 }
 
 #section-title {
-    margin-top: 20px;
     text-align: center;
     padding-bottom: 30px;
 }
