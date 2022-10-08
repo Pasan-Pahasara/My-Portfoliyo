@@ -132,28 +132,32 @@
                     <div class="modal-body">
 
                         <!-- Form -->
-                        <form>
+                        <form class="ubFt">
                             <div>
                                 <label for="customer-id" class="col-form-label">Customer ID:</label>
                                 <input type="text" class="form-control" id="customer-id">
+                                <small class="control-error text-danger" id="lblCusID"></small>
                             </div>
                             <div>
                                 <label for="customer-name" class="col-form-label">Customer Name:</label>
                                 <input type="text" class="form-control" id="customer-name">
+                                <small class="control-error text-danger" id="lblCusName"></small>
                             </div>
                             <div>
                                 <label for="customer-address" class="col-form-label">Customer Address:</label>
                                 <input type="text" class="form-control" id="customer-address">
+                                <small class="control-error text-danger" id="lblCusAddress"></small>
                             </div>
                             <div>
                                 <label for="customer-salary" class="col-form-label">Customer Salary:</label>
                                 <input type="text" class="form-control" id="customer-salary">
+                                <small class="control-error text-danger" id="lblCusSalary"></small>
                             </div>
                         </form>
                     </div>
-                    <p><small class="text-danger p-2 ps-3" id="error"></small></p>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" id="clearCustomer" class="btn btn-warning">Clear</button>
                         <button type="button" id="newCustomer" class="btn btn-success">Save</button>
                     </div>
                 </div>
