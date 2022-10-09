@@ -91,7 +91,7 @@
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal"
                         data-bs-whatever="@mdo">Update
                 </button>
-                <button type="button" id="btnDelete" class="btn btn-danger">Delete</button>
+                <button type="button" id="btnCusDelete" class="btn btn-danger">Delete</button>
             </div>
         </nav>
     </div>
@@ -133,29 +133,29 @@
 
                         <!-- Form -->
                         <form class="ubFt">
-                            <div>
+                            <div class="ms-3 me-3">
                                 <label for="customer-id" class="col-form-label">Customer ID:</label>
                                 <input type="text" class="form-control" id="customer-id">
                                 <small class="control-error text-danger" id="lblCusID"></small>
                             </div>
-                            <div>
+                            <div class="ms-3 me-3">
                                 <label for="customer-name" class="col-form-label">Customer Name:</label>
                                 <input type="text" class="form-control" id="customer-name">
                                 <small class="control-error text-danger" id="lblCusName"></small>
                             </div>
-                            <div>
+                            <div class="ms-3 me-3">
                                 <label for="customer-address" class="col-form-label">Customer Address:</label>
                                 <input type="text" class="form-control" id="customer-address">
                                 <small class="control-error text-danger" id="lblCusAddress"></small>
                             </div>
-                            <div>
+                            <div class="ms-3 me-3">
                                 <label for="customer-salary" class="col-form-label">Customer Salary:</label>
                                 <input type="text" class="form-control" id="customer-salary">
                                 <small class="control-error text-danger" id="lblCusSalary"></small>
                             </div>
                         </form>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer ubFt">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="button" id="clearCustomer" class="btn btn-warning">Clear</button>
                         <button type="button" id="newCustomer" class="btn btn-success">Save</button>

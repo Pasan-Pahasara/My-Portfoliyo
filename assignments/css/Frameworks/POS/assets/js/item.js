@@ -4,6 +4,10 @@
  **/
 
 let items = [];
+
+//stating focus customerID
+$("#item-id").focus();
+
 //add new item
 $("#newItem").click(function () {
     let itemID = $("#item-id").val();
@@ -28,7 +32,7 @@ $("#newItem").click(function () {
     })
     loadAllItems();
     dblRowClickEvents();
-    clearTextFields();
+    clearItemAllTexts();
 });
 
 //load all items function
@@ -55,80 +59,147 @@ let regItemName = /^[A-z ]{3,20}$/;
 let regItemPrice = /^[0-9]{1,10}$/;
 let regItemQtyOnHand = /^[0-9]{1,3}$/;
 
-//text fields focus and regex
-$("#item-id").on('keyup', function (event) {
-    let input = $("#item-id").val();
+//item validation array
+let itemValidations = [];
 
-    if (regItemCode.test(input)) {
-        $("#item-id").css('border', '2px solid green');
-        $("#error2").text("");
-
-        if (event.key === 'Enter') {
-            $("#item-name").focus();
-        }
-    }else {
-        $("#item-id").css('border', '2px solid red');
-        $("#error2").text("Wrong format: I00-001");
-    }
+itemValidations.push({
+    itemReg: regItemCode,
+    itemField: $('#item-id'),
+    itemError: 'Item ID Pattern is Wrong : I00-001'
+});
+itemValidations.push({
+    itemReg: regItemName,
+    itemField: $('#item-name'),
+    itemError: 'Item Name Pattern is Wrong : A-z 5-20'
+});
+itemValidations.push({
+    itemReg: regItemPrice,
+    itemField: $('#item-price'),
+    itemError: 'Item Price Pattern is Wrong : 100 or 100.00,/'
+});
+itemValidations.push({
+    itemReg: regItemQtyOnHand,
+    itemField: $('#item-quantity'),
+    itemError: 'Item Quantity Pattern is Wrong : 100'
 });
 
-$("#item-name").on('keyup', function (event) {
-    let input =$("#item-name").val();
-    if(regItemName.test(input)) {
-        $("#item-name").css('border', '2px solid green');
-        $("#error2").text("");
-
-        if (event.key === 'Enter') {
-            $("#item-price").focus();
-        }
-    }else {
-        $("#item-name").css('border','2px solid red')
-        $("#error2").text("Wrong format: Pizza");
-    }
-});
-
-$("#item-price").on('keyup', function (event) {
-    let input =$("#item-price").val();
-    if(regItemPrice.test(input)){
-        $("#item-price").css('border','2px solid green');
-        $("#error2").text("");
-        if (event.key === 'Enter') {
-            $("#item-quantity").focus();
-        }
-    }else {
-        $("#item-price").css('border','2px solid red');
-        $("#error2").text("Wrong format: 10");
-    }
-});
-
-$("#item-quantity").on('keyup', function (event) {
-    let input=$("#item-quantity").val();
-    if(regItemQtyOnHand.test(input)) {
-        $("#item-quantity").css('border', '2px solid green');
-        $("#error2").text("");
-        if (event.key === 'Enter') {
-            $("#newItem").focus();
-        }
-    }else {
-        $("#item-quantity").css('border','2px solid red')
-        $("#error2").text("Wrong format: 150");
-    }
-});
-
-//disable tab key focus
+//disable tab key of all four text fields using grouping selector in CSS
 $("#item-id,#item-name,#item-price,#item-quantity").on('keydown', function (event) {
-    if (event.key === 'Tab') {
+    if (event.key == "Tab") {
         event.preventDefault();
     }
 });
 
-//clear text fields
-function clearTextFields() {
-    $('#item-id').val('');
-    $('#item-name').val('');
-    $('#item-price').val('');
-    $('#item-quantity').val('');
-    $('#item-id').focus();
+//grouping all fields keyup event using and call check validity function
+$("#item-id,#item-name,#item-price,#item-quantity").on('keyup', function (event) {
+    checkItemValidity();
+});
+
+//grouping all fields blur event using and call check validity function
+$("#item-id,#item-name,#item-price,#item-quantity").on('blur', function (event) {
+    checkItemValidity();
+});
+
+//item-id focus event
+$("#item-id").on('keydown', function (event) {
+    if (event.key == "Enter" && itemCheck(regItemCode, $("#item-id"))) {
+        $("#item-name").focus();
+    } else {
+        focusItemText($("#item-id"));
+    }
+});
+
+//item-name focus event
+$("#item-name").on('keydown', function (event) {
+    if (event.key == "Enter" && itemCheck(regItemName, $("#item-name"))) {
+        focusItemText($("#item-price"));
+    }
+});
+
+//item-price focus event
+$("#item-price").on('keydown', function (event) {
+    if (event.key == "Enter" && itemCheck(regItemPrice, $("#item-price"))) {
+        focusItemText($("#item-quantity"));
+    }
+});
+
+//item-quantity focus event
+$("#item-quantity").on('keydown', function (event) {
+    if (event.key == "Enter" && itemCheck(regItemQtyOnHand, $("#item-quantity"))) {
+        $("#newItem").focus();
+    }
+});
+
+//add item modal clear button
+$("#clearItem").on('click', function () {
+    clearItemAllTexts();
+});
+
+//check validity function
+function checkItemValidity() {
+    let itemErrorCount = 0;
+    for (let itemValidation of itemValidations) {
+        if (itemCheck(itemValidation.itemReg, itemValidation.itemField)) {
+            textItemSuccess(itemValidation.itemField, "");
+        } else {
+            itemErrorCount = itemErrorCount + 1;
+            setItemTextError(itemValidation.itemField, itemValidation.itemError);
+        }
+    }
+    setItemButtonState(itemErrorCount);
+}
+
+//check regex pattern function
+function itemCheck(regex, txtField) {
+    let itemInputValue = txtField.val();
+    return regex.test(itemInputValue) ? true : false;
+}
+
+//error text fields function
+function setItemTextError(txtField, error) {
+    if (txtField.val().length <= 0) {
+        defaultItemText(txtField, "");
+    } else {
+        txtField.css('border', '2px solid red');
+        txtField.parent().children('small').text(error);
+    }
+}
+
+//success text fields function
+function textItemSuccess(txtField, error) {
+    if (txtField.val().length <= 0) {
+        defaultItemText(txtField, "");
+    } else {
+        txtField.css('border', '2px solid green');
+        txtField.parent().children('small').text(error);
+    }
+}
+
+//default text fields function
+function defaultItemText(txtField, error) {
+    txtField.css("border", "1px solid #ced4da");
+    txtField.parent().children('small').text(error);
+}
+
+//focus texts function
+function focusItemText(txtField) {
+    txtField.focus();
+}
+
+//button state function
+function setItemButtonState(value) {
+    if (value > 0) {
+        $("#newItem").attr('disabled', true);
+    } else {
+        $("#newItem").attr('disabled', false);
+    }
+}
+
+//clear text fields function
+function clearItemAllTexts() {
+    $("#item-id").focus();
+    $("#item-id,#item-name,#item-price,#item-quantity").val("");
+    checkItemValidity();
 }
 
 //search id and load table

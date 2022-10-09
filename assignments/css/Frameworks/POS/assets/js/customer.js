@@ -151,6 +151,21 @@ $("#clearCustomer").on('click', function () {
    clearAllTexts();
 });
 
+//delete customer button
+$("#btnCusDelete").click(function () {
+    let deleteID = $("#customer-id").val();
+
+    let option = confirm("Do you really want to delete customer id :" + deleteID);
+    if (option){
+        if (deleteCustomer(deleteID)) {
+            alert("Customer Successfully Deleted..");
+            setTextfieldValues("", "", "", "");
+        } else {
+            alert("No such customer to delete. please check the id");
+        }
+    }
+});
+
 //check validity function
 function checkValidity() {
     let errorCount = 0;
@@ -229,3 +244,24 @@ $("#btnCustomerSearch").click(function () {
     $("#tblCustomer").append(row);
 });
 
+function searchCustomer(cusID) {
+    for (let customer of customers) {
+        if (customer.id == cusID) {
+            return customer;
+        }
+    }
+    return null;
+}
+
+//delete customer function
+function deleteCustomer(customerID) {
+    let customer = searchCustomer(customerID);
+    if (customer != null) {
+        let indexNumber = customers.indexOf(customer);
+        customers.splice(indexNumber, 1);
+        loadAllCustomers();
+        return true;
+    } else {
+        return false;
+    }
+}
