@@ -166,6 +166,11 @@ $("#btnCusDelete").click(function () {
     }
 });
 
+//load all customers button
+$("#btnViewAllCustomer").click(function () {
+    loadAllCustomers();
+})
+
 //check validity function
 function checkValidity() {
     let errorCount = 0;
