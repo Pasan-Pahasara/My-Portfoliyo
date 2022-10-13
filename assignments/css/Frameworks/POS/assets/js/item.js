@@ -146,11 +146,6 @@ $("#item-quantity").on('keydown', function (event) {
     }
 });
 
-// add item modal clear button
-$("#clearItem").on('click', function () {
-    clearItemAllTexts();
-});
-
 // load all items button
 $("#btnViewAllItem").on('click', function () {
     loadAllItems();
@@ -164,6 +159,42 @@ $("#clearItem").on('click', function () {
 // search id and load table
 $("#btnItemSearch").click(function () {
     var searchID = items.find(({id}) => id === $("#itemSearchBar").val());
+
+    // delete item button
+    $("#btnItemDelete").click(function () {
+        let deleteItemID = $("#itemSearchBar").val();
+        Swal.fire({
+            title: 'Do you want to Delete the \n' + deleteItemID + ' ?',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Delete',
+            confirmButtonColor: '#3085d6',
+            denyButtonText: `Don't Delete`,
+        }).then((result) => {
+            if (result.isConfirmed) {
+                if (deleteItem(deleteItemID)) {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Delete Successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    setItemTextFieldValues("", "", "", "");
+                } else {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'error',
+                        title: 'Delete Unsuccessfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }
+            } else if (result.isDenied) {
+                Swal.fire(deleteItemID + ' Delete Canceled!', '', 'info')
+            }
+        })
+    });
 
     $("#tblItem").empty();
 
