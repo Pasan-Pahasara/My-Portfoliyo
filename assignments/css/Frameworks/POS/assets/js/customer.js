@@ -378,3 +378,20 @@ function deleteCustomer(customerID) {
         return false;
     }
 }
+
+// update customer function
+function updateCustomer(customerID) {
+    let customer = searchCustomer(customerID);
+    if (customer != null) {
+        customer.id = $("#customerID").val();
+        customer.name = $("#customerName").val();
+        customer.address = $("#customerAddress").val();
+        customer.salary = $("#customerSalary").val();
+        loadAllCustomers();
+        return true;
+    } else {
+        return false;
+        loadAllCustomers();
+        setCusTextFieldValues("", "", "", "");
+    }
+}
