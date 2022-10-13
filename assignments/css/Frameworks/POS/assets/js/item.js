@@ -196,6 +196,30 @@ $("#btnItemSearch").click(function () {
         })
     });
 
+    // update customer button
+    $("#updateItemBtn").click(function () {
+        let itemID = $("#itemID").val();
+        let response = updateItem(itemID);
+        if (response) {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Update Successfully',
+                showConfirmButton: false,
+                timer: 1500
+            })
+            setItemTextFieldValues("", "", "", "");
+        } else {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: 'Update Unsuccessfully',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+    });
+
     $("#tblItem").empty();
 
     // get all item records from the array
@@ -328,8 +352,8 @@ function updateItem(itemID) {
     if (item != null) {
         item.id = $("#itemID").val();
         item.name = $("#itemName").val();
-        item.address = $("#itemPrice").val();
-        item.salary = $("#itemQuantity").val();
+        item.price = $("#itemPrice").val();
+        item.quantity = $("#itemQuantity").val();
         loadAllItems();
         return true;
     } else {
