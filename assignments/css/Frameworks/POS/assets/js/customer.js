@@ -481,6 +481,11 @@ $("#customerSalary").on('keydown', function (event) {
     }
 });
 
+// add update customer modal clear button
+$("#clearUpdateCustomer").on('click', function () {
+    clearUpdateCustomerAllTexts();
+});
+
 // check update validity function
 function checkUpdateCustomerValidity() {
     let errorCount = 0;
