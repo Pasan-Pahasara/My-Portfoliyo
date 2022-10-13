@@ -152,7 +152,7 @@ $("#clearItem").on('click', function () {
 });
 
 // load all items button
-$("#btnViewAllItem").on('click',function () {
+$("#btnViewAllItem").on('click', function () {
     loadAllItems();
 })
 
@@ -244,4 +244,14 @@ function clearItemAllTexts() {
     $("#item-id").focus();
     $("#item-id,#item-name,#item-price,#item-quantity").val("");
     checkItemValidity();
+}
+
+// search item function
+function searchItem(itemID) {
+    for (let item of items) {
+        if (item.id == itemID) {
+            return item;
+        }
+    }
+    return null;
 }
