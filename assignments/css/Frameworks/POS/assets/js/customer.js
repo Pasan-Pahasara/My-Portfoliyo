@@ -395,3 +395,4 @@ function updateCustomer(customerID) {
         setCusTextFieldValues("", "", "", "");
     }
 }
+

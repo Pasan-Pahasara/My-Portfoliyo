@@ -514,3 +514,7 @@ function clearUpdateItemAllTexts() {
     $("#itemID,#itemName,#itemPrice,#itemQuantity").val("");
     checkItemValidity();
 }
+
+//--------------------------------------------//
+<!-- Ended Item Update Regex -->
+//--------------------------------------------//
