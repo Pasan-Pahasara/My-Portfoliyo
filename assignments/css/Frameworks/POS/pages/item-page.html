@@ -90,11 +90,13 @@
     <div class="row">
         <nav class="navbar ubFt">
             <div class="container-fluid justify-content-center gap-2 d-flex flex-xxl-row">
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal"
+                <button type="button" id="btnItemUpdate" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal"
                         data-bs-whatever="@mdo">Update
                 </button>
                 <button type="button" id="btnItemDelete" class="btn btn-danger">Delete</button>
-                <button type="button" id="btnViewAllItem" class="btn btn-warning yellow-button black-text">View All Items</button>
+                <button type="button" id="btnViewAllItem" class="btn btn-warning yellow-button black-text">View All
+                    Items
+                </button>
             </div>
         </nav>
     </div>
@@ -172,7 +174,7 @@
         <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header green-hd">
+                    <div class="modal-header bg-warning">
                         <h5 class="modal-title text-white" id="updateModalLabel">Update Item</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -183,18 +185,22 @@
                             <div>
                                 <label for="itemID" class="col-form-label">Item Code:</label>
                                 <input type="text" class="form-control" id="itemID">
+                                <small class="control-error text-danger" id="lblUpdateItemID"></small>
                             </div>
                             <div>
                                 <label for="itemName" class="col-form-label">Item Name:</label>
                                 <input type="text" class="form-control" id="itemName">
+                                <small class="control-error text-danger" id="lblUpdateItemName"></small>
                             </div>
                             <div>
                                 <label for="itemPrice" class="col-form-label">Item Price:</label>
                                 <input type="text" class="form-control" id="itemPrice">
+                                <small class="control-error text-danger" id="lblUpdateItemAddress"></small>
                             </div>
                             <div>
                                 <label for="itemQuantity" class="col-form-label">Item Quantity:</label>
                                 <input type="text" class="form-control" id="itemQuantity">
+                                <small class="control-error text-danger" id="lblUpdateItemSalary"></small>
                             </div>
                         </form>
                     </div>

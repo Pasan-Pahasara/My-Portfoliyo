@@ -110,6 +110,7 @@ let regItemQtyOnHand = /^[0-9]{1,3}$/;
 
 // item validation array
 let itemValidations = [];
+let updateItemValidations = [];
 
 itemValidations.push({
     itemReg: regItemCode,
@@ -229,35 +230,49 @@ $("#btnItemSearch").click(function () {
         })
     });
 
-    // update customer button
-    $("#updateItemBtn").click(function () {
-        let itemID = $("#itemID").val();
-        let response = updateItem(itemID);
-        if (response) {
-            Swal.fire({
-                position: 'top-end',
-                icon: 'success',
-                title: 'Update Successfully',
-                showConfirmButton: false,
-                timer: 1500
-            })
-            setItemTextFieldValues("", "", "", "");
-        } else {
-            Swal.fire({
-                position: 'top-end',
-                icon: 'error',
-                title: 'Update Unsuccessfully',
-                showConfirmButton: false,
-                timer: 1500
-            })
-        }
-    });
+    // set update text fields values
+    if (searchID != null) {
+         $("#itemID").val(searchID.id);
+         $("#itemName").val(searchID.name);
+         $("#itemPrice").val(searchID.price);
+         $("#itemQuantity").val(searchID.quantity);
+        loadAllItems();
+        return true;
+    } else {
+        return false;
+        loadAllItems();
+        setItemTextFieldValues("", "", "", "");
+    }
 
     $("#tblItem").empty();
 
     // get all item records from the array
     var row = `<tr><td>${searchID.id}</td><td>${searchID.name}</td><td>${searchID.price}</td><td>${searchID.quantity}</td></tr>`;
     $("#tblItem").append(row);
+});
+
+// update customer button
+$("#updateItemBtn").click(function () {
+    let itemID = $("#itemID").val();
+    let response = updateItem(itemID);
+    if (response) {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Update Successfully',
+            showConfirmButton: false,
+            timer: 1500
+        })
+        setItemTextFieldValues("", "", "", "");
+    } else {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'error',
+            title: 'Update Unsuccessfully',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
 });
 
 // clear Search Bar Button
@@ -381,17 +396,109 @@ function deleteItem(itemID) {
 
 // update item function
 function updateItem(itemID) {
-    let item = searchItem(itemID);
-    if (item != null) {
-        item.id = $("#itemID").val();
-        item.name = $("#itemName").val();
-        item.price = $("#itemPrice").val();
-        item.quantity = $("#itemQuantity").val();
+    let items = searchItem(itemID);
+    if (items != null) {
+        items.id = $("#itemID").val();
+        items.name = $("#itemName").val();
+        items.price = $("#itemPrice").val();
+        items.quantity = $("#itemQuantity").val();
         loadAllItems();
         return true;
     } else {
         return false;
         loadAllItems();
         setItemTextFieldValues("", "", "", "");
+    }
+}
+
+//--------------------------------------------//
+<!-- Start Item Update Regex -->
+//--------------------------------------------//
+
+updateItemValidations.push({
+    itemReg: regItemCode,
+    itemField: $('#itemID'),
+    itemError: 'Item ID Pattern is Wrong : I00-001'
+});
+updateItemValidations.push({
+    itemReg: regItemName,
+    itemField: $('#itemName'),
+    itemError: 'Item Name Pattern is Wrong : A-z 5-20'
+});
+updateItemValidations.push({
+    itemReg: regItemPrice,
+    itemField: $('#itemPrice'),
+    itemError: 'Item Price Pattern is Wrong : 100 or 100.00,/'
+});
+updateItemValidations.push({
+    itemReg: regItemQtyOnHand,
+    itemField: $('#itemQuantity'),
+    itemError: 'Item Quantity Pattern is Wrong : 100'
+});
+
+// disable tab key of all four text fields using grouping selector in CSS
+$("#itemID,#itemName,#itemPrice,#itemQuantity").on('keydown', function (event) {
+    if (event.key == "Tab") {
+        event.preventDefault();
+    }
+});
+
+// grouping all fields keyup event using and call check validity function
+$("#itemID,#itemName,#itemPrice,#itemQuantity").on('keyup', function (event) {
+    checkUpdateItemValidity();
+});
+
+// grouping all fields blur event using and call check validity function
+$("#itemID,#itemName,#itemPrice,#itemQuantity").on('blur', function (event) {
+    checkUpdateItemValidity();
+});
+
+// update itemID focus event
+$("#itemID").on('keydown', function (event) {
+    if (event.key == "Enter" && itemCheck(regItemCode, $("#itemID"))) {
+    }
+});
+
+// update itemName focus event
+$("#itemName").on('keydown', function (event) {
+    if (event.key == "Enter" && itemCheck(regItemName, $("#itemName"))) {
+        focusItemText($("#itemPrice"));
+    }
+});
+
+// update itemPrice focus event
+$("#itemPrice").on('keydown', function (event) {
+    if (event.key == "Enter" && itemCheck(regItemPrice, $("#itemPrice"))) {
+        focusItemText($("#itemQuantity"));
+    }
+});
+
+// update itemQuantity focus event
+$("#itemQuantity").on('keydown', function (event) {
+    if (event.key == "Enter" && itemCheck(regItemQtyOnHand, $("#itemQuantity"))) {
+        $("#updateItemBtn").focus();
+    }
+});
+
+// check update validity function
+function checkUpdateItemValidity() {
+    let itemErrorCount = 0;
+    for (let itemValidation of updateItemValidations) {
+        if (itemCheck(itemValidation.itemReg, itemValidation.itemField)) {
+            textItemSuccess(itemValidation.itemField, "");
+        } else {
+            itemErrorCount = itemErrorCount + 1;
+            setItemTextError(itemValidation.itemField, itemValidation.itemError);
+        }
+    }
+    setUpdateItemButtonState(itemErrorCount);
+}
+
+// update button state function
+function setUpdateItemButtonState(value) {
+    if (value > 0) {
+        $("#updateItemBtn").attr('disabled', true);
+    } else {
+        $("#updateItemBtn").attr('disabled', false);
     }
 }
