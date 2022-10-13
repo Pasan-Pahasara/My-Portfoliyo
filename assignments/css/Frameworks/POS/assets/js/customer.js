@@ -110,6 +110,7 @@ let regCusSalary = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 
 // customer validation array
 let customerValidations = [];
+let updateCustomerValidations = [];
 
 customerValidations.push({
     reg: regCusID,
@@ -396,3 +397,94 @@ function updateCustomer(customerID) {
     }
 }
 
+//--------------------------------------------//
+<!-- Start Customer Update Regex -->
+//--------------------------------------------//
+
+updateCustomerValidations.push({
+    reg: regCusID,
+    field: $('#customerID'),
+    error: 'Customer ID Pattern is Wrong : C00-001'
+});
+updateCustomerValidations.push({
+    reg: regCusName,
+    field: $('#customerName'),
+    error: 'Customer Name Pattern is Wrong : A-z 5-20'
+});
+updateCustomerValidations.push({
+    reg: regCusAddress,
+    field: $('#customerAddress'),
+    error: 'Customer Address Pattern is Wrong : A-z 0-9 ,/'
+});
+updateCustomerValidations.push({
+    reg: regCusSalary,
+    field: $('#customerSalary'),
+    error: 'Customer Salary Pattern is Wrong : 100 or 100.00'
+});
+
+// disable tab key of all four text fields using grouping selector in CSS
+$("#customerID,#customerName,#customerAddress,#customerSalary").on('keydown', function (event) {
+    if (event.key == "Tab") {
+        event.preventDefault();
+    }
+});
+
+// grouping all fields keyup event using and call check validity function
+$("#customerID,#customerName,#customerAddress,#customerSalary").on('keyup', function (event) {
+    checkUpdateCustomerValidity();
+});
+
+// grouping all fields blur event using and call check validity function
+$("#customerID,#customerName,#customerAddress,#customerSalary").on('blur', function (event) {
+    checkUpdateCustomerValidity();
+});
+
+// update customerID focus event
+$("#customerID").on('keydown', function (event) {
+    if (event.key == "Enter" && check(regCusID, $("#customerID"))) {
+    }
+});
+
+// update customerName focus event
+$("#customerName").on('keydown', function (event) {
+    if (event.key == "Enter" && check(regCusName, $("#customerName"))) {
+        focusText($("#customerAddress"));
+    }
+});
+
+// update customerAddress focus event
+$("#customerAddress").on('keydown', function (event) {
+    if (event.key == "Enter" && check(regCusAddress, $("#customerAddress"))) {
+        focusText($("#customerSalary"));
+    }
+});
+
+// update customerSalary focus event
+$("#customerSalary").on('keydown', function (event) {
+    if (event.key == "Enter" && check(regCusSalary, $("#customerSalary"))) {
+        $("#updateCustomerBtn").focus();
+    }
+});
+
+// check update validity function
+function checkUpdateCustomerValidity() {
+    let errorCount = 0;
+    for (let validation of updateCustomerValidations) {
+        if (check(validation.reg, validation.field)) {
+            textSuccess(validation.field, "");
+        } else {
+            errorCount = errorCount + 1;
+            setTextError(validation.field, validation.error);
+        }
+    }
+    setUpdateCustomerButtonState(errorCount);
+}
+
+// update button state function
+function setUpdateCustomerButtonState(value) {
+    if (value > 0) {
+        $("#updateCustomerBtn").attr('disabled', true);
+    } else {
+        $("#updateCustomerBtn").attr('disabled', false);
+    }
+}

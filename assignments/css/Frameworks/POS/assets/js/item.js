@@ -512,7 +512,7 @@ function setUpdateItemButtonState(value) {
 function clearUpdateItemAllTexts() {
     $("#itemID").focus();
     $("#itemID,#itemName,#itemPrice,#itemQuantity").val("");
-    checkItemValidity();
+    checkUpdateItemValidity();
 }
 
 //--------------------------------------------//
