@@ -151,6 +151,10 @@ $("#clearItem").on('click', function () {
     clearItemAllTexts();
 });
 
+// load all items button
+$("#btnViewAllItem").on('click',function () {
+    loadAllItems();
+})
 
 //check validity function
 function checkItemValidity() {
