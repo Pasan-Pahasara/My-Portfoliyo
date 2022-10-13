@@ -321,3 +321,20 @@ function deleteItem(itemID) {
         return false;
     }
 }
+
+// update item function
+function updateItem(itemID) {
+    let item = searchItem(itemID);
+    if (item != null) {
+        item.id = $("#itemID").val();
+        item.name = $("#itemName").val();
+        item.address = $("#itemPrice").val();
+        item.salary = $("#itemQuantity").val();
+        loadAllItems();
+        return true;
+    } else {
+        return false;
+        loadAllItems();
+        setItemTextFieldValues("", "", "", "");
+    }
+}
