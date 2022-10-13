@@ -193,6 +193,42 @@ $("#btnViewAllCustomer").click(function () {
 $("#btnCustomerSearch").click(function () {
     var searchCusID = customers.find(({id}) => id === $("#customerSearchBar").val());
 
+    // delete customer button
+    $("#btnCusDelete").click(function () {
+        let deleteCusID = $("#customerSearchBar").val();
+        Swal.fire({
+            title: 'Do you want to Delete the \n' + deleteCusID + ' ?',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Delete',
+            confirmButtonColor: '#3085d6',
+            denyButtonText: `Don't Delete`,
+        }).then((result) => {
+            if (result.isConfirmed) {
+                if (deleteCustomer(deleteCusID)) {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Delete Successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    setCusTextFieldValues("", "", "", "");
+                } else {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'error',
+                        title: 'Delete Unsuccessfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }
+            } else if (result.isDenied) {
+                Swal.fire(deleteCusID + ' Delete Canceled!', '', 'info')
+            }
+        })
+    });
+
     $("#tblCustomer").empty();
 
     // get all customer records from the array
@@ -305,3 +341,4 @@ function setCusTextFieldValues(id, name, address, salary) {
     $("#customerAddress").val(address);
     $("#customerSalary").val(salary);
 }
+
