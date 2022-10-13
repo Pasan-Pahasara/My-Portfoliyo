@@ -95,10 +95,10 @@
         <div class="row">
             <nav class="navbar">
                 <div class="container-fluid d-flex flex-md-column flex-sm-row">
-                    <form class="d-flex flex-column flex-sm-row" role="search">
-                        <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Input Name/NIC"
+                    <form class="d-flex flex-column flex-sm-row ubFt" role="search">
+                        <input class="form-control me-1" type="search" id="customerSearchBar" placeholder="Input Name/NIC"
                                aria-label="Search">
-                        <button class="orange-ww-bg rounded-2 dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                        <button class="orange-ww-bg rounded-2 dropdown-toggle m-1" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Name
                         </button>
@@ -107,7 +107,9 @@
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-success m-1" id="btnCustomerSearch" type="button">Search</button>
+                        <button class="btn btn-outline-secondary m-1" id="btnCustomerSearchClear" type="button">Clear
+                        </button>
                     </form>
                 </div>
             </nav>
@@ -115,12 +117,15 @@
 
         <!-- Update and Delete Buttons -->
         <div class="row">
-            <nav class="navbar">
+            <nav class="navbar ubFt">
                 <div class="container-fluid justify-content-center gap-2 d-flex flex-xxl-row">
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#customerUpdateModal"
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal"
                             data-bs-whatever="@mdo">Update
                     </button>
-                    <button type="button" id="btnDelete" class="btn btn-danger">Delete</button>
+                    <button type="button" id="btnCusDelete" class="btn btn-danger">Delete</button>
+                    <button type="button" id="btnViewAllCustomer" class="btn btn-warning yellow-button black-text">View All
+                        Customers
+                    </button>
                 </div>
             </nav>
         </div>
@@ -130,7 +135,7 @@
             <!-- Table -->
             <div class="d-flex overflow-auto h-70 w-75 rounded-2">
                 <table class="table table-striped table-hover">
-                    <thead class="green-hd text-white sticky-top">
+                    <thead class="green-hd text-white sticky-top ubFt">
                     <tr>
                         <th scope="col">Customer ID</th>
                         <th scope="col">Name</th>
@@ -145,14 +150,13 @@
             </div>
 
             <!-- Adding Customers Button -->
-            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#customerModal"
+            <button type="button" class="btn btn-dark ubFt" data-bs-toggle="modal" data-bs-target="#customerModal"
                     data-bs-whatever="@mdo"><i class="bi bi-plus"></i>
                 New Customer
             </button>
 
-            <!-- Modal Fade -->
-            <div class="modal fade" id="customerModal" tabindex="-1" aria-labelledby="customerModalLabel"
-                 aria-hidden="true">
+            <!-- Start Customer Added Modal Fade -->
+            <div class="modal fade" id="customerModal" tabindex="-1" aria-labelledby="customerModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header green-hd">
@@ -162,72 +166,83 @@
                         <div class="modal-body">
 
                             <!-- Form -->
-                            <form>
-                                <div>
+                            <form class="ubFt">
+                                <div class="ms-3 me-3">
                                     <label for="customer-id" class="col-form-label">Customer ID:</label>
                                     <input type="text" class="form-control" id="customer-id">
+                                    <small class="control-error text-danger" id="lblCusID"></small>
                                 </div>
-                                <div>
+                                <div class="ms-3 me-3">
                                     <label for="customer-name" class="col-form-label">Customer Name:</label>
                                     <input type="text" class="form-control" id="customer-name">
+                                    <small class="control-error text-danger" id="lblCusName"></small>
                                 </div>
-                                <div>
+                                <div class="ms-3 me-3">
                                     <label for="customer-address" class="col-form-label">Customer Address:</label>
                                     <input type="text" class="form-control" id="customer-address">
+                                    <small class="control-error text-danger" id="lblCusAddress"></small>
                                 </div>
-                                <div>
+                                <div class="ms-3 me-3">
                                     <label for="customer-salary" class="col-form-label">Customer Salary:</label>
                                     <input type="text" class="form-control" id="customer-salary">
+                                    <small class="control-error text-danger" id="lblCusSalary"></small>
                                 </div>
                             </form>
                         </div>
-                        <p><small class="text-danger p-2 ps-3" id="error"></small></p>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
+                        <div class="modal-footer ubFt">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" id="clearCustomer" class="btn btn-warning">Clear</button>
                             <button type="button" id="newCustomer" class="btn btn-success">Save</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Ended Customer Added Modal Fade -->
 
-            <!-- Modal Fade -->
-            <div class="modal fade" id="customerUpdateModal" tabindex="-1" aria-labelledby="customerUpdateModalLabel"
-                 aria-hidden="true">
+            <!-- Start Customer Update Modal Fade -->
+            <div class="modal fade" id="customerUpdateModal" tabindex="-1" aria-labelledby="customerUpdateModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header green-hd">
+                        <div class="modal-header bg-warning">
                             <h5 class="modal-title text-white" id="customerUpdateModalLabel">Update Customer</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
 
                             <!-- Form -->
-                            <form>
+                            <form class="ubFt">
                                 <div>
                                     <label for="customerID" class="col-form-label">Customer ID:</label>
                                     <input type="text" class="form-control" id="customerID">
+                                    <small class="control-error text-danger"></small>
                                 </div>
                                 <div>
                                     <label for="customerName" class="col-form-label">Customer Name:</label>
                                     <input type="text" class="form-control" id="customerName">
+                                    <small class="control-error text-danger"></small>
                                 </div>
                                 <div>
                                     <label for="customerAddress" class="col-form-label">Customer Address:</label>
                                     <input type="text" class="form-control" id="customerAddress">
+                                    <small class="control-error text-danger"></small>
                                 </div>
                                 <div>
                                     <label for="customerSalary" class="col-form-label">Customer Salary:</label>
                                     <input type="text" class="form-control" id="customerSalary">
+                                    <small class="control-error text-danger"></small>
                                 </div>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="reset" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
-                            <button type="submit" class="btn btn-success">Save</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" id="clearUpdateCustomer" class="btn btn-warning">Clear</button>
+                            <button type="button" id="updateCustomerBtn" class="btn btn-success">Save</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Ended Customer Update Modal Fade -->
+
         </section>
     </main>
     <!--customer section end-->
