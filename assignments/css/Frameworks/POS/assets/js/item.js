@@ -255,3 +255,11 @@ function searchItem(itemID) {
     }
     return null;
 }
+
+// set item values function
+function setItemTextFieldValues(code, iName, price, qty) {
+    $("#itemID").val(code);
+    $("#itemName").val(iName);
+    $("#itemPrice").val(price);
+    $("#itemQuantity").val(qty);
+}
