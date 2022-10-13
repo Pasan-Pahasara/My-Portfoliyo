@@ -229,6 +229,30 @@ $("#btnCustomerSearch").click(function () {
         })
     });
 
+    // update customer button
+    $("#updateCustomerBtn").click(function () {
+        let customerID = $("#customerID").val();
+        let response = updateCustomer(customerID);
+        if (response) {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Update Successfully',
+                showConfirmButton: false,
+                timer: 1500
+            })
+            setCusTextFieldValues("", "", "", "");
+        } else {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: 'Update Unsuccessfully',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+    });
+
     $("#tblCustomer").empty();
 
     // get all customer records from the array
