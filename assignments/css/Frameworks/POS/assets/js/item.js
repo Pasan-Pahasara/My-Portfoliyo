@@ -502,3 +502,10 @@ function setUpdateItemButtonState(value) {
         $("#updateItemBtn").attr('disabled', false);
     }
 }
+
+// clear update text fields function
+function clearUpdateItemAllTexts() {
+    $("#itemID").focus();
+    $("#itemID,#itemName,#itemPrice,#itemQuantity").val("");
+    checkItemValidity();
+}
