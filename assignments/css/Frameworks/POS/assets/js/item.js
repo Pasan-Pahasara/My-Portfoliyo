@@ -5,7 +5,7 @@
 
 let items = [];
 
-//stating focus customerID
+// stating focus customerID
 $("#item-id").focus();
 
 //add new item
@@ -32,10 +32,11 @@ $("#newItem").click(function () {
     })
     loadAllItems();
     dblRowClickEvents();
+    bindRowClickEvents();
     clearItemAllTexts();
 });
 
-//load all items function
+// load all items function
 function loadAllItems() {
     $("#tblItem").empty();
 
@@ -46,10 +47,25 @@ function loadAllItems() {
     }
 }
 
-//double clicked delete function
+// double clicked delete function
 function dblRowClickEvents() {
     $("#tblItem>tr").on('dblclick', function () {
         $(this).remove(); //select the row which runs the event at the moment and then delete it
+    });
+}
+
+// setting all table records details values to text fields
+function bindRowClickEvents() {
+    $("#tblItem>tr").click(function () {
+        let iteId = $(this).children(":eq(0)").text();
+        let iteName = $(this).children(":eq(1)").text();
+        let itePrice = $(this).children(":eq(2)").text();
+        let iteQtyOnHand = $(this).children(":eq(3)").text();
+
+        $('#itemID').val(iteId);
+        $('#itemName').val(iteName);
+        $('#itemPrice').val(itePrice);
+        $('#itemQuantity').val(iteQtyOnHand);
     });
 }
 
@@ -134,6 +150,7 @@ $("#item-quantity").on('keydown', function (event) {
 $("#clearItem").on('click', function () {
     clearItemAllTexts();
 });
+
 
 //check validity function
 function checkItemValidity() {
