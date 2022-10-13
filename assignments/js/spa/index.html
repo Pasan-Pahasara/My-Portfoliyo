@@ -253,11 +253,11 @@
         <div class="row">
             <nav class="navbar">
                 <div class="container-fluid d-flex flex-md-column flex-sm-row">
-                    <form class="d-flex flex-column flex-sm-row" role="search">
-                        <input class="form-control me-2 mb-2 mb-lg-0" type="search"
+                    <form class="d-flex flex-column flex-sm-row ubFt" role="search">
+                        <input class="form-control me-1" type="search" id="itemSearchBar"
                                placeholder="Input Item Name/Code Here"
                                aria-label="Search">
-                        <button class="orange-ww-bg rounded-2 dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                        <button class="orange-ww-bg rounded-2 dropdown-toggle m-1" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Name
                         </button>
@@ -266,7 +266,8 @@
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-success m-1" id="btnItemSearch" type="button">Search</button>
+                        <button class="btn btn-outline-secondary m-1" id="btnItemSearchClear" type="button">Clear</button>
                     </form>
                 </div>
             </nav>
@@ -274,12 +275,15 @@
 
         <!-- Update and Delete Buttons -->
         <div class="row">
-            <nav class="navbar">
+            <nav class="navbar ubFt">
                 <div class="container-fluid justify-content-center gap-2 d-flex flex-xxl-row">
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal"
+                    <button type="button" id="btnItemUpdate" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal"
                             data-bs-whatever="@mdo">Update
                     </button>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" id="btnItemDelete" class="btn btn-danger">Delete</button>
+                    <button type="button" id="btnViewAllItem" class="btn btn-warning yellow-button black-text">View All
+                        Items
+                    </button>
                 </div>
             </nav>
         </div>
@@ -289,7 +293,7 @@
             <!-- Table -->
             <div class="d-flex overflow-auto h-70 w-75 rounded-2">
                 <table class="table table-striped table-hover">
-                    <thead class="green-hd text-white sticky-top">
+                    <thead class="green-hd text-white sticky-top ubFt">
                     <tr>
                         <th scope="col">Item Code</th>
                         <th scope="col">Item Name</th>
@@ -309,9 +313,8 @@
                 New Items
             </button>
 
-            <!-- Modal Fade -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                 aria-hidden="true">
+            <!-- Start Item Added Modal Fade -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header green-hd">
@@ -321,72 +324,83 @@
                         <div class="modal-body">
 
                             <!-- Form -->
-                            <form>
+                            <form class="ubFt">
                                 <div>
                                     <label for="item-id" class="col-form-label">Item Code:</label>
                                     <input type="text" class="form-control" id="item-id">
+                                    <small class="control-error text-danger" id="lblItemID"></small>
                                 </div>
                                 <div>
                                     <label for="item-name" class="col-form-label">Item Name:</label>
                                     <input type="text" class="form-control" id="item-name">
+                                    <small class="control-error text-danger" id="lblItemName"></small>
                                 </div>
                                 <div>
                                     <label for="item-price" class="col-form-label">Item Price:</label>
                                     <input type="text" class="form-control" id="item-price">
+                                    <small class="control-error text-danger" id="lblItemAddress"></small>
                                 </div>
                                 <div>
                                     <label for="item-quantity" class="col-form-label">Item Quantity:</label>
                                     <input type="text" class="form-control" id="item-quantity">
+                                    <small class="control-error text-danger" id="lblItemSalary"></small>
                                 </div>
                             </form>
                         </div>
-                        <p><small class="text-danger p-2 ps-3" id="error2"></small></p>
-                        <div class="modal-footer">
-                            <button type="reset" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
-                            <button type="submit" id="newItem" class="btn btn-success">Save</button>
+                        <div class="modal-footer ubFt">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" id="clearItem" class="btn btn-warning">Clear</button>
+                            <button type="button" id="newItem" class="btn btn-success">Save</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Ended Item Added Modal Fade -->
 
-            <!-- Modal Fade -->
-            <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel"
-                 aria-hidden="true">
+            <!-- Start Item Update Modal Fade -->
+            <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header green-hd">
+                        <div class="modal-header bg-warning">
                             <h5 class="modal-title text-white" id="updateModalLabel">Update Item</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
 
                             <!-- Form -->
-                            <form>
+                            <form class="ubFt">
                                 <div>
                                     <label for="itemID" class="col-form-label">Item Code:</label>
                                     <input type="text" class="form-control" id="itemID">
+                                    <small class="control-error text-danger" id="lblUpdateItemID"></small>
                                 </div>
                                 <div>
                                     <label for="itemName" class="col-form-label">Item Name:</label>
                                     <input type="text" class="form-control" id="itemName">
+                                    <small class="control-error text-danger" id="lblUpdateItemName"></small>
                                 </div>
                                 <div>
                                     <label for="itemPrice" class="col-form-label">Item Price:</label>
                                     <input type="text" class="form-control" id="itemPrice">
+                                    <small class="control-error text-danger" id="lblUpdateItemAddress"></small>
                                 </div>
                                 <div>
                                     <label for="itemQuantity" class="col-form-label">Item Quantity:</label>
                                     <input type="text" class="form-control" id="itemQuantity">
+                                    <small class="control-error text-danger" id="lblUpdateItemSalary"></small>
                                 </div>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="reset" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
-                            <button type="submit" class="btn btn-success">Save</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" id="clearUpdateItem" class="btn btn-warning">Clear</button>
+                            <button type="button" id="updateItemBtn" class="btn btn-success">Save</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Ended Item Update Modal Fade -->
+
         </section>
     </main>
     <!--item section end-->
