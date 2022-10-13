@@ -480,6 +480,11 @@ $("#itemQuantity").on('keydown', function (event) {
     }
 });
 
+// add update item modal clear button
+$("#clearUpdateItem").on('click', function () {
+    clearUpdateItemAllTexts();
+});
+
 // check update validity function
 function checkUpdateItemValidity() {
     let itemErrorCount = 0;
