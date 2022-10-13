@@ -342,3 +342,15 @@ function setCusTextFieldValues(id, name, address, salary) {
     $("#customerSalary").val(salary);
 }
 
+// delete customer function
+function deleteCustomer(customerID) {
+    let customer = searchCustomer(customerID);
+    if (customer != null) {
+        let indexNumber = customers.indexOf(customer);
+        customers.splice(indexNumber, 1);
+        loadAllCustomers();
+        return true;
+    } else {
+        return false;
+    }
+}
