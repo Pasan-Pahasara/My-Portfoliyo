@@ -200,6 +200,13 @@ $("#btnCustomerSearch").click(function () {
     $("#tblCustomer").append(row);
 });
 
+// clear Search Bar Button
+$("#btnCustomerSearchClear").click(function () {
+    $("#customerSearchBar").val("");
+    clearAllTexts();
+    loadAllCustomers();
+})
+
 // search customer ID
 $("#customerID").on('keyup', function (event) {
     if (event.code == "Enter") {
