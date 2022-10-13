@@ -277,3 +277,16 @@ function setItemTextFieldValues(code, iName, price, qty) {
     $("#itemPrice").val(price);
     $("#itemQuantity").val(qty);
 }
+
+// delete item function
+function deleteItem(itemID) {
+    let item = searchItem(itemID);
+    if (item != null) {
+        let indexNumber = items.indexOf(item);
+        items.splice(indexNumber, 1);
+        loadAllItems();
+        return true;
+    } else {
+        return false;
+    }
+}
