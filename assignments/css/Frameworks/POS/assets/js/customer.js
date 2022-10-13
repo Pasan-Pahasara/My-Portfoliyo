@@ -280,3 +280,10 @@ function searchCustomer(cusID) {
     return null;
 }
 
+// set customer values function
+function setCusTextFieldValues(id, name, address, salary) {
+    $("#customerID").val(id);
+    $("#customerName").val(name);
+    $("#customerAddress").val(address);
+    $("#customerSalary").val(salary);
+}
