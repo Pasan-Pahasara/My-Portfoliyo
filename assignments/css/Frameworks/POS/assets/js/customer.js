@@ -5,10 +5,10 @@
 
 let customers = [];
 
-//stating focus customerID
-$("#customerID").focus();
+// stating focus customerID
+$("#customer-id").focus();
 
-//add new customer
+// add new customer
 $("#newCustomer").click(function () {
     let customerID = $("#customer-id").val();
     let customerName = $("#customer-name").val();
@@ -36,7 +36,7 @@ $("#newCustomer").click(function () {
     clearAllTexts();
 });
 
-//load all customers function
+// load all customers function
 function loadAllCustomers() {
     $("#tblCustomer").empty();
 
@@ -47,35 +47,68 @@ function loadAllCustomers() {
     }
 }
 
-//setting all table records details values to text fields
+// setting all table records details values to text fields
 function bindRowClickEvents() {
     $("#tblCustomer>tr").click(function () {
-        let id = $(this).children(":eq(0)").text();
-        let name = $(this).children(":eq(1)").text();
-        let address = $(this).children(":eq(2)").text();
-        let salary = $(this).children(":eq(3)").text();
+        let cusId = $(this).children(":eq(0)").text();
+        let cusName = $(this).children(":eq(1)").text();
+        let cusAddress = $(this).children(":eq(2)").text();
+        let cusSalary = $(this).children(":eq(3)").text();
 
-        $('#customer-id').val(id);
-        $('#customer-name').val(name);
-        $('#customer-address').val(address);
-        $('#customer-salary').val(salary);
+        $('#customerID').val(cusId);
+        $('#customerName').val(cusName);
+        $('#customerAddress').val(cusAddress);
+        $('#customerSalary').val(cusSalary);
     });
 }
 
-//double clicked delete function
+// double clicked delete function
 function dblRowClickEvents() {
     $("#tblCustomer>tr").on('dblclick', function () {
-        $(this).remove(); //select the row which runs the event at the moment and then delete it
+        let deleteCusID = $(this).children(":eq(0)").text();
+
+        Swal.fire({
+            title: 'Do you want to Delete the \n' + deleteCusID + ' ?',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Delete',
+            confirmButtonColor: '#3085d6',
+            denyButtonText: `Don't Delete`,
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $(this).remove(); //select the row which runs the event at the moment and then delete it
+                if (deleteCustomer(deleteCusID)) {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Delete Successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    setCusTextFieldValues("", "", "", "");
+                } else {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'error',
+                        title: 'Delete Unsuccessfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }
+            } else if (result.isDenied) {
+                Swal.fire(deleteCusID + ' Delete Canceled!', '', 'info')
+            }
+        })
     });
 }
 
-//regex patterns
+// regex patterns
 let regCusID = /^(C00-)[0-9]{3,4}$/;
 let regCusName = /^[A-z ]{3,20}$/;
 let regCusAddress = /^[A-z0-9/ ]{6,30}$/;
 let regCusSalary = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 
-//customer validation array
+// customer validation array
 let customerValidations = [];
 
 customerValidations.push({
@@ -99,24 +132,24 @@ customerValidations.push({
     error: 'Customer Salary Pattern is Wrong : 100 or 100.00'
 });
 
-//disable tab key of all four text fields using grouping selector in CSS
+// disable tab key of all four text fields using grouping selector in CSS
 $("#customer-id,#customer-name,#customer-address,#customer-salary").on('keydown', function (event) {
     if (event.key == "Tab") {
         event.preventDefault();
     }
 });
 
-//grouping all fields keyup event using and call check validity function
+// grouping all fields keyup event using and call check validity function
 $("#customer-id,#customer-name,#customer-address,#customer-salary").on('keyup', function (event) {
     checkValidity();
 });
 
-//grouping all fields blur event using and call check validity function
+// grouping all fields blur event using and call check validity function
 $("#customer-id,#customer-name,#customer-address,#customer-salary").on('blur', function (event) {
     checkValidity();
 });
 
-//customer-id focus event
+// customer-id focus event
 $("#customer-id").on('keydown', function (event) {
     if (event.key == "Enter" && check(regCusID, $("#customer-id"))) {
         $("#customer-name").focus();
@@ -125,53 +158,52 @@ $("#customer-id").on('keydown', function (event) {
     }
 });
 
-//customer-name focus event
+// customer-name focus event
 $("#customer-name").on('keydown', function (event) {
     if (event.key == "Enter" && check(regCusName, $("#customer-name"))) {
         focusText($("#customer-address"));
     }
 });
 
-//customer-address focus event
+// customer-address focus event
 $("#customer-address").on('keydown', function (event) {
     if (event.key == "Enter" && check(regCusAddress, $("#customer-address"))) {
         focusText($("#customer-salary"));
     }
 });
 
-//customer-salary focus event
+// customer-salary focus event
 $("#customer-salary").on('keydown', function (event) {
     if (event.key == "Enter" && check(regCusSalary, $("#customer-salary"))) {
         $("#newCustomer").focus();
     }
 });
 
-//add customer modal clear button
+// add customer modal clear button
 $("#clearCustomer").on('click', function () {
-   clearAllTexts();
+    clearAllTexts();
 });
 
-//delete customer button
-$("#btnCusDelete").click(function () {
-    let deleteID = $("#customer-id").val();
-
-    let option = confirm("Do you really want to delete customer id :" + deleteID);
-    if (option){
-        if (deleteCustomer(deleteID)) {
-            alert("Customer Successfully Deleted..");
-            setTextfieldValues("", "", "", "");
-        } else {
-            alert("No such customer to delete. please check the id");
-        }
-    }
-});
-
-//load all customers button
+// load all customers button
 $("#btnViewAllCustomer").click(function () {
     loadAllCustomers();
 })
 
-//check validity function
+// search customer ID
+$("#customerID").on('keyup', function (event) {
+    if (event.code == "Enter") {
+        let typedId = $("#customerID").val();
+        let customer = searchCustomer(typedId);
+        if (customer != null) {
+            setCusTextFieldValues(customer.id, customer.name, customer.address, customer.salary);
+        } else {
+            alert("There is no customer available for that " + typedId);
+            setCusTextFieldValues("", "", "", "");
+        }
+    }
+});
+
+// check validity function
 function checkValidity() {
     let errorCount = 0;
     for (let validation of customerValidations) {
@@ -185,13 +217,13 @@ function checkValidity() {
     setButtonState(errorCount);
 }
 
-//check regex pattern function
+// check regex pattern function
 function check(regex, txtField) {
     let inputValue = txtField.val();
     return regex.test(inputValue) ? true : false;
 }
 
-//error text fields function
+// error text fields function
 function setTextError(txtField, error) {
     if (txtField.val().length <= 0) {
         defaultText(txtField, "");
@@ -201,7 +233,7 @@ function setTextError(txtField, error) {
     }
 }
 
-//success text fields function
+// success text fields function
 function textSuccess(txtField, error) {
     if (txtField.val().length <= 0) {
         defaultText(txtField, "");
@@ -211,18 +243,18 @@ function textSuccess(txtField, error) {
     }
 }
 
-//default text fields function
+// default text fields function
 function defaultText(txtField, error) {
     txtField.css("border", "1px solid #ced4da");
     txtField.parent().children('small').text(error);
 }
 
-//focus texts function
+// focus texts function
 function focusText(txtField) {
     txtField.focus();
 }
 
-//button state function
+// button state function
 function setButtonState(value) {
     if (value > 0) {
         $("#newCustomer").attr('disabled', true);
@@ -231,24 +263,14 @@ function setButtonState(value) {
     }
 }
 
-//clear text fields function
+// clear added text fields function
 function clearAllTexts() {
     $("#customer-id").focus();
     $("#customer-id,#customer-name,#customer-address,#customer-salary").val("");
     checkValidity();
 }
 
-//search id and load table
-$("#btnCustomerSearch").click(function () {
-    var searchCusID = customers.find(({id}) => id === $("#customerSearchBar").val());
-
-    $("#tblCustomer").empty();
-
-    // get all customer records from the array
-    var row = `<tr><td>${searchCusID.id}</td><td>${searchCusID.name}</td><td>${searchCusID.address}</td><td>${searchCusID.salary}</td></tr>`;
-    $("#tblCustomer").append(row);
-});
-
+// search customer function
 function searchCustomer(cusID) {
     for (let customer of customers) {
         if (customer.id == cusID) {
@@ -258,15 +280,3 @@ function searchCustomer(cusID) {
     return null;
 }
 
-//delete customer function
-function deleteCustomer(customerID) {
-    let customer = searchCustomer(customerID);
-    if (customer != null) {
-        let indexNumber = customers.indexOf(customer);
-        customers.splice(indexNumber, 1);
-        loadAllCustomers();
-        return true;
-    } else {
-        return false;
-    }
-}

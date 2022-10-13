@@ -66,10 +66,10 @@
     <div class="row">
         <nav class="navbar">
             <div class="container-fluid d-flex flex-md-column flex-sm-row">
-                <form class="d-flex flex-column flex-sm-row" role="search">
-                    <input class="form-control me-2 mb-2 mb-lg-0" type="search" id="customerSearchBar"  placeholder="Input Name/NIC"
+                <form class="d-flex flex-column flex-sm-row ubFt" role="search">
+                    <input class="form-control me-1" type="search" id="customerSearchBar"  placeholder="Input Name/NIC"
                            aria-label="Search">
-                    <button class="orange-ww-bg rounded-2 dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                    <button class="orange-ww-bg rounded-2 dropdown-toggle m-1" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                         Name
                     </button>
@@ -78,7 +78,8 @@
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                    <button class="btn btn-outline-success" id="btnCustomerSearch" type="button">Search</button>
+                    <button class="btn btn-outline-success m-1" id="btnCustomerSearch" type="button">Search</button>
+                    <button class="btn btn-outline-secondary m-1" id="btnCustomerSearchClear" type="button">Clear</button>
                 </form>
             </div>
         </nav>
@@ -102,7 +103,7 @@
         <!-- Table -->
         <div class="d-flex overflow-auto h-70 w-75 rounded-2">
             <table class="table table-striped table-hover">
-                <thead class="green-hd text-white sticky-top">
+                <thead class="green-hd text-white sticky-top ubFt">
                 <tr>
                     <th scope="col">Customer ID</th>
                     <th scope="col">Name</th>
@@ -117,12 +118,12 @@
         </div>
 
         <!-- Adding Customers Button -->
-        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        <button type="button" class="btn btn-dark ubFt" data-bs-toggle="modal" data-bs-target="#exampleModal"
                 data-bs-whatever="@mdo"><i class="bi bi-plus"></i>
             New Customer
         </button>
 
-        <!-- Modal Fade -->
+        <!-- Start Customer Added Modal Fade -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -164,19 +165,20 @@
                 </div>
             </div>
         </div>
+        <!-- Ended Customer Added Modal Fade -->
 
-        <!-- Modal Fade -->
+        <!-- Start Customer Update Modal Fade -->
         <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header green-hd">
+                    <div class="modal-header bg-warning">
                         <h5 class="modal-title text-white" id="updateModalLabel">Update Customer</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
 
                         <!-- Form -->
-                        <form>
+                        <form class="ubFt">
                             <div>
                                 <label for="customerID" class="col-form-label">Customer ID:</label>
                                 <input type="text" class="form-control" id="customerID">
@@ -196,12 +198,15 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="reset" class="btn btn-warning" data-bs-dismiss="modal">Clear</button>
-                        <button type="button" class="btn btn-success">Save</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" id="clearUpdateCustomer" class="btn btn-warning">Clear</button>
+                        <button type="button" id="updateCustomerBtn" class="btn btn-success">Save</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Ended Customer Update Modal Fade -->
+
     </section>
 </main>
 <!-- JS For Bootstrap -->
