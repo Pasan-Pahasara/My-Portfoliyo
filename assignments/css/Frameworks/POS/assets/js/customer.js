@@ -7,6 +7,7 @@ let customers = [];
 
 // stating focus customerID
 $("#customer-id").focus();
+$("#customerID").focus();
 
 // add new customer
 $("#newCustomer").click(function () {
@@ -230,35 +231,49 @@ $("#btnCustomerSearch").click(function () {
         })
     });
 
-    // update customer button
-    $("#updateCustomerBtn").click(function () {
-        let customerID = $("#customerID").val();
-        let response = updateCustomer(customerID);
-        if (response) {
-            Swal.fire({
-                position: 'top-end',
-                icon: 'success',
-                title: 'Update Successfully',
-                showConfirmButton: false,
-                timer: 1500
-            })
-            setCusTextFieldValues("", "", "", "");
-        } else {
-            Swal.fire({
-                position: 'top-end',
-                icon: 'error',
-                title: 'Update Unsuccessfully',
-                showConfirmButton: false,
-                timer: 1500
-            })
-        }
-    });
+    // set update text fields values
+    if (searchCusID != null) {
+        $("#customerID").val(searchCusID.id);
+        $("#customerName").val(searchCusID.name);
+        $("#customerAddress").val(searchCusID.address);
+        $("#customerSalary").val(searchCusID.salary);
+        loadAllCustomers();
+        return true;
+    } else {
+        return false;
+        loadAllCustomers();
+        setCusTextFieldValues("", "", "", "");
+    }
 
     $("#tblCustomer").empty();
 
     // get all customer records from the array
     var row = `<tr><td>${searchCusID.id}</td><td>${searchCusID.name}</td><td>${searchCusID.address}</td><td>${searchCusID.salary}</td></tr>`;
     $("#tblCustomer").append(row);
+});
+
+// update customer button
+$("#updateCustomerBtn").click(function () {
+    let customerID = $("#customerID").val();
+    let response = updateCustomer(customerID);
+    if (response) {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Update Successfully',
+            showConfirmButton: false,
+            timer: 1500
+        })
+        setCusTextFieldValues("", "", "", "");
+    } else {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'error',
+            title: 'Update Unsuccessfully',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
 });
 
 // clear Search Bar Button
@@ -487,4 +502,11 @@ function setUpdateCustomerButtonState(value) {
     } else {
         $("#updateCustomerBtn").attr('disabled', false);
     }
+}
+
+// clear update text fields function
+function clearUpdateCustomerAllTexts() {
+    $("#customerID").focus();
+    $("#customerID,#customerName,#customerAddress,#customerSalary").val("");
+    checkUpdateCustomerValidity();
 }

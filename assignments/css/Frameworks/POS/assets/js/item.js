@@ -192,7 +192,7 @@ $("#clearItem").on('click', function () {
 
 // search id and load table
 $("#btnItemSearch").click(function () {
-    var searchID = items.find(({id}) => id === $("#itemSearchBar").val());
+    var searchItemID = items.find(({id}) => id === $("#itemSearchBar").val());
 
     // delete item button
     $("#btnItemDelete").click(function () {
@@ -231,11 +231,11 @@ $("#btnItemSearch").click(function () {
     });
 
     // set update text fields values
-    if (searchID != null) {
-         $("#itemID").val(searchID.id);
-         $("#itemName").val(searchID.name);
-         $("#itemPrice").val(searchID.price);
-         $("#itemQuantity").val(searchID.quantity);
+    if (searchItemID != null) {
+         $("#itemID").val(searchItemID.id);
+         $("#itemName").val(searchItemID.name);
+         $("#itemPrice").val(searchItemID.price);
+         $("#itemQuantity").val(searchItemID.quantity);
         loadAllItems();
         return true;
     } else {
@@ -247,7 +247,7 @@ $("#btnItemSearch").click(function () {
     $("#tblItem").empty();
 
     // get all item records from the array
-    var row = `<tr><td>${searchID.id}</td><td>${searchID.name}</td><td>${searchID.price}</td><td>${searchID.quantity}</td></tr>`;
+    var row = `<tr><td>${searchItemID.id}</td><td>${searchItemID.name}</td><td>${searchItemID.price}</td><td>${searchItemID.quantity}</td></tr>`;
     $("#tblItem").append(row);
 });
 
