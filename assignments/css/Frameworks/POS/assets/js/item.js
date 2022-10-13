@@ -161,6 +161,24 @@ $("#clearItem").on('click', function () {
     clearItemAllTexts();
 });
 
+// search id and load table
+$("#btnItemSearch").click(function () {
+    var searchID = items.find(({id}) => id === $("#itemSearchBar").val());
+
+    $("#tblItem").empty();
+
+    // get all item records from the array
+    var row = `<tr><td>${searchID.id}</td><td>${searchID.name}</td><td>${searchID.price}</td><td>${searchID.quantity}</td></tr>`;
+    $("#tblItem").append(row);
+});
+
+// clear Search Bar Button
+$("#btnItemSearchClear").click(function () {
+    $("#itemSearchBar").val("");
+    clearItemAllTexts();
+    loadAllItems();
+});
+
 // check validity function
 function checkItemValidity() {
     let itemErrorCount = 0;
@@ -227,14 +245,3 @@ function clearItemAllTexts() {
     $("#item-id,#item-name,#item-price,#item-quantity").val("");
     checkItemValidity();
 }
-
-// search id and load table
-$("#btnItemSearch").click(function () {
-    var searchID = items.find(({id}) => id === $("#itemSearchBar").val());
-
-    $("#tblItem").empty();
-
-    // get all item records from the array
-        var row = `<tr><td>${searchID.id}</td><td>${searchID.name}</td><td>${searchID.price}</td><td>${searchID.quantity}</td></tr>`;
-        $("#tblItem").append(row);
-});
