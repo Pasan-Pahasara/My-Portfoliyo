@@ -50,7 +50,40 @@ function loadAllItems() {
 // double clicked delete function
 function dblRowClickEvents() {
     $("#tblItem>tr").on('dblclick', function () {
-        $(this).remove(); //select the row which runs the event at the moment and then delete it
+        let deleteItemID = $(this).children(":eq(0)").text();
+
+        Swal.fire({
+            title: 'Do you want to Delete the \n' + deleteItemID + ' ?',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Delete',
+            confirmButtonColor: '#3085d6',
+            denyButtonText: `Don't Delete`,
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $(this).remove(); //select the row which runs the event at the moment and then delete it
+                if (deleteItem(deleteItemID)) {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Delete Successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    setItemTextFieldValues("", "", "", "");
+                } else {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'error',
+                        title: 'Delete Unsuccessfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }
+            } else if (result.isDenied) {
+                Swal.fire(deleteItemID + ' Delete Canceled!', '', 'info')
+            }
+        })
     });
 }
 
