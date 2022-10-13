@@ -179,6 +179,20 @@ $("#btnItemSearchClear").click(function () {
     loadAllItems();
 });
 
+// search item ID
+$("#itemID").on('keyup', function (event) {
+    if (event.code == "Enter") {
+        let typedItemId = $("#itemID").val();
+        let Item = searchItem(typedItemId);
+        if (Item != null) {
+            setItemTextFieldValues(Item.id, Item.name, Item.price, Item.quantity);
+        } else {
+            alert("There is no item available for that " + typedItemId);
+            setItemTextFieldValues("", "", "", "");
+        }
+    }
+});
+
 // check validity function
 function checkItemValidity() {
     let itemErrorCount = 0;
