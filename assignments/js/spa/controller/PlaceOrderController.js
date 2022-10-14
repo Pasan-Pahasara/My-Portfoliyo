@@ -73,3 +73,21 @@ let itemOrderQty;
 const total = 0;
 const discount = 0;
 const subTotal = 0;
+
+//--------------------------------------------//
+<!-- Start Cart Details -->
+//--------------------------------------------//
+// add to cart
+$("#tableAddCart").empty();
+function loadAddCartTable() {
+    itemCode = $("#cmbCode").val();
+    itemName = $("#iName").val();
+    itemPrice = $("#iPrice").val();
+    itemQty = $("#iQtyOnHand").val();
+    itemOrderQty = $("#buyQty").val();
+
+    let total = itemPrice * itemOrderQty;
+    let row = `<tr><td>${itemCode}</td><td>${itemName}</td><td>${itemPrice}</td><td>${itemOrderQty}</td><td>${total}</td></tr>`;
+
+    $("#tableAddCart").append(row);
+}
