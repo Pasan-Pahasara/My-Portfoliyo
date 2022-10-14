@@ -15,7 +15,10 @@ function generateOrderID() {
         $("#orderId").val(value);
     });
 }
-
+// get date
+function setCurrentDate() {
+    let currentDate = $("#orderDate").val();
+}
 //--------------------------------------------//
 <!-- Start Customer Details Combo -->
 //--------------------------------------------//

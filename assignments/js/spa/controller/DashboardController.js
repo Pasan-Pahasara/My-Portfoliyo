@@ -6,6 +6,7 @@
 // generate OrderID
 $("#btnPlaceOrder").click(function () {
     generateOrderID();
+    setCurrentDate();
 });
 
 var swiper = new Swiper(".mySwiper", {
