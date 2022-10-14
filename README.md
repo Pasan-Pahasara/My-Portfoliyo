@@ -20,7 +20,11 @@ This is My Personal Web Project.
 
 * 🔗 <a href="https://www.linkedin.com/in/pasan-pahasara-356a75165/" target="_blank">Linked-In</a>
 
+<div align="left">
 
+  #### ʟᴀɴɢᴜᴀɢᴇꜱ - ʜᴛᴍʟ, ᴄꜱꜱ, ᴊᴀᴠᴀ ꜱᴄʀɪᴘᴛ
+  <div>
+    
 #
 
 # Web Pos System
@@ -31,8 +35,17 @@ This is Framework Assigment
 * 🔗 <a href="https://wireframe.cc/4kLkXl" target="_blank">Wire-Frame</a>
 * 🔗 <a href="https://www.figma.com/file/gH2fuiUXiMCCXV7izGhqMN/Web-Pos-System?node-id=0%3A1" target="_blank">Mock-Up</a>
 * 🔗 <a href="https://pasan-pahasara.github.io/My-Portfoliyo/assignments/js/spa/" target="_blank">GitHub Page</a>
-#
-              
+
+<div align="left">
+
+#### ʟᴀɴɢᴜᴀɢᴇꜱ - ʜᴛᴍʟ, ᴄꜱꜱ, ᴊᴀᴠᴀ ꜱᴄʀɪᴘᴛ
+
+#### ʟɪʙʀᴀʀɪᴇꜱ - ᴊQᴜᴇʀʏ, ꜱᴡᴇᴇᴛᴀʟᴇʀᴛ
+
+#### ꜰʀᴀᴍᴇᴡᴏʀᴋꜱ - ʙᴏᴏᴛꜱᴛʀᴀᴘ 5
+
+</div>
+
 #
 
 # Calculator
