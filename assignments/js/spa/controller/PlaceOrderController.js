@@ -16,10 +16,12 @@ function generateOrderID() {
         $("#orderId").val(value);
     });
 }
+
 // get date
 function setCurrentDate() {
     let currentDate = $("#orderDate").val();
 }
+
 //--------------------------------------------//
 <!-- Start Customer Details Combo -->
 //--------------------------------------------//
@@ -92,6 +94,11 @@ $("#btnAddCart").on('click', function () {
         loadAddCartTable();
         countingDownQty($("#buyQty").val());
         calcTotal($("#buyQty").val() * $("#iPrice").val());
+    } else if (duplicate === true) {
+
+        manageQtyOnHand(tableRow.children(':nth-child(4)').text(), $("#buyQty").val());
+        $(tableRow).children(':nth-child(4)').text($("#buyQty").val());
+
     }
 
     // click table row and set values to text fields
@@ -113,6 +120,7 @@ $("#btnAddCart").on('click', function () {
 
 // load cart details to the table
 $("#tableAddCart").empty();
+
 function loadAddCartTable() {
     itemCode = $("#cmbCode").val();
     itemName = $("#iName").val();
@@ -126,8 +134,6 @@ function loadAddCartTable() {
     $("#tableAddCart").append(row);
 }
 
-
-
 // counting order qty hand after buy
 function countingDownQty(orderQty) {
     let minQty = parseInt(orderQty);
@@ -139,7 +145,18 @@ function countingDownQty(orderQty) {
 // calculate total
 function calcTotal(number) {
     total += number;
-    $("#lblTotal").val("RS:"+total+"/=");
+    $("#lblTotal").val("RS:" + total + "/=");
+}
+
+function manageQtyOnHand(preQty, nowQty) {
+    var preQty = parseInt(preQty);
+    var nowQty = parseInt(nowQty);
+    let avaQty = parseInt($("#iQtyOnHand").val());
+
+    avaQty = avaQty + preQty;
+    avaQty = avaQty - nowQty;
+
+    $("#iQtyOnHand").val(avaQty);
 }
 //--------------------------------------------//
 <!-- Ended Cart Details -->
