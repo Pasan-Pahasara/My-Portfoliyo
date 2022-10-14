@@ -481,8 +481,18 @@
                 <div class="row">
                     <div class="col-12 col-md-12 col-lg-12">
                         <h3 class="text-start p-2 text-danger rounded-5">Total :
-                            <input class="form-control" placeholder="RS: 0.00/=" id="lblTotal" type="text">
+                            <input class="form-control" placeholder="RS: 0.00/=" disabled id="lblTotal" type="text">
                         </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label for="discount" class="form-label">Discount</label>
+                        <input class="form-control" id="discount" type="number" role="spinbutton">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label for="subTotal" class="form-label">Sub Total (Rs.)</label>
+                        <input class="form-control" disabled id="subTotal" type="text">
                     </div>
                 </div>
                 <div class="row">
@@ -491,12 +501,6 @@
                         <input class="form-control" id="cash" type="text">
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
-                        <label for="discount" class="form-label">Discount</label>
-                        <input class="form-control" id="discount" type="number" role="spinbutton">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-12 col-lg-12 h-25">
                         <label for="balance" class="form-label">Balance (Rs.)</label>
                         <input class="form-control" disabled id="balance" type="text">
                     </div>

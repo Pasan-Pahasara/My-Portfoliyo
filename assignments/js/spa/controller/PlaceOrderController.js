@@ -172,3 +172,12 @@ function manageTotal(preTotal, nowTotal) {
 //--------------------------------------------//
 <!-- Ended Cart Details -->
 //--------------------------------------------//
+
+// discount added and calculate total
+$(document).on("change keyup blur", "#discount", function () {
+    discount = $("#discount").val();
+    discount = (total / 100) * discount;
+    subTotal = total - discount;
+
+    $("#subTotal").val(subTotal);
+});
