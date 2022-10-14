@@ -122,6 +122,11 @@ $("#btnAddCart").on('click', function () {
         $("#buyQty").val(qty);
         $("#lblTotal").val(total);
     });
+
+    let itemIdQ = $("#cmbCode").val();
+    let response = updateItemQty(itemIdQ);
+    if (response) {
+    }
 });
 
 // load cart details to the table
@@ -254,3 +259,13 @@ $(document).on("change keyup blur", "#buyQty", function () {
         $("#btnAddCart").attr('disabled', false);
     }
 });
+
+// search item Qty function
+function searchItemQty(itemIdQ) {
+    for (let itemQ of items) {
+        if (itemQ.id === itemIdQ) {
+            return itemQ;
+        }
+    }
+    return null;
+}
