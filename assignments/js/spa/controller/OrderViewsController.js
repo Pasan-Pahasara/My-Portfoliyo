@@ -13,3 +13,14 @@ function loadAllOrders() {
         $("#tblOrder").append(row);
     }
 }
+
+// load all order details functions
+function loadAllOrderDetails() {
+
+    $("#tblOrderDetails").empty();
+
+    for (let orderDetail of orderDetails) {
+        let row = `<tr><td>${orderDetail.orderId}</td><td>${orderDetail.cusId}</td><td>${orderDetail.itemId}</td><td>${orderDetail.qty}</td><td>${orderDetail.total}</td></tr>`;
+        $("#tblOrderDetails").append(row);
+    }
+}
