@@ -14,6 +14,17 @@ function loadAllCustomersForOption() {
     }
 }
 
+// set items Details
+$("#cusId").click(function () {
+    let find = customers.find(({id}) => id === $("#cusId").val());
+    $("#cusName").val(find.name);
+    $("#cusAddress").val(find.address);
+    $("#cusSalary").val(find.salary);
+});
+//--------------------------------------------//
+<!-- Ended Customer Details Combo -->
+//--------------------------------------------//
+
 //--------------------------------------------//
 <!-- Start Item Details Combo -->
 //--------------------------------------------//
