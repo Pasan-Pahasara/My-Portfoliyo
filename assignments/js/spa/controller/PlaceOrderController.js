@@ -32,6 +32,7 @@ function setCurrentDate() {
 // load ids'
 function loadAllCustomersForOption() {
     $("#cusId").empty();
+    $("#cusId").append(`<option>-Select Customer-</option>`);
     for (let customer of customers) {
         $("#cusId").append(`<option>${customer.id}</option>`);
     }
@@ -54,6 +55,7 @@ $("#cusId").click(function () {
 // load ids'
 function loadAllItemsForOption() {
     $("#cmbCode").empty();
+    $("#cmbCode").append(`<option>-Select Item-</option>`);
     for (let item of items) {
         $("#cmbCode").append(`<option>${item.id}</option>`);
     }
