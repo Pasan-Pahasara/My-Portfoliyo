@@ -62,3 +62,14 @@ $("#cmbCode").click(function () {
 //--------------------------------------------//
 <!-- Ended Item Details Combo -->
 //--------------------------------------------//
+
+// global variables names
+let itemCode;
+let itemName;
+let itemPrice;
+let itemQty;
+let itemOrderQty;
+
+const total = 0;
+const discount = 0;
+const subTotal = 0;
