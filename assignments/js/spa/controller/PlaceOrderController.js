@@ -89,6 +89,7 @@ $("#btnAddCart").on('click', function () {
     }
     if (duplicate !== true) {
         loadAddCartTable();
+        countingDownQty($("#buyQty").val());
     }
 })
 
@@ -107,6 +108,13 @@ function loadAddCartTable() {
     $("#tableAddCart").append(row);
 }
 
+// counting order qty hand after buy
+function countingDownQty(orderQty) {
+    let minQty = parseInt(orderQty);
+    let reduceQty = parseInt($("#iQtyOnHand").val());
+    reduceQty = reduceQty - minQty;
+    $("#iQtyOnHand").val(reduceQty);
+}
 //--------------------------------------------//
 <!-- Ended Cart Details -->
 //--------------------------------------------//
