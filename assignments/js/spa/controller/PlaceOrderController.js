@@ -77,7 +77,12 @@ const subTotal = 0;
 //--------------------------------------------//
 <!-- Start Cart Details -->
 //--------------------------------------------//
-// add to cart
+// add to cart button
+$("#btnAddCart").on('click', function () {
+    loadAddCartTable();
+})
+
+// load cart details to the table
 $("#tableAddCart").empty();
 function loadAddCartTable() {
     itemCode = $("#cmbCode").val();
