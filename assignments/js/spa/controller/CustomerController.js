@@ -14,14 +14,7 @@ $("#newCustomer").click(function () {
     let customerAddress = $("#customer-address").val();
     let customerSalary = $("#customer-salary").val();
 
-    let customerObject = new CustomerDTO(customerID, customerName, customerAddress, customerSalary)
-    //
-    //     {
-    // //     id: customerID,
-    // //     name: customerName,
-    // //     address: customerAddress,
-    // //     salary: customerSalary
-    // // };
+    let customerObject = new CustomerDTO(customerID, customerName, customerAddress, customerSalary);
 
     customers.push(customerObject);
     //customer saved alert

@@ -13,12 +13,8 @@ $("#newItem").click(function () {
     let itemPrice = $("#item-price").val();
     let itemQuantity = $("#item-quantity").val();
 
-    let itemObject = {
-        id: itemID,
-        name: itemName,
-        price: itemPrice,
-        quantity: itemQuantity
-    };
+    let itemObject = new ItemDTO(itemID, itemName, itemPrice, itemQuantity);
+
     items.push(itemObject);
     //item saved alert
     Swal.fire({
