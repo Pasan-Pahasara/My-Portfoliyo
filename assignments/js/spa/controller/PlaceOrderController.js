@@ -281,3 +281,8 @@ function searchItemQty(itemIdQ) {
     }
     return null;
 }
+
+// clear add order details in textFields function
+function clearAllOrderTextFieldsDetails() {
+    $('#cusId,#cusName,#cusAddress,#cusSalary,#cmbCode,#iName,#iPrice,#iQtyOnHand,#buyQty,#discount,#lblTotal,#subTotal,#cash,#balance').val("");
+}
