@@ -8,17 +8,17 @@ let tableRow = [];
 $("#btnAddCart").attr('disabled', true);
 $("#btnPlaceOrder").attr('disabled', true);
 
+
 // generate orderID
 function generateOrderID() {
-    value = "ORD-0001";
-    $("#btnPlaceOrder").click(function () {
-        const newValue = value.split('-');
-        let increase = newValue[1];
-        increase++;
-        value = "ORD-" + increase;
-
-        $("#orderId").val(value);
-    });
+    if (orderDB.length > 0) {
+        let lastId = orderDB[orderDB.length - 1].oId;
+        let digit = lastId.substring(6);
+        let number = parseInt(digit) + 1;
+        return lastId.replace(digit, number);
+    } else {
+        return "ORD-001";
+    }
 }
 
 // get date
@@ -158,7 +158,7 @@ function countingDownQty(orderQty) {
 // calculate total
 function calcTotal(number) {
     total += number;
-    $("#lblTotal").val("RS:" + total + "/=");
+    $("#lblTotal").val("RS: " + total + "/=");
 }
 
 // manage qtyOnHand function
@@ -211,11 +211,11 @@ $(document).on("change keyup blur", "#cash", function () {
 $("#btnPlaceOrder").click(function () {
     placeOrder();
     pushOrderDetails();
-    generateOrderID();
     clearAllOrderTextFieldsDetails();
     loadAllOrders();
     loadAllOrderDetails();
     $("#tableAddCart").empty();
+    $("#orderId").val(generateOrderID());
 });
 
 // place orderDTO details function
@@ -290,4 +290,6 @@ function searchItemQty(itemIdQ) {
 // clear add order details in textFields function
 function clearAllOrderTextFieldsDetails() {
     $('#cusId,#cusName,#cusAddress,#cusSalary,#orderDate,#cmbCode,#iName,#iPrice,#iQtyOnHand,#buyQty,#discount,#lblTotal,#subTotal,#cash,#balance').val("");
+    $("#btnAddCart").attr('disabled', true);
+    $("#btnPlaceOrder").attr('disabled', true);
 }

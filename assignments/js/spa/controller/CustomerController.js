@@ -7,6 +7,17 @@
 $("#customer-id").focus();
 $("#customerID").focus();
 
+// generate CustomerID
+function generateCustomerID() {
+    if (customers.length > 0) {
+        let lastId = customers[customers.length - 1].id;
+        let digit = lastId.substring(6);
+        let number = parseInt(digit) + 1;
+        return lastId.replace(digit, number);
+    } else {
+        return "C00-001";
+    }
+}
 // add new customer
 $("#newCustomer").click(function () {
     let customerID = $("#customer-id").val();
@@ -30,6 +41,7 @@ $("#newCustomer").click(function () {
     bindCustomerRowClickEvents();
     clearAllTexts();
     loadAllCustomersForOption();
+    $("#customer-id").val(generateCustomerID());
 });
 
 // load all customers function
@@ -354,8 +366,8 @@ function setButtonState(value) {
 
 // clear added text fields function
 function clearAllTexts() {
-    $("#customer-id").focus();
-    $("#customer-id,#customer-name,#customer-address,#customer-salary").val("");
+    $("#customer-name").focus();
+    $("#customer-name,#customer-address,#customer-salary").val("");
     checkValidity();
 }
 
@@ -510,3 +522,4 @@ function clearUpdateCustomerAllTexts() {
     $("#customerID,#customerName,#customerAddress,#customerSalary").val("");
     checkUpdateCustomerValidity();
 }
+

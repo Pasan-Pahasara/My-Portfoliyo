@@ -6,6 +6,17 @@
 // stating focus customerID
 $("#item-id").focus();
 
+// generate ItemID
+function generateItemID() {
+    if (items.length > 0) {
+        let lastId = items[items.length - 1].id;
+        let digit = lastId.substring(6);
+        let number = parseInt(digit) + 1;
+        return lastId.replace(digit, number);
+    } else {
+        return "I00-001";
+    }
+}
 //add new item
 $("#newItem").click(function () {
     let itemID = $("#item-id").val();
@@ -29,6 +40,7 @@ $("#newItem").click(function () {
     bindItemRowClickEvents();
     clearItemAllTexts();
     loadAllItemsForOption();
+    $("#item-id").val(generateItemID());
 });
 
 // load all items function
@@ -353,8 +365,8 @@ function setItemButtonState(value) {
 
 // clear text fields function
 function clearItemAllTexts() {
-    $("#item-id").focus();
-    $("#item-id,#item-name,#item-price,#item-quantity").val("");
+    $("#item-name").focus();
+    $("#item-name,#item-price,#item-quantity").val("");
     checkItemValidity();
 }
 

@@ -5,7 +5,6 @@
 
 // generate OrderID
 $("#btnPlaceOrder").click(function () {
-    generateOrderID();
     setCurrentDate();
 });
 
@@ -47,6 +46,7 @@ $('#customersBtn').click(function () {
     $('#itemSection').attr('style', 'display : none !important')
     $('#placeOrderSection').attr('style', 'display : none !important')
     $('#orderDetailsSection').attr('style', 'display : none !important')
+    $("#customer-id").val(generateCustomerID());
 })
 
 $('#itemsBtn').click(function () {
@@ -55,6 +55,7 @@ $('#itemsBtn').click(function () {
     $('#itemSection').attr('style', 'display : flex !important')
     $('#placeOrderSection').attr('style', 'display : none !important')
     $('#orderDetailsSection').attr('style', 'display : none !important')
+    $("#item-id").val(generateItemID());
 })
 
 $('#placeOrderBtn').click(function () {
@@ -63,6 +64,7 @@ $('#placeOrderBtn').click(function () {
     $('#itemSection').attr('style', 'display : none !important')
     $('#placeOrderSection').attr('style', 'display : flex !important')
     $('#orderDetailsSection').attr('style', 'display : none !important')
+    $("#orderId").val(generateOrderID());
 })
 
 $('#OrderDetailsBtn').click(function () {
