@@ -210,6 +210,7 @@ $("#btnPlaceOrder").click(function () {
     placeOrder();
     pushOrderDetails();
     generateOrderID();
+    clearAllOrderTextFieldsDetails();
     $("#tableAddCart").empty();
 });
 
