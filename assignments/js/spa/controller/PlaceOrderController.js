@@ -196,6 +196,13 @@ $(document).on("change keyup blur", "#cash", function () {
     }
 });
 
+// place order button
+$("#btnPlaceOrder").click(function () {
+    pushOrderDetails();
+    generateOrderID();
+    $("#tableAddCart").empty();
+});
+
 // place order function
 function pushOrderDetails() {
     for (let i = 0; i < $("#tableAddCart tr").length; i++) {
