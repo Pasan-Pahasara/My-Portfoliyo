@@ -3,6 +3,19 @@
  * @since : 0.1.0
  **/
 
+// generate orderID
+function generateOrderID() {
+    value = "ORD-0001";
+    $("#btnPlaceOrder").click(function () {
+        const newValue = value.split('-');
+        let increase = newValue[1];
+        increase++;
+        value = "ORD-" + increase;
+
+        $("#orderId").val(value);
+    });
+}
+
 //--------------------------------------------//
 <!-- Start Customer Details Combo -->
 //--------------------------------------------//
@@ -14,7 +27,7 @@ function loadAllCustomersForOption() {
     }
 }
 
-// set items Details
+// set customers Details
 $("#cusId").click(function () {
     let find = customers.find(({id}) => id === $("#cusId").val());
     $("#cusName").val(find.name);

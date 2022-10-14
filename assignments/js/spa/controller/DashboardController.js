@@ -3,6 +3,11 @@
  * @since : 0.1.0
  **/
 
+// generate OrderID
+$("#btnPlaceOrder").click(function () {
+    generateOrderID();
+});
+
 var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     autoplay: {
