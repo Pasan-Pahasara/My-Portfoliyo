@@ -32,6 +32,7 @@ $("#newItem").click(function () {
     dblRowClickEvents();
     bindRowClickEvents();
     clearItemAllTexts();
+    loadAllItemsForOption();
 });
 
 // load all items function

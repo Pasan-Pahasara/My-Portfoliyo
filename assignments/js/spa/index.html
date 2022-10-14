@@ -426,10 +426,6 @@
                         <label for="cusId" class="form-label">Customer ID :</label>
                         <select aria-label="Default select example" class="form-select" id="cusId">
                             <option selected>-Select Customer-</option>
-                            <option value="1">C001</option>
-                            <option value="2">C002</option>
-                            <option value="3">C003</option>
-                            <option value="4">C004</option>
                         </select>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -453,13 +449,9 @@
                 <h3 class="text-center bg-success p-2 text-light rounded-5">Items</h3>
                 <div class="row mt-1">
                     <div class="col-12 col-md-6 col-lg-6">
-                        <label for="itemCode" class="form-label">Item Code :</label>
-                        <select aria-label="Default select example" class="form-select" id="itemCode">
+                        <label for="cmbCode" class="form-label">Item Code :</label>
+                        <select aria-label="Default select example" class="form-select" id="cmbCode">
                             <option selected>-Select Item-</option>
-                            <option value="1">I001</option>
-                            <option value="2">I002</option>
-                            <option value="3">I003</option>
-                            <option value="4">I004</option>
                         </select>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -473,8 +465,8 @@
                         <input class="form-control" disabled id="iPrice" type="text">
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
-                        <label for="qtyOnHand" class="form-label">Qty On Hand :</label>
-                        <input class="form-control" disabled id="qtyOnHand" type="text">
+                        <label for="iQtyOnHand" class="form-label">Qty On Hand :</label>
+                        <input class="form-control" disabled id="iQtyOnHand" type="text">
                     </div>
                 </div>
                 <div class="row mt-1">
@@ -604,5 +596,7 @@
 <script src="./controller/CustomerController.js"></script>
 <!--Item JS-->
 <script src="./controller/ItemController.js"></script>
+<!--Place Order JS-->
+<script src="./controller/PlaceOrderController.js"></script>
 </body>
 </html>
