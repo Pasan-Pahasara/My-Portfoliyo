@@ -93,7 +93,23 @@ $("#btnAddCart").on('click', function () {
         countingDownQty($("#buyQty").val());
         calcTotal($("#buyQty").val() * $("#iPrice").val());
     }
-})
+
+    // click table row and set values to text fields
+    $("#tableAddCart>tr").click('click', function () {
+        tableRow = $(this);
+        let itemCode = $(this).children(":eq(0)").text();
+        let itemName = $(this).children(":eq(1)").text();
+        let unitPrice = $(this).children(":eq(2)").text();
+        let qty = $(this).children(":eq(3)").text();
+        let total = $(this).children(":eq(4)").text();
+
+        $("#cmbCode").val(itemCode);
+        $("#iName").val(itemName);
+        $("#iPrice").val(unitPrice);
+        $("#buyQty").val(qty);
+        $("#lblTotal").val(total);
+    });
+});
 
 // load cart details to the table
 $("#tableAddCart").empty();
@@ -109,6 +125,8 @@ function loadAddCartTable() {
 
     $("#tableAddCart").append(row);
 }
+
+
 
 // counting order qty hand after buy
 function countingDownQty(orderQty) {
