@@ -71,9 +71,9 @@ let itemPrice;
 let itemQty;
 let itemOrderQty;
 
-const total = 0;
-const discount = 0;
-const subTotal = 0;
+let total = 0;
+let discount = 0;
+let subTotal = 0;
 
 //--------------------------------------------//
 <!-- Start Cart Details -->
@@ -87,9 +87,11 @@ $("#btnAddCart").on('click', function () {
             duplicate = true;
         }
     }
+
     if (duplicate !== true) {
         loadAddCartTable();
         countingDownQty($("#buyQty").val());
+        calcTotal($("#buyQty").val() * $("#iPrice").val());
     }
 })
 
@@ -114,6 +116,12 @@ function countingDownQty(orderQty) {
     let reduceQty = parseInt($("#iQtyOnHand").val());
     reduceQty = reduceQty - minQty;
     $("#iQtyOnHand").val(reduceQty);
+}
+
+// calculate total
+function calcTotal(number) {
+    total += number;
+    $("#lblTotal").val("RS:"+total+"/=");
 }
 //--------------------------------------------//
 <!-- Ended Cart Details -->
