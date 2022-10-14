@@ -260,6 +260,18 @@ $(document).on("change keyup blur", "#buyQty", function () {
     }
 });
 
+// update Item Qty function
+function updateItemQty(itemIdQ) {
+    let itemQ = searchItemQty(itemIdQ);
+    if (itemQ != null) {
+        itemQ.quantity = $("#iQtyOnHand").val();
+        loadAllItems();
+        return true;
+    } else {
+        return false;
+    }
+}
+
 // search item Qty function
 function searchItemQty(itemIdQ) {
     for (let itemQ of items) {
