@@ -99,6 +99,8 @@ $("#btnAddCart").on('click', function () {
         manageQtyOnHand(tableRow.children(':nth-child(4)').text(), $("#buyQty").val());
         $(tableRow).children(':nth-child(4)').text($("#buyQty").val());
 
+        manageTotal(tableRow.children(':nth-child(5)').text(), $("#buyQty").val() * $("#iPrice").val());
+        $(tableRow).children(':nth-child(5)').text($("#buyQty").val() * $("#iPrice").val());
     }
 
     // click table row and set values to text fields
@@ -148,6 +150,7 @@ function calcTotal(number) {
     $("#lblTotal").val("RS:" + total + "/=");
 }
 
+// manage qtyOnHand function
 function manageQtyOnHand(preQty, nowQty) {
     var preQty = parseInt(preQty);
     var nowQty = parseInt(nowQty);
@@ -157,6 +160,14 @@ function manageQtyOnHand(preQty, nowQty) {
     avaQty = avaQty - nowQty;
 
     $("#iQtyOnHand").val(avaQty);
+}
+
+// manage total function
+function manageTotal(preTotal, nowTotal) {
+    total -= preTotal;
+    total += nowTotal;
+
+    $("#lblTotal").val(total);
 }
 //--------------------------------------------//
 <!-- Ended Cart Details -->
