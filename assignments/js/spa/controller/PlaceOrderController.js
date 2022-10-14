@@ -195,3 +195,24 @@ $(document).on("change keyup blur", "#cash", function () {
         $("#btnPlaceOrder").attr('disabled', false);
     }
 });
+
+// place order function
+function pushOrderDetails() {
+    for (let i = 0; i < $("#tableAddCart tr").length; i++) {
+        let orderId = $("#orderId").val();
+        let cusId = $("#cmbCode").val();
+        let itemId = $("#tableAddCart tr").children(':nth-child(1)')[i].innerText;
+        let qty = $("#tableAddCart tr").children(':nth-child(4)')[i].innerText;
+        let total = $("#tableAddCart tr").children(':nth-child(5)')[i].innerText;
+
+        let orderDetailObject = {
+            orderId: orderId,
+            cusId: cusId,
+            itemId: itemId,
+            qty: qty,
+            total:total
+        };
+        orderDetails.push(orderDetailObject);
+        console.log(orderDetailObject);
+    }
+}
