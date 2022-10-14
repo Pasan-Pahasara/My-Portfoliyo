@@ -181,3 +181,17 @@ $(document).on("change keyup blur", "#discount", function () {
 
     $("#subTotal").val(subTotal);
 });
+
+// added cash and check balance
+$(document).on("change keyup blur", "#cash", function () {
+    let cash = $("#cash").val();
+    let balance = cash - subTotal;
+    $("#balance").val(balance);
+    if (balance < 0) {
+        $("#lblCheckSubtotal").parent().children('strong').text(balance+" : plz enter valid Balance");
+        $("#btnPlaceOrder").attr('disabled', true);
+    } else {
+        $("#lblCheckSubtotal").parent().children('strong').text("");
+        $("#btnPlaceOrder").attr('disabled', false);
+    }
+});
