@@ -4,6 +4,10 @@
  **/
 let tableRow = [];
 
+// disable cart button and place order button
+$("#btnAddCart").attr('disabled', true);
+$("#btnPlaceOrder").attr('disabled', true);
+
 // generate orderID
 function generateOrderID() {
     value = "ORD-0001";
@@ -198,7 +202,7 @@ $(document).on("change keyup blur", "#cash", function () {
 
 // place order button
 $("#btnPlaceOrder").click(function () {
-    // placeOrder();
+    placeOrder();
     pushOrderDetails();
     generateOrderID();
     $("#tableAddCart").empty();
@@ -208,20 +212,15 @@ $("#btnPlaceOrder").click(function () {
 function pushOrderDetails() {
     for (let i = 0; i < $("#tableAddCart tr").length; i++) {
         let orderId = $("#orderId").val();
-        let cusId = $("#cmbCode").val();
+        let cusId = $("#cusId").val();
         let itemId = $("#tableAddCart tr").children(':nth-child(1)')[i].innerText;
         let qty = $("#tableAddCart tr").children(':nth-child(4)')[i].innerText;
         let total = $("#tableAddCart tr").children(':nth-child(5)')[i].innerText;
 
-        let orderDetailObject = {
-            orderId: orderId,
-            cusId: cusId,
-            itemId: itemId,
-            qty: qty,
-            total:total
-        };
-        orderDetails.push(orderDetailObject);
-        console.log(orderDetailObject);
+        let orderDetailArrayList = new orderDetail(orderId, cusId, itemId, qty, total);
+
+        orderDetails.push(orderDetailArrayList);
+        console.log(orderDetailArrayList);
     }
 }
 
@@ -241,3 +240,17 @@ function placeOrder() {
 
     // saveUpdateAlert("Place Ordering", "Successfully.");
 }
+
+// check buy quantity and enable btnAddCart button
+$(document).on("change keyup blur", "#buyQty", function () {
+    let qtyOnHand = $("#iQtyOnHand").val();
+    let buyQty = $("#buyQty").val();
+    let buyOnHand = qtyOnHand - buyQty;
+    if (buyOnHand < 0) {
+        $("#lblCheckQty").parent().children('strong').text(qtyOnHand + " : Empty On Stock..!!");
+        $("#btnAddCart").attr('disabled', true);
+    } else {
+        $("#lblCheckQty").parent().children('strong').text("");
+        $("#btnAddCart").attr('disabled', false);
+    }
+});
