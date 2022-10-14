@@ -30,8 +30,8 @@ $("#newCustomer").click(function () {
         timer: 1500
     })
     loadAllCustomers();
-    bindRowClickEvents();
-    dblRowClickEvents();
+    dblCustomerRowClickEvents();
+    bindCustomerRowClickEvents();
     clearAllTexts();
     loadAllCustomersForOption();
 });
@@ -48,7 +48,7 @@ function loadAllCustomers() {
 }
 
 // setting all table records details values to text fields
-function bindRowClickEvents() {
+function bindCustomerRowClickEvents() {
     $("#tblCustomer>tr").click(function () {
         let cusId = $(this).children(":eq(0)").text();
         let cusName = $(this).children(":eq(1)").text();
@@ -63,7 +63,7 @@ function bindRowClickEvents() {
 }
 
 // double clicked delete function
-function dblRowClickEvents() {
+function dblCustomerRowClickEvents() {
     $("#tblCustomer>tr").on('dblclick', function () {
         let deleteCusID = $(this).children(":eq(0)").text();
 

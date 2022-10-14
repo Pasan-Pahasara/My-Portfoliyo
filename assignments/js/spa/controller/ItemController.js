@@ -29,8 +29,8 @@ $("#newItem").click(function () {
         timer: 1500
     })
     loadAllItems();
-    dblRowClickEvents();
-    bindRowClickEvents();
+    dblItemRowClickEvents();
+    bindItemRowClickEvents();
     clearItemAllTexts();
     loadAllItemsForOption();
 });
@@ -40,14 +40,14 @@ function loadAllItems() {
     $("#tblItem").empty();
 
     // get all item records from the array
-    for (var item of items) {
-        var row = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.price}</td><td>${item.quantity}</td></tr>`;
+    for (let item of items) {
+        let row = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.price}</td><td>${item.quantity}</td></tr>`;
         $("#tblItem").append(row);
     }
 }
 
 // double clicked delete function
-function dblRowClickEvents() {
+function dblItemRowClickEvents() {
     $("#tblItem>tr").on('dblclick', function () {
         let deleteItemID = $(this).children(":eq(0)").text();
 
@@ -87,7 +87,7 @@ function dblRowClickEvents() {
 }
 
 // setting all table records details values to text fields
-function bindRowClickEvents() {
+function bindItemRowClickEvents() {
     $("#tblItem>tr").click(function () {
         let iteId = $(this).children(":eq(0)").text();
         let iteName = $(this).children(":eq(1)").text();
