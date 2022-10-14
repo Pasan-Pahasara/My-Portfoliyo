@@ -2,6 +2,7 @@
  * @author : Pasan Pahasara
  * @since : 0.1.0
  **/
+let tableRow = [];
 
 // generate orderID
 function generateOrderID() {
@@ -79,7 +80,16 @@ const subTotal = 0;
 //--------------------------------------------//
 // add to cart button
 $("#btnAddCart").on('click', function () {
-    loadAddCartTable();
+    // duplicate false
+    let duplicate = false;
+    for (let i = 0; i < $("#tableAddCart tr").length; i++) {
+        if ($("#cmbCode option:selected").text() === $("#tableAddCart tr").children(':nth-child(1)')[i].innerText) {
+            duplicate = true;
+        }
+    }
+    if (duplicate !== true) {
+        loadAddCartTable();
+    }
 })
 
 // load cart details to the table
@@ -96,3 +106,7 @@ function loadAddCartTable() {
 
     $("#tableAddCart").append(row);
 }
+
+//--------------------------------------------//
+<!-- Ended Cart Details -->
+//--------------------------------------------//
