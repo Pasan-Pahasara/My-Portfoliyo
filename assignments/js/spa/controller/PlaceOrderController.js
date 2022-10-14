@@ -213,6 +213,8 @@ $("#btnPlaceOrder").click(function () {
     pushOrderDetails();
     generateOrderID();
     clearAllOrderTextFieldsDetails();
+    loadAllOrders();
+    loadAllOrderDetails();
     $("#tableAddCart").empty();
 });
 
