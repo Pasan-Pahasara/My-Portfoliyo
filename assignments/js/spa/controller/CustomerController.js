@@ -33,6 +33,7 @@ $("#newCustomer").click(function () {
     bindRowClickEvents();
     dblRowClickEvents();
     clearAllTexts();
+    loadAllCustomersForOption();
 });
 
 // load all customers function

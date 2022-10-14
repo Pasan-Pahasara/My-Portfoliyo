@@ -4,6 +4,17 @@
  **/
 
 //--------------------------------------------//
+<!-- Start Customer Details Combo -->
+//--------------------------------------------//
+// load ids'
+function loadAllCustomersForOption() {
+    $("#cusId").empty();
+    for (let customer of customers) {
+        $("#cusId").append(`<option>${customer.id}</option>`);
+    }
+}
+
+//--------------------------------------------//
 <!-- Start Item Details Combo -->
 //--------------------------------------------//
 // load ids'
