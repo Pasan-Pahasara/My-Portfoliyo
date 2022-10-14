@@ -88,6 +88,11 @@ let subTotal = 0;
 //--------------------------------------------//
 // add to cart button
 $("#btnAddCart").on('click', function () {
+    Swal.fire({
+        title: 'Added Cart Successfully..!',
+        confirmButtonColor: '#3085d6'
+    });
+
     // duplicate false
     let duplicate = false;
     for (let i = 0; i < $("#tableAddCart tr").length; i++) {
@@ -207,8 +212,41 @@ $(document).on("change keyup blur", "#cash", function () {
     }
 });
 
+// dblclick delete function
+$("#tableAddCart").on('dblclick',function () {
+    Swal.fire({
+        title: 'Do you want to Delete the Select row ?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Delete',
+        confirmButtonColor: '#3085d6',
+        denyButtonText: `Don't Delete`,
+        customClass: {
+            actions: 'my-actions',
+            cancelButton: 'order-1 right-gap',
+            confirmButton: 'order-2',
+            denyButton: 'order-3',
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $(this).children('tr').eq(0).remove();
+            Swal.fire('Delete!', '', 'success')
+        } else if (result.isDenied) {
+            Swal.fire('Select row are not Delete', '', 'info')
+        }
+    })
+
+});
+
 // place orderDTO button
 $("#btnPlaceOrder").click(function () {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Your Order has been placed',
+        showConfirmButton: false,
+        timer: 1500
+    })
     placeOrder();
     pushOrderDetails();
     clearAllOrderTextFieldsDetails();
@@ -293,3 +331,5 @@ function clearAllOrderTextFieldsDetails() {
     $("#btnAddCart").attr('disabled', true);
     $("#btnPlaceOrder").attr('disabled', true);
 }
+
+
