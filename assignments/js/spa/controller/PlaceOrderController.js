@@ -4,7 +4,7 @@
  **/
 let tableRow = [];
 
-// disable cart button and place order button
+// disable cart button and place orderDTO button
 $("#btnAddCart").attr('disabled', true);
 $("#btnPlaceOrder").attr('disabled', true);
 
@@ -145,7 +145,7 @@ function loadAddCartTable() {
     $("#tableAddCart").append(row);
 }
 
-// counting order qty hand after buy
+// counting orderDTO qty hand after buy
 function countingDownQty(orderQty) {
     let minQty = parseInt(orderQty);
     let reduceQty = parseInt($("#iQtyOnHand").val());
@@ -205,7 +205,7 @@ $(document).on("change keyup blur", "#cash", function () {
     }
 });
 
-// place order button
+// place orderDTO button
 $("#btnPlaceOrder").click(function () {
     placeOrder();
     pushOrderDetails();
@@ -213,7 +213,7 @@ $("#btnPlaceOrder").click(function () {
     $("#tableAddCart").empty();
 });
 
-// place order details function
+// place orderDTO details function
 function pushOrderDetails() {
     for (let i = 0; i < $("#tableAddCart tr").length; i++) {
         let orderId = $("#orderId").val();
@@ -222,17 +222,17 @@ function pushOrderDetails() {
         let qty = $("#tableAddCart tr").children(':nth-child(4)')[i].innerText;
         let total = $("#tableAddCart tr").children(':nth-child(5)')[i].innerText;
 
-        let orderDetailArrayList = new orderDetail(orderId, cusId, itemId, qty, total);
+        let orderDetailArrayList = new orderDetailDTO(orderId, cusId, itemId, qty, total);
 
         orderDetails.push(orderDetailArrayList);
         console.log(orderDetailArrayList);
     }
 }
 
-// place order function
+// place orderDTO function
 function placeOrder() {
     //create object
-    let orderArrayList = new order(
+    let orderArrayList = new orderDTO(
         $("#orderId").val(),
         $("#cmbCode").val(),
         $("#orderDate").val(),

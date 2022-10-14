@@ -3,7 +3,7 @@
  * @since : 0.1.0
  **/
 
-class order {
+class orderDTO {
     constructor(oId, cId, oDate, subTotal, discount) {
         this.oId = oId;
         this.cId = cId;

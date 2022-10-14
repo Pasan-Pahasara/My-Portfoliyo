@@ -1495,7 +1495,7 @@ proto._create = function() {
   }
 };
 
-// goes through all children again and gets bricks in proper order
+// goes through all children again and gets bricks in proper orderDTO
 proto.reloadItems = function() {
   // collection of item elements
   this.items = this._itemize( this.element.children );
@@ -2304,7 +2304,7 @@ var proto = Item.prototype = Object.create( Outlayer.Item.prototype );
 
 var _create = proto._create;
 proto._create = function() {
-  // assign id, used for original-order sorting
+  // assign id, used for original-orderDTO sorting
   this.id = this.layout.itemGUID++;
   _create.call( this );
   this.sortData = {};
@@ -3059,7 +3059,7 @@ var trim = String.prototype.trim ?
 
   proto._itemize = function() {
     var items = Outlayer.prototype._itemize.apply( this, arguments );
-    // assign ID for original-order
+    // assign ID for original-orderDTO
     for ( var i=0; i < items.length; i++ ) {
       var item = items[i];
       item.id = this.itemGUID++;
@@ -3341,7 +3341,7 @@ var trim = String.prototype.trim ?
 
   // ----- sort method ----- //
 
-  // sort filteredItem order
+  // sort filteredItem orderDTO
   proto._sort = function() {
     if ( !this.options.sortBy ) {
       return;
