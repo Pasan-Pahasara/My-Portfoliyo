@@ -198,12 +198,13 @@ $(document).on("change keyup blur", "#cash", function () {
 
 // place order button
 $("#btnPlaceOrder").click(function () {
+    // placeOrder();
     pushOrderDetails();
     generateOrderID();
     $("#tableAddCart").empty();
 });
 
-// place order function
+// place order details function
 function pushOrderDetails() {
     for (let i = 0; i < $("#tableAddCart tr").length; i++) {
         let orderId = $("#orderId").val();
@@ -222,4 +223,21 @@ function pushOrderDetails() {
         orderDetails.push(orderDetailObject);
         console.log(orderDetailObject);
     }
+}
+
+// place order function
+function placeOrder() {
+    //create object
+    let orderArrayList = new order(
+        $("#orderId").val(),
+        $("#cmbCode").val(),
+        $("#orderDate").val(),
+        $("#lblTotal").val(),
+        $("#discount").val()
+    );
+
+    orderDB.push(orderArrayList);
+    console.log(orderArrayList);
+
+    // saveUpdateAlert("Place Ordering", "Successfully.");
 }
