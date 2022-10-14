@@ -239,9 +239,9 @@ function placeOrder() {
     //create object
     let orderArrayList = new orderDTO(
         $("#orderId").val(),
-        $("#cmbCode").val(),
+        $("#cusId").val(),
         $("#orderDate").val(),
-        $("#lblTotal").val(),
+        $("#subTotal").val(),
         $("#discount").val()
     );
 
@@ -289,5 +289,5 @@ function searchItemQty(itemIdQ) {
 
 // clear add order details in textFields function
 function clearAllOrderTextFieldsDetails() {
-    $('#cusId,#cusName,#cusAddress,#cusSalary,#cmbCode,#iName,#iPrice,#iQtyOnHand,#buyQty,#discount,#lblTotal,#subTotal,#cash,#balance').val("");
+    $('#cusId,#cusName,#cusAddress,#cusSalary,#orderDate,#cmbCode,#iName,#iPrice,#iQtyOnHand,#buyQty,#discount,#lblTotal,#subTotal,#cash,#balance').val("");
 }
