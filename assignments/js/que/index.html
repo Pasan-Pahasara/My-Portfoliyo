@@ -12,34 +12,35 @@
         <section class="col-4">
             <div class="mb-3">
                 <label  class="form-label">Enter Name:</label>
-                <input type="text" class="form-control" id="txtName">
+                <input type="text" class="form-control twx" id="txtName">
             </div>
             <div class="mb-3">
                 <label class="form-label">Choose Color:</label>
-                <input type="color" class="form-control" id="txtColor" >
+                <input type="color" class="form-control twx" id="txtColor">
             </div>
-            <div>
-                <button class="btn btn-danger" id="btnAdd">Add to Que</button>
+            <div class="wrap">
+                <button class="button" id="btnAdd">Add to Que</button>
             </div>
         </section>
     </section>
 
     <main>
-        <section id="container" class="mt-5">
+        <section id="container" class="mt-5 col-9 d-flex mx-4">
 
         </section>
-        <section id="img">
-
-        </section>
+        <div id="img" class="col-3"></div>
 
         <section class="row justify-content-center mt-4">
             <div class="d-flex col-4 justify-content-center gap-5">
-                <button class="btn btn-success" id="btnStart">Start</button>
-                <button class="btn btn-danger" id="btnStop">Stop</button>
+                <button class="button hoverBt mr-2" id="btnStart">Start</button>
+                <button class="button" id="btnStop">Stop</button>
             </div>
         </section>
     </main>
 
 </section>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/js.js"></script>
 </body>
 </html>
