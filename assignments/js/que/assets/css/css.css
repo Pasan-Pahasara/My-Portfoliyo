@@ -1,0 +1,80 @@
+/**
+ * @author : Pasan Pahasara
+ * @since : 0.1.0
+ **/
+
+label{
+    font-family: 'Ubuntu', sans-serif;
+}
+.twx{
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #ECF0F3;
+}
+
+main > section:first-child {
+    border-bottom: 3px solid whitesmoke;
+    gap: 18px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+main > section:first-child > div {
+    width: 120px;
+    height: 55px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+main > section:first-child > div > h1 {
+    font-size: 20px;
+    width: max-content;
+    height: max-content;
+    margin: 0;
+}
+
+#img{
+    background: url("../img/house.gif") center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+.button {
+    width: 140px;
+    height: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none !important;
+}
+
+.button:hover {
+    background-color: #ff6b81;
+    box-shadow: 0px 15px 20px rgba(191, 64, 64, 0.4);
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.hoverBt:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-5px);
+}
