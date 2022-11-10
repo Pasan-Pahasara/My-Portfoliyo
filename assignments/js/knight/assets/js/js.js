@@ -3,6 +3,7 @@
  * @since : 0.1.0
  **/
 
+let id = 0;
 const music = new Audio('assets/audio/Kitt  Scanner Sound HD.mp3');
 var kitt = {
     count: 0,
@@ -43,12 +44,9 @@ function renderKit() {
     kitt.animate();
 }
 
-var id = setInterval(renderKit, 90);
-
-
 $("#btnStart").click(function () {
     clearInterval(id);
-    id = setInterval(renderKit, 90);
+    id = setInterval(renderKit, 130);
     music.play();
     music.loop = true;
 });
