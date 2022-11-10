@@ -32,6 +32,7 @@ main > section:first-child > div {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 main > section:first-child > div > h1 {

@@ -18,7 +18,7 @@ function renderQueue() {
     $('#container').empty();
 
     for (let i = 0; i < persons.length; i++) {
-        $('#container').append(`<div style="background-color: ${persons[i].color}"><h1 style="font-weight: 600; font-size: 20px">${persons[i].name}</h1></div>`);
+        $('#container').append(`<div style="background-color: ${persons[i].color}"><h1 style="font-weight: 600; font-size: 20px;">${persons[i].name}</h1></div>`);
     }
 
     persons.unshift(persons.pop());
