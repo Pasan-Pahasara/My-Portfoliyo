@@ -53,6 +53,24 @@ function runAnimationStart() {
  * End Run Animation
  * */
 
+/***
+ * Start Move Background
+ * */
+let backgroundImagePositionX = 0;
+let moveBackgroundAnimationId = 0;
+let score = 0;
+
+function moveBackground() {
+    backgroundImagePositionX = backgroundImagePositionX - 20;
+    $("#moveBackground").css("background-position-x", +backgroundImagePositionX + "px");
+    score++;
+    $("#score").text(score);
+}
+
+/***
+ * End Move Background
+ * */
+
 $(document).on('keypress', function (e) {
     // alert(e.which);
     if (e.keyCode === 13) {
@@ -60,5 +78,9 @@ $(document).on('keypress', function (e) {
         idleAnimationNumber = 0;
 
         runAnimationStart();
+
+        if (moveBackgroundAnimationId === 0) {
+            moveBackgroundAnimationId = setInterval(moveBackground, 100)
+        }
     }
 });
