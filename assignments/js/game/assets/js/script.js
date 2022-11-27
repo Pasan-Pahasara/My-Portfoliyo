@@ -111,6 +111,29 @@ function jumpAnimationStart() {
  * End Jump Animation
  * */
 
+/***
+ * Start Fly Animation
+ * */
+
+let flyImageNumber = 1;
+let flyAnimationNumber = 0;
+
+function flyAnimation() {
+    flyImageNumber++;
+    if (flyImageNumber === 10) {
+        flyImageNumber = 1;
+    }
+    $("#girl").attr("src", "assets/images/png/Glide_00" + flyImageNumber + ".png")
+}
+
+function flyAnimationStart() {
+    flyAnimationNumber = setInterval(flyAnimation, 100);
+}
+
+/***
+ * End Fly Animation
+ * */
+
 $(document).on('keypress', function (e) {
     // alert(e.which);
     if (e.keyCode === 13) {
@@ -132,6 +155,18 @@ $(document).on('keypress', function (e) {
         if (moveBackgroundAnimationId === 0) {
             moveBackgroundAnimationId = setInterval(moveBackground, 100)
         }
+    } else if (e.keyCode === 113) {
+        if (flyAnimationNumber === 0) {
+            flyAnimationStart();
+        }
+        clearInterval(idleAnimationNumber);
+        idleAnimationNumber = 0;
+
+        clearInterval(jumpAnimationNumber);
+        jumpAnimationNumber = 0;
+
+        clearInterval(runAnimationNumber);
+        runAnimationNumber = 0;
     }
 });
 
