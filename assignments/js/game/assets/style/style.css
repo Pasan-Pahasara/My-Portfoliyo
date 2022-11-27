@@ -61,3 +61,13 @@
     width: 80px;
     height: 80px;
 }
+
+.barrier {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: 348px;
+    background-image: url("./.././images/plants-vs-zombies.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

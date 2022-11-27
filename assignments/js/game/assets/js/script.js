@@ -5,6 +5,7 @@
 
 $(document).ready(function () {
     idleAnimationStart();
+    createBarrier();
 });
 
 /***
@@ -134,6 +135,65 @@ function flyAnimationStart() {
  * End Fly Animation
  * */
 
+/***
+ * Start Barrier Animation
+ * */
+
+let barrierMarginLeft = 500;
+
+function createBarrier() {
+    for (let i = 0; i <= 10; i++) {
+        $("#barrier").append("<div class='barrier' style='margin-left: " + barrierMarginLeft + "px' id='barrier" + i + "'></div>");
+
+        if (i < 5) {
+            barrierMarginLeft = barrierMarginLeft + 2000;
+        }
+        if (i >= 5) {
+            barrierMarginLeft = barrierMarginLeft + 1000;
+        }
+    }
+}
+
+let barrierAnimationId = 0;
+
+function barrierAnimation() {
+    for (let i = 0; i < 10; i++) {
+        let css = parseInt($("#barrier" + i).css("margin-left"));
+
+        let newMarginLeft = css - 25;
+        $("#barrier" + i).css("margin-left", newMarginLeft - 25 + "px")
+
+        if (newMarginLeft >= -110 & newMarginLeft <= 100) {
+            if (girlMarginTop > 200) {
+                if (i === 0) {
+                    $("#heart3").css('visibility', 'hidden');
+                }
+                if (i === 1) {
+                    $("#heart2").css('visibility', 'hidden');
+                }
+                if (i === 2) {
+                    $("#heart1").css('visibility', 'hidden');
+
+                    clearInterval(barrierAnimationId);
+
+                    clearInterval(runAnimationNumber);
+                    runAnimationNumber = -1;
+
+                    clearInterval(jumpAnimationNumber);
+                    jumpAnimationNumber = -1;
+
+                    clearInterval(moveBackgroundAnimationId);
+                    moveBackgroundAnimationId = -1;
+                }
+            }
+        }
+    }
+}
+
+/***
+ * End Barrier Animation
+ * */
+
 $(document).on('keypress', function (e) {
     // alert(e.which);
     if (e.keyCode === 13) {
@@ -143,7 +203,10 @@ $(document).on('keypress', function (e) {
         runAnimationStart();
 
         if (moveBackgroundAnimationId === 0) {
-            moveBackgroundAnimationId = setInterval(moveBackground, 100)
+            moveBackgroundAnimationId = setInterval(moveBackground, 110)
+        }
+        if (barrierAnimationId === 0) {
+            barrierAnimationId = setInterval(barrierAnimation, 90);
         }
     } else if (e.keyCode === 32) {
         clearInterval(idleAnimationNumber);
@@ -153,7 +216,7 @@ $(document).on('keypress', function (e) {
             jumpAnimationStart();
         }
         if (moveBackgroundAnimationId === 0) {
-            moveBackgroundAnimationId = setInterval(moveBackground, 100)
+            moveBackgroundAnimationId = setInterval(moveBackground, 110)
         }
     } else if (e.keyCode === 113) {
         if (flyAnimationNumber === 0) {
