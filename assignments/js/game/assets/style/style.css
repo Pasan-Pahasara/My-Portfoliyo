@@ -2,3 +2,23 @@
  * @author : Pasan Pahasara
  * @since : 0.1.0
  **/
+
+.container {
+    margin: 0;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./.././images/background.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.fighterGirl {
+    height: 230px;
+    margin-top: 205px;
+    position: absolute;
+}
