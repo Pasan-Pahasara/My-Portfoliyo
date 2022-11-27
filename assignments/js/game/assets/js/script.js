@@ -28,3 +28,37 @@ function idleAnimationStart() {
 /***
  * End  Idle Animation
  * */
+
+/***
+ * Start Run Animation
+ * */
+
+let runImageNumber = 1;
+let runAnimationNumber = 0;
+
+function runAnimation() {
+    runImageNumber++;
+    if (runImageNumber === 10) {
+        runImageNumber = 1;
+    }
+    $("#girl").attr("src", "assets/images/png/Run__00" + runImageNumber + ".png");
+}
+
+function runAnimationStart() {
+    runAnimationNumber = setInterval(runAnimation, 100);
+    clearInterval(idleAnimationNumber);
+}
+
+/***
+ * End Run Animation
+ * */
+
+$(document).on('keypress', function (e) {
+    // alert(e.which);
+    if (e.keyCode === 13) {
+        clearInterval(idleAnimationNumber);
+        idleAnimationNumber = 0;
+
+        runAnimationStart();
+    }
+});
