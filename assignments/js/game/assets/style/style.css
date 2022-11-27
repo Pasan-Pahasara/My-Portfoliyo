@@ -22,3 +22,30 @@
     margin-top: 205px;
     position: absolute;
 }
+
+.scoreContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.scoreWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: fit-content;
+    position: relative;
+    background: #ECF0F3;
+    opacity: 50%;
+    border-radius: 51px;
+    margin: 20px 20px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+}
+
+.score {
+    display: flex;
+    font-size: 70px;
+    padding-left: 25px;
+    font-family: 'Teko', sans-serif;
+    font-weight: bolder;
+    margin-bottom: -32px;
+}
