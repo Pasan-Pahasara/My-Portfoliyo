@@ -71,6 +71,46 @@ function moveBackground() {
  * End Move Background
  * */
 
+/***
+ * Start Jump Animation
+ * */
+
+let jumpImageNumber = 1;
+let jumpAnimationNumber = 0;
+let girlMarginTop = 152;
+
+function jumpAnimation() {
+    jumpImageNumber++;
+    if (jumpImageNumber <= 5) {
+        girlMarginTop = girlMarginTop - 60;
+        $("#girl").css("top", "" + girlMarginTop + "px");
+    }
+    if (jumpImageNumber >= 7) {
+        girlMarginTop = girlMarginTop + 60;
+        $("#girl").css("top", "" + girlMarginTop + "px");
+    }
+
+    if (jumpImageNumber === 10) {
+        jumpImageNumber = 1;
+        clearInterval(jumpAnimationNumber);
+        jumpAnimationNumber = 0;
+        runImageNumber = 0;
+        runAnimationStart();
+    }
+    $("#girl").attr("src", "assets/images/png/Jump__00" + jumpImageNumber + ".png");
+}
+
+function jumpAnimationStart() {
+    jumpAnimationNumber = setInterval(jumpAnimation, 100);
+    runImageNumber = 0;
+    clearInterval(idleAnimationNumber);
+    clearInterval(runAnimationNumber);
+}
+
+/***
+ * End Jump Animation
+ * */
+
 $(document).on('keypress', function (e) {
     // alert(e.which);
     if (e.keyCode === 13) {
@@ -82,5 +122,16 @@ $(document).on('keypress', function (e) {
         if (moveBackgroundAnimationId === 0) {
             moveBackgroundAnimationId = setInterval(moveBackground, 100)
         }
+    } else if (e.keyCode === 32) {
+        clearInterval(idleAnimationNumber);
+        idleAnimationNumber = 0;
+
+        if (jumpAnimationNumber === 0) {
+            jumpAnimationStart();
+        }
+        if (moveBackgroundAnimationId === 0) {
+            moveBackgroundAnimationId = setInterval(moveBackground, 100)
+        }
     }
 });
+
