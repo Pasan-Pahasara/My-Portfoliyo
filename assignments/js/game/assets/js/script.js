@@ -184,6 +184,8 @@ function barrierAnimation() {
 
                     clearInterval(moveBackgroundAnimationId);
                     moveBackgroundAnimationId = -1;
+
+                    deadAnimationNumber = setInterval(girlDeadAnimation, 100);
                 }
             }
         }
@@ -192,6 +194,27 @@ function barrierAnimation() {
 
 /***
  * End Barrier Animation
+ * */
+
+/***
+ * Start Dead Animation
+ * */
+
+let deadImageNumber = 1;
+let deadAnimationNumber = 0;
+
+function girlDeadAnimation() {
+    deadImageNumber++;
+    if (deadImageNumber === 10) {
+        deadImageNumber = 9;
+    }
+    setInterval(idleAnimationNumber);
+    idleAnimationNumber = 0;
+    $("#girl").attr("src", "assets/images/png/Dead__00" + deadImageNumber + ".png")
+}
+
+/***
+ * End Dead Animation
  * */
 
 $(document).on('keypress', function (e) {
