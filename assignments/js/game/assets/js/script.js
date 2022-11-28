@@ -78,7 +78,7 @@ function moveBackground() {
 
 let jumpImageNumber = 1;
 let jumpAnimationNumber = 0;
-let girlMarginTop = 152;
+let girlMarginTop = 205;
 
 function jumpAnimation() {
     jumpImageNumber++;
@@ -102,7 +102,7 @@ function jumpAnimation() {
 }
 
 function jumpAnimationStart() {
-    jumpAnimationNumber = setInterval(jumpAnimation, 100);
+    jumpAnimationNumber = setInterval(jumpAnimation, 150);
     runImageNumber = 0;
     clearInterval(idleAnimationNumber);
     clearInterval(runAnimationNumber);
@@ -133,6 +133,27 @@ function flyAnimationStart() {
 
 /***
  * End Fly Animation
+ * */
+
+/***
+ * Start Dead Animation
+ * */
+
+let deadImageNumber = 1;
+let deadAnimationNumber = 0;
+
+function girlDeadAnimation() {
+    deadImageNumber++;
+    if (deadImageNumber === 10) {
+        deadImageNumber = 9;
+    }
+    setInterval(idleAnimationNumber);
+    idleAnimationNumber = 0;
+    $("#girl").attr("src", "assets/images/png/Dead__00" + deadImageNumber + ".png")
+}
+
+/***
+ * End Dead Animation
  * */
 
 /***
@@ -184,7 +205,6 @@ function barrierAnimation() {
 
                     clearInterval(moveBackgroundAnimationId);
                     moveBackgroundAnimationId = -1;
-
                     deadAnimationNumber = setInterval(girlDeadAnimation, 100);
                 }
             }
@@ -194,27 +214,6 @@ function barrierAnimation() {
 
 /***
  * End Barrier Animation
- * */
-
-/***
- * Start Dead Animation
- * */
-
-let deadImageNumber = 1;
-let deadAnimationNumber = 0;
-
-function girlDeadAnimation() {
-    deadImageNumber++;
-    if (deadImageNumber === 10) {
-        deadImageNumber = 9;
-    }
-    setInterval(idleAnimationNumber);
-    idleAnimationNumber = 0;
-    $("#girl").attr("src", "assets/images/png/Dead__00" + deadImageNumber + ".png")
-}
-
-/***
- * End Dead Animation
  * */
 
 $(document).on('keypress', function (e) {
@@ -289,4 +288,6 @@ $(document).on('keypress', function (e) {
         runAnimationNumber = 0;
     }
 });
+
+
 
