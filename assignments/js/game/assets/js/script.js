@@ -223,23 +223,57 @@ $(document).on('keypress', function (e) {
         clearInterval(idleAnimationNumber);
         idleAnimationNumber = 0;
 
-        runAnimationStart();
+        clearInterval(runAnimationNumber);
+        runAnimationNumber = 0;
+
+        if (flyAnimationNumber === 0) {
+            runAnimationStart();
+        }
 
         if (moveBackgroundAnimationId === 0) {
-            moveBackgroundAnimationId = setInterval(moveBackground, 110)
+            moveBackgroundAnimationId = setInterval(moveBackground, 100)
         }
         if (barrierAnimationId === 0) {
-            barrierAnimationId = setInterval(barrierAnimation, 90);
+            barrierAnimationId = setInterval(barrierAnimation, 150);
         }
+    } else if (e.keyCode === 122) {
+        clearInterval(idleAnimationNumber);
+        idleAnimationNumber = 0;
+
+        if (flyAnimationNumber !== 0) {
+            clearInterval(idleAnimationNumber);
+            idleAnimationNumber = 0;
+        } else {
+            idleAnimationStart();
+        }
+
+        clearInterval(runAnimationNumber);
+        runAnimationNumber = 0;
+
+        clearInterval(barrierAnimationId);
+        barrierAnimationId = 0;
+
+        clearInterval(jumpAnimationNumber);
+        jumpAnimationNumber = 0;
+
+        clearInterval(moveBackgroundAnimationId);
+        moveBackgroundAnimationId = 0;
+
     } else if (e.keyCode === 32) {
         clearInterval(idleAnimationNumber);
         idleAnimationNumber = 0;
+
+        clearInterval(flyAnimationNumber);
+        flyAnimationNumber = 0;
 
         if (jumpAnimationNumber === 0) {
             jumpAnimationStart();
         }
         if (moveBackgroundAnimationId === 0) {
-            moveBackgroundAnimationId = setInterval(moveBackground, 110)
+            moveBackgroundAnimationId = setInterval(moveBackground, 100)
+        }
+        if (barrierAnimationId === 0) {
+            barrierAnimationId = setInterval(barrierAnimation, 150);
         }
     } else if (e.keyCode === 113) {
         if (flyAnimationNumber === 0) {
