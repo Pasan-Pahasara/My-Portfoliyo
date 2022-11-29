@@ -59,7 +59,7 @@
     width: 235px;
 }
 
-#heartSection>img {
+#heartSection > img {
     width: 80px;
     height: 80px;
 }
@@ -68,8 +68,186 @@
     width: 100px;
     height: 100px;
     position: absolute;
-    margin-top: 348px;
+    margin-top: 377px;
     background-image: url("./.././images/plants-vs-zombies.gif");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#controlsWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#controlsWrapper > button {
+    width: 55px;
+    height: 55px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#controlsWrapper > button:hover {
+    width: 60px;
+    height: 60px;
+}
+
+#controlsWrapper > button#btnSound {
+    background-image: url("../../assets/images/sound.png");
+    background-size: cover;
+    background-position: center;
+}
+
+div#controlsWrapper > button#btnPause {
+    background-image: url("../../assets/images/pause.png");
+    background-size: cover;
+    background-position: center;
+}
+
+div#controlsWrapper > button#btnResume {
+    background-image: url("../../assets/images/resume.png");
+    background-size: cover;
+    background-position: center;
+}
+
+div#controlsWrapper > button#btnRestart {
+    background-image: url("../../assets/images/restart.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#controlsWrapper > #move {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: -10px;
+    right: 3px;
+}
+
+#controlsWrapper > #move:hover {
+    cursor: grabbing;
+}
+
+#controlsWrapper > #move:active {
+    cursor: grab;
+}
+
+div#controlsWrapper #move > i {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    color: black;
+}
+
+div#controlsWrapper > button#btnPause.pause {
+    width: 60px;
+    height: 60px;
+}
+
+div#controlsWrapper > button#btnSound.sound-on {
+    width: 60px;
+    height: 60px;
+}
+
+.bgBlur {
+    filter: blur(8px);
+    -webkit-filter: blur(2px);
+}
+
+section#pause-bg {
+    display: none;
+    width: 12%;
+    height: 49%;
+    background-image: url('../../assets/images/png/Idle__002.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#gameOverWrapper {
+    display: none;
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: spin 4s linear;
+}
+
+#gameOver_title-img {
+    height: 85%;
+    background-image: url('../../assets/images/gameOver.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 5px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    75% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#gameWin_title-img {
+    width: 23%;
+    height: 59%;
+    background-image: url('../../assets/images/winning.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: x 4s linear;
+}
+
+@keyframes x {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.75;
+    }
+
+    75% {
+        opacity: 1;
+    }
 }

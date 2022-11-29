@@ -6,7 +6,31 @@
 $(document).ready(function () {
     idleAnimationStart();
     createBarrier();
+    hideComponents();
+    removeBlur();
 });
+
+let backgroundMusic = new Audio();
+backgroundMusic.src = "assets/audio/happy-sun.mp3";
+backgroundMusic.play().then(r => {
+    backgroundMusic.loop = true;
+});
+
+
+let jumpTrack = new Audio();
+jumpTrack.src = "assets/audio/cartoon-jump-6462.mp3";
+
+let deadTrack = new Audio();
+deadTrack.src = "assets/audio/welcome-to-hell-103646.mp3";
+
+let flyTrack = new Audio();
+flyTrack.src = "assets/audio/swing-whoosh-110410.mp3";
+
+let winnerTrack = new Audio();
+winnerTrack.src = "assets/audio/winner.mp3";
+
+let gameOverTrack = new Audio();
+gameOverTrack.src = "assets/audio/GameOver.wav";
 
 /***
  * Start Idle Animation
@@ -24,6 +48,8 @@ function idleAnimation() {
 
 function idleAnimationStart() {
     idleAnimationNumber = setInterval(idleAnimation, 200);
+    flyTrack.pause();
+    backgroundMusic.play();
 }
 
 /***
@@ -48,6 +74,8 @@ function runAnimation() {
 function runAnimationStart() {
     runAnimationNumber = setInterval(runAnimation, 100);
     clearInterval(idleAnimationNumber);
+    flyTrack.pause();
+    backgroundMusic.play();
 }
 
 /***
@@ -66,6 +94,13 @@ function moveBackground() {
     $("#moveBackground").css("background-position-x", +backgroundImagePositionX + "px");
     score++;
     $("#score").text(score);
+    flyTrack.loop;
+    // if (score >= 318) {
+    if (score >= 20) {
+        hideComponents();
+        winResults();
+        moveBackground();
+    }
 }
 
 /***
@@ -78,7 +113,7 @@ function moveBackground() {
 
 let jumpImageNumber = 1;
 let jumpAnimationNumber = 0;
-let girlMarginTop = 205;
+let girlMarginTop = 180;
 
 function jumpAnimation() {
     jumpImageNumber++;
@@ -106,6 +141,7 @@ function jumpAnimationStart() {
     runImageNumber = 0;
     clearInterval(idleAnimationNumber);
     clearInterval(runAnimationNumber);
+    flyTrack.pause();
 }
 
 /***
@@ -129,6 +165,9 @@ function flyAnimation() {
 
 function flyAnimationStart() {
     flyAnimationNumber = setInterval(flyAnimation, 100);
+    flyTrack.play().then(r => {
+        flyTrack.loop = true;
+    });
 }
 
 /***
@@ -178,14 +217,14 @@ function createBarrier() {
 let barrierAnimationId = 0;
 
 function barrierAnimation() {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 6; i++) {
         let css = parseInt($("#barrier" + i).css("margin-left"));
 
         let newMarginLeft = css - 25;
         $("#barrier" + i).css("margin-left", newMarginLeft - 25 + "px")
 
         if (newMarginLeft >= -110 & newMarginLeft <= 100) {
-            if (girlMarginTop > 200) {
+            if (girlMarginTop > 175) {
                 if (i === 0) {
                     $("#heart3").css('visibility', 'hidden');
                 }
@@ -206,6 +245,8 @@ function barrierAnimation() {
                     clearInterval(moveBackgroundAnimationId);
                     moveBackgroundAnimationId = -1;
                     deadAnimationNumber = setInterval(girlDeadAnimation, 100);
+                    deadTrack.play();
+                    game_over();
                 }
             }
         }
@@ -235,30 +276,38 @@ $(document).on('keypress', function (e) {
         if (barrierAnimationId === 0) {
             barrierAnimationId = setInterval(barrierAnimation, 150);
         }
-    } else if (e.keyCode === 122) {
-        clearInterval(idleAnimationNumber);
-        idleAnimationNumber = 0;
-
-        if (flyAnimationNumber !== 0) {
-            clearInterval(idleAnimationNumber);
-            idleAnimationNumber = 0;
-        } else {
-            idleAnimationStart();
-        }
-
-        clearInterval(runAnimationNumber);
-        runAnimationNumber = 0;
-
-        clearInterval(barrierAnimationId);
-        barrierAnimationId = 0;
-
-        clearInterval(jumpAnimationNumber);
-        jumpAnimationNumber = 0;
-
-        clearInterval(moveBackgroundAnimationId);
-        moveBackgroundAnimationId = 0;
-
-    } else if (e.keyCode === 32) {
+        removeBlur();
+    }
+        // else if (e.keyCode === 122) {
+        //     clearInterval(idleAnimationNumber);
+        //     idleAnimationNumber = 0;
+        //
+        //     if (flyAnimationNumber !== 0) {
+        //         clearInterval(idleAnimationNumber);
+        //         idleAnimationNumber = 0;
+        //     } else {
+        //         idleAnimationStart();
+        //     }
+        //
+        //     clearInterval(runAnimationNumber);
+        //     runAnimationNumber = 0;
+        //
+        //     clearInterval(barrierAnimationId);
+        //     barrierAnimationId = 0;
+        //
+        //     clearInterval(jumpAnimationNumber);
+        //     jumpAnimationNumber = 0;
+        //
+        //     clearInterval(moveBackgroundAnimationId);
+        //     moveBackgroundAnimationId = 0;
+        //
+        //     blurComponents();
+        //
+        //     $(document).off("32");
+        //     $(document).off("13");
+        //
+    // }
+    else if (e.keyCode === 32) {
         clearInterval(idleAnimationNumber);
         idleAnimationNumber = 0;
 
@@ -274,6 +323,9 @@ $(document).on('keypress', function (e) {
         if (barrierAnimationId === 0) {
             barrierAnimationId = setInterval(barrierAnimation, 150);
         }
+        removeBlur();
+        jumpTrack.play();
+
     } else if (e.keyCode === 113) {
         if (flyAnimationNumber === 0) {
             flyAnimationStart();
@@ -286,8 +338,141 @@ $(document).on('keypress', function (e) {
 
         clearInterval(runAnimationNumber);
         runAnimationNumber = 0;
+
+        removeBlur();
     }
 });
 
+$("#btnSound").on('click', function (e) {
+    if (!backgroundMusic.paused) {
+        backgroundMusic.pause();
+        $("#btnSound").removeClass("sound-on");
+    } else {
+        backgroundMusic.play().then(r => {
+            backgroundMusic.loop = true;
+        });
+        $("#btnSound").addClass("sound-on");
+    }
+});
+
+function blurComponents() {
+    $(".background").addClass("bgBlur");
+}
+
+function removeBlur() {
+    $(".background").removeClass("bgBlur");
+}
+
+function pauseAll() {
+    clearInterval(idleAnimationNumber);
+    idleAnimationNumber = 0;
+
+    if (flyAnimationNumber !== 0) {
+        clearInterval(idleAnimationNumber);
+        idleAnimationNumber = 0;
+    } else {
+        idleAnimationStart();
+    }
+
+    clearInterval(runAnimationNumber);
+    runAnimationNumber = 0;
+
+    clearInterval(barrierAnimationId);
+    barrierAnimationId = 0;
+
+    clearInterval(jumpAnimationNumber);
+    jumpAnimationNumber = 0;
+
+    clearInterval(moveBackgroundAnimationId);
+    moveBackgroundAnimationId = 0;
+}
+
+$("#btnPause").on('click', function (e) {
+    $("body").css("pointer-events", "none");
+    $("#btnPause").css("pointer-events", "none");
+    $("#btnResume").css("pointer-events", "auto");
+    $("#btnRestart").css("pointer-events", "auto");
+    $(document).off("32");
+    $(document).off("13");
+    pauseAll();
+
+    $("#btnPause").addClass("pause");
+    $("#btnResume").removeClass("pause");
+
+    blurComponents();
+
+    $("#pause-bg").css("display", "block");
+    $("#title-img").css("display", "block");
+
+    backgroundMusic.pause();
+});
+
+$("#btnResume").on('click', function (e) {
+    $("#btnPause").css("pointer-events", "auto");
+    $("#btnResume").addClass("pause");
+    $("#btnPause").removeClass("pause");
+    $(document).on("32");
+    $(document).on("13");
+    removeBlur();
+    hideComponents();
+    backgroundMusic.play();
+});
+
+$("#btnRestart").on('click', function (e) {
+    window.location.href = "index.html";
+});
+
+function hideComponents() {
+    $("#pause-bg").css("display", "none");
+    $("#title-img").css("display", "none");
+    $("#gameOver_title-img").css("display", "none");
+    $("#gameWin_title-img").css("display", "none");
+    $("#btnNext").css("display", "none");
+}
+
+$(function () {
+    $("#controlsWrapper").draggable({
+        containment: "window"
+    });
+});
+
+$("#controlsWrapper").hover(function () {
+    $("#controlsWrapper").css("cursor", "grab");
+
+}, function () {
+    $("#controlsWrapper").css("cursor", "pointer");
+});
+
+
+function game_over() {
+    blurComponents();
+
+    $("#gameOverWrapper").css("display", "block");
+    $("#gameOver_title-img").css("display", "block");
+
+    backgroundMusic.pause();
+    gameOverTrack.play();
+    $("#btnSound").removeClass("sound-on");
+
+    $("#girl").css("display", "none");
+
+}
+
+function winResults() {
+    $(document).off("32");
+    $(document).off("13");
+
+    blurComponents();
+
+    $("#gameWin_title-img").css("display", "block");
+    $("#btnNext").css("display", "block");
+    $("#btnPause").css("pointer-events", "none");
+    $("#btnResume").css("pointer-events", "none");
+    pauseAll();
+
+    backgroundMusic.pause();
+    winnerTrack.play();
+    $("#btnSound").removeClass("sound-on");
+}
 
 
