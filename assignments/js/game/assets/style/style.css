@@ -220,6 +220,7 @@ section#pause-bg {
 }
 
 #gameWin_title-img {
+    display: none;
     width: 23%;
     height: 59%;
     background-image: url('../../assets/images/winning.png');
@@ -250,4 +251,22 @@ section#pause-bg {
     75% {
         opacity: 1;
     }
+}
+
+#btnNext {
+    display: none;
+    width: 71px;
+    height: 71px;
+    background-image: url('../../assets/images/next.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 62%;
+    left: 69%;
+}
+
+#btnNext:hover {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
 }

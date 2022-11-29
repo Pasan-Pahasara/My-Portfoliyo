@@ -475,4 +475,7 @@ function winResults() {
     $("#btnSound").removeClass("sound-on");
 }
 
+$("#btnNext").on('click', function (e) {
+
+});
 
