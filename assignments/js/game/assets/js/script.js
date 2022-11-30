@@ -96,9 +96,7 @@ function moveBackground() {
     $("#score").text(score);
     flyTrack.loop;
     if (score >= 318) {
-        hideComponents();
         winResults();
-        moveBackground();
     }
 }
 
