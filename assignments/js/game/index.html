@@ -3,44 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/home.css">
 </head>
-<body class="container">
-<div class="background" id="moveBackground">
-    <section class="scoreContainer">
-        <section class="scoreWrapper">
-            <div class="score" id="score">0</div>
-            <div id="heartSection">
-                <img id="heart1" src="assets/images/rotating-red-heart.gif" alt="">
-                <img id="heart2" src="assets/images/rotating-red-heart.gif" alt="">
-                <img id="heart3" src="assets/images/rotating-red-heart.gif" alt="">
-            </div>
-        </section>
-    </section>
-    <img id="girl" class="fighterGirl" src="assets/images/png/Idle__000.png" alt=""/>
-    <div id="barrier"></div>
-</div>
-<div id="controlsWrapper">
-    <button id="btnSound"></button>
-    <button id="btnPause"></button>
-    <button id="btnResume"></button>
-    <button id="btnRestart"></button>
-</div>
-
-<section id="pause-bg">
-    <div id="title-img"></div>
+<body>
+<section id="home-bg">
+    <div id="titleImg"></div>
+    <button id="btnPlay"></button>
 </section>
 
-<section id="gameOverWrapper">
-    <div id="gameOver_title-img"></div>
-    <div id="gameOver_img"></div>
+<div id="ttBackground"></div>
+
+<div id="controller-icons">
+    <button id="setting-icon"></button>
+    <button id="help-icon"></button>
+    <button id="sound-icon"></button>
+</div>
+
+<section id="help">
+    <button id="btnClose"></button>
 </section>
-
-<div id="gameWin_title-img"></div>
-
-<div id="btnNext"></div>
-
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/homeScript.js"></script>
 </body>
 </html>

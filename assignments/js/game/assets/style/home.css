@@ -1,0 +1,140 @@
+/**
+ * @author : Pasan Pahasara
+ * @since : 0.1.0
+ **/
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+section#home-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./.././images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ttBackground{
+    width: 44%;
+    height: 68%;
+    background-image: url('./.././images/bbBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 46px;
+    margin: auto;
+    animation: x 4s linear;
+}
+
+@keyframes x {
+    0% {
+        transform: scale3d(10%,10%,10%);
+    }
+}
+
+section#home-bg div#titleImg {
+    display: block !important;
+    width: 34%;
+    height: 33%;
+    background-image: url('./.././images/name.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    animation: spin 4s linear;
+}
+
+@keyframes spin {
+    0% {
+        width: 40%;
+        height: 40vh;
+        transform: scaleZ(10%);
+    }
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+div#controller-icons>button.pressed {
+    width: 75px;
+    height: 75px;
+}
+
+button#btnPlay {
+    width: 25%;
+    height: 25%;
+    background-image: url('../../assets/images/startButton.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 35%;
+}
+
+button#btnPlay:hover {
+    width: 21%;
+    height: 21%;
+}
+
+div#controller-icons {
+    width: 290px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+div#controller-icons>button {
+    height: 66px;
+    width: 66px;
+    margin: 10px;
+}
+
+div#controller-icons>button:hover {
+    height: 71px;
+    width: 71px;
+}
+
+div#controller-icons>button#setting-icon {
+    background-image: url('../../assets/images/setting.png');
+    background-size: cover;
+    background-position: center;
+}
+
+div#controller-icons>button#help-icon {
+    background-image: url('../../assets/images/question.png');
+    background-size: cover;
+    background-position: center;
+    height: 114px;
+    width: 74px;
+}
+
+div#controller-icons>button#sound-icon {
+    background-image: url('../../assets/images/sound.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-blur {
+    filter: blur(8px);
+    -webkit-filter: blur(2px);
+}

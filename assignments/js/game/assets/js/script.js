@@ -95,8 +95,7 @@ function moveBackground() {
     score++;
     $("#score").text(score);
     flyTrack.loop;
-    // if (score >= 318) {
-    if (score >= 20) {
+    if (score >= 318) {
         hideComponents();
         winResults();
         moveBackground();
@@ -402,7 +401,7 @@ $("#btnPause").on('click', function (e) {
     blurComponents();
 
     $("#pause-bg").css("display", "block");
-    $("#title-img").css("display", "block");
+    $("#titleImg").css("display", "block");
 
     backgroundMusic.pause();
 });
@@ -419,12 +418,12 @@ $("#btnResume").on('click', function (e) {
 });
 
 $("#btnRestart").on('click', function (e) {
-    window.location.href = "index.html";
+    window.location.href = "index1.html";
 });
 
 function hideComponents() {
     $("#pause-bg").css("display", "none");
-    $("#title-img").css("display", "none");
+    $("#titleImg").css("display", "none");
     $("#gameOver_title-img").css("display", "none");
     $("#gameWin_title-img").css("display", "none");
     $("#btnNext").css("display", "none");
@@ -442,7 +441,6 @@ $("#controlsWrapper").hover(function () {
 }, function () {
     $("#controlsWrapper").css("cursor", "pointer");
 });
-
 
 function game_over() {
     blurComponents();
@@ -476,6 +474,6 @@ function winResults() {
 }
 
 $("#btnNext").on('click', function (e) {
-
+    window.location.href = "index2.html";
 });
 
