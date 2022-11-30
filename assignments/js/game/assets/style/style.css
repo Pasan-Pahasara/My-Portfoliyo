@@ -280,3 +280,13 @@ section#pause-bg {
     height: 80px;
     cursor: pointer;
 }
+
+.barrier2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: 377px;
+    background-image: url("./.././images/372102230_BITCOIN_400px.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

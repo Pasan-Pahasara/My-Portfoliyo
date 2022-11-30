@@ -5,7 +5,7 @@
 
 $(document).ready(function () {
     idleAnimationStart();
-    createBarrier();
+    // createBarrier();
     hideComponents();
     removeBlur();
 });
@@ -49,7 +49,7 @@ function idleAnimation() {
 function idleAnimationStart() {
     idleAnimationNumber = setInterval(idleAnimation, 200);
     flyTrack.pause();
-    backgroundMusic.play();
+    // backgroundMusic.play();
 }
 
 /***
@@ -91,11 +91,11 @@ let score = 0;
 
 function moveBackground() {
     backgroundImagePositionX = backgroundImagePositionX - 20;
-    $("#moveBackground").css("background1-position-x", +backgroundImagePositionX + "px");
+    $("#moveBackground").css("background-position-x", +backgroundImagePositionX + "px");
     score++;
     $("#score").text(score);
     flyTrack.loop;
-    if (score >= 318) {
+    if (score >= 320) {
         winResults();
     }
 }
@@ -291,8 +291,8 @@ $(document).on('keypress', function (e) {
         //     clearInterval(runAnimationNumber);
         //     runAnimationNumber = 0;
         //
-        //     clearInterval(barrierAnimationId);
-        //     barrierAnimationId = 0;
+        //     clearInterval(barrierAnimationId2);
+        //     barrierAnimationId2 = 0;
         //
         //     clearInterval(jumpAnimationNumber);
         //     jumpAnimationNumber = 0;
@@ -429,12 +429,6 @@ function hideComponents() {
     $("#btnNext1").css("display", "none");
 }
 
-$(function () {
-    $("#controlsWrapper").draggable({
-        containment: "window"
-    });
-});
-
 $("#controlsWrapper").hover(function () {
     $("#controlsWrapper").css("cursor", "grab");
 
@@ -451,17 +445,10 @@ function game_over() {
     backgroundMusic.pause();
     gameOverTrack.play();
     $("#btnSound").removeClass("sound-on");
-
-    $("#girl").css("display", "none");
-
 }
 
 function winResults() {
-    $(document).off("32");
-    $(document).off("13");
-
     blurComponents();
-
     $("#gameWin_title-img").css("display", "block");
     $(".btnNext").css("display", "block");
     $("#btnPause").css("pointer-events", "none");
