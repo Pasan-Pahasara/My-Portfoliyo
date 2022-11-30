@@ -59,7 +59,7 @@ This is Framework Assigment
 This is JS Assigment
 
 #
-* 🔗 <a href="https://pasan-pahasara.github.io/My-Portfoliyo/assignments/js/game/index.html/" target="_blank">GitHub Page</a>
+* 🔗 <a href="https://pasan-pahasara.github.io/My-Portfoliyo/assignments/js/game/index.html" target="_blank">GitHub Page</a>
 #
 
 ###### If you think my code is good pleace drop a Star <img src="https://github.com/Pasan-Pahasara/md-alpha/blob/main/star.webp" width="40px">
