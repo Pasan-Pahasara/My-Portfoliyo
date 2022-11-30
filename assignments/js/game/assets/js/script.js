@@ -91,7 +91,7 @@ let score = 0;
 
 function moveBackground() {
     backgroundImagePositionX = backgroundImagePositionX - 20;
-    $("#moveBackground").css("background-position-x", +backgroundImagePositionX + "px");
+    $("#moveBackground").css("background1-position-x", +backgroundImagePositionX + "px");
     score++;
     $("#score").text(score);
     flyTrack.loop;
@@ -213,37 +213,39 @@ function createBarrier() {
 
 let barrierAnimationId = 0;
 
+var tempI = -2;
+
 function barrierAnimation() {
     for (let i = 0; i < 6; i++) {
         let css = parseInt($("#barrier" + i).css("margin-left"));
 
         let newMarginLeft = css - 25;
         $("#barrier" + i).css("margin-left", newMarginLeft - 25 + "px")
-
         if (newMarginLeft >= -110 & newMarginLeft <= 100) {
             if (girlMarginTop > 175) {
-                if (i === 0) {
-                    $("#heart3").css('visibility', 'hidden');
-                }
-                if (i === 1) {
-                    $("#heart2").css('visibility', 'hidden');
-                }
-                if (i === 2) {
-                    $("#heart1").css('visibility', 'hidden');
+                if (i === 0 || i === 1 || i === 2 || i === 3 || i === 4 || i === 5 || i === 6) {
+                    if (tempI < i && $("#heart3").css('visibility') !== "hidden" && $("#heart2").css('visibility') !== "hidden" && $("#heart1").css('visibility') !== "hidden") {
+                        $("#heart3").css('visibility', 'hidden');
+                        tempI = i;
+                    } else if (tempI < i && $("#heart3").css('visibility') === "hidden" && $("#heart2").css('visibility') !== "hidden" && $("#heart1").css('visibility') !== "hidden") {
+                        $("#heart2").css('visibility', 'hidden');
+                        tempI = i;
+                    } else if (tempI < i && $("#heart3").css('visibility') === "hidden" && $("#heart2").css('visibility') === "hidden" && $("#heart1").css('visibility') !== "hidden") {
+                        $("#heart1").css('visibility', 'hidden');
+                        tempI = i;
+                        clearInterval(barrierAnimationId);
+                        clearInterval(runAnimationNumber);
+                        runAnimationNumber = -1;
 
-                    clearInterval(barrierAnimationId);
+                        clearInterval(jumpAnimationNumber);
+                        jumpAnimationNumber = -1;
 
-                    clearInterval(runAnimationNumber);
-                    runAnimationNumber = -1;
-
-                    clearInterval(jumpAnimationNumber);
-                    jumpAnimationNumber = -1;
-
-                    clearInterval(moveBackgroundAnimationId);
-                    moveBackgroundAnimationId = -1;
-                    deadAnimationNumber = setInterval(girlDeadAnimation, 100);
-                    deadTrack.play();
-                    game_over();
+                        clearInterval(moveBackgroundAnimationId);
+                        moveBackgroundAnimationId = -1;
+                        deadAnimationNumber = setInterval(girlDeadAnimation, 100);
+                        deadTrack.play();
+                        game_over();
+                    }
                 }
             }
         }
@@ -353,11 +355,11 @@ $("#btnSound").on('click', function (e) {
 });
 
 function blurComponents() {
-    $(".background").addClass("bgBlur");
+    $(".background1").addClass("bgBlur");
 }
 
 function removeBlur() {
-    $(".background").removeClass("bgBlur");
+    $(".background1").removeClass("bgBlur");
 }
 
 function pauseAll() {
@@ -424,7 +426,7 @@ function hideComponents() {
     $("#titleImg").css("display", "none");
     $("#gameOver_title-img").css("display", "none");
     $("#gameWin_title-img").css("display", "none");
-    $("#btnNext").css("display", "none");
+    $("#btnNext1").css("display", "none");
 }
 
 $(function () {
@@ -461,7 +463,7 @@ function winResults() {
     blurComponents();
 
     $("#gameWin_title-img").css("display", "block");
-    $("#btnNext").css("display", "block");
+    $(".btnNext").css("display", "block");
     $("#btnPause").css("pointer-events", "none");
     $("#btnResume").css("pointer-events", "none");
     pauseAll();
@@ -471,7 +473,12 @@ function winResults() {
     $("#btnSound").removeClass("sound-on");
 }
 
-$("#btnNext").on('click', function (e) {
+$("#btnNext1").on('click', function (e) {
     window.location.href = "index2.html";
 });
+
+$("#btnNext2").on('click', function (e) {
+    window.location.href = "index3.html";
+});
+
 

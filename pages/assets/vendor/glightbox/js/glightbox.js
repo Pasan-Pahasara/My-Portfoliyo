@@ -1802,7 +1802,7 @@
       if (provider === 'local' || !provider) {
         provider = 'local';
         var html = '<video id="' + videoID + '" ';
-        html += "style=\"background:#000; max-width: ".concat(data.width, ";\" ");
+        html += "style=\"background1:#000; max-width: ".concat(data.width, ";\" ");
         html += 'preload="metadata" ';
         html += 'x-webkit-airplay="allow" ';
         html += 'playsinline ';

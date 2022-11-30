@@ -6,14 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 /**
-* added background color
+* added background1 color
 */
 body {
     background-color: #174CE2;
 }
 
 /**
-* added position, size and section background color
+* added position, size and section background1 color
 */
 section {
     width: 300px;

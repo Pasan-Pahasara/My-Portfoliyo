@@ -4887,7 +4887,7 @@
       }
 
       const isModalOverflowing = this._element.scrollHeight > document.documentElement.clientHeight;
-      const initialOverflowY = this._element.style.overflowY; // return if the following background transition hasn't yet completed
+      const initialOverflowY = this._element.style.overflowY; // return if the following background1 transition hasn't yet completed
 
       if (initialOverflowY === 'hidden' || this._element.classList.contains(CLASS_NAME_STATIC)) {
         return;
