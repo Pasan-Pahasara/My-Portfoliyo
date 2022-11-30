@@ -5,7 +5,7 @@
 
 $(document).ready(function () {
     idleAnimationStart();
-    // createBarrier();
+    createBarrier();
     hideComponents();
     removeBlur();
 });
@@ -192,69 +192,69 @@ function girlDeadAnimation() {
  * End Dead Animation
  * */
 
-/***
- * Start Barrier Animation
- * */
-
-let barrierMarginLeft = 500;
-
-function createBarrier() {
-    for (let i = 0; i <= 10; i++) {
-        $("#barrier").append("<div class='barrier' style='margin-left: " + barrierMarginLeft + "px' id='barrier" + i + "'></div>");
-
-        if (i < 5) {
-            barrierMarginLeft = barrierMarginLeft + 2000;
-        }
-        if (i >= 5) {
-            barrierMarginLeft = barrierMarginLeft + 1000;
-        }
-    }
-}
-
-let barrierAnimationId = 0;
-
-var tempI = -2;
-
-function barrierAnimation() {
-    for (let i = 0; i < 6; i++) {
-        let css = parseInt($("#barrier" + i).css("margin-left"));
-
-        let newMarginLeft = css - 25;
-        $("#barrier" + i).css("margin-left", newMarginLeft - 25 + "px")
-        if (newMarginLeft >= -110 & newMarginLeft <= 100) {
-            if (girlMarginTop > 175) {
-                if (i === 0 || i === 1 || i === 2 || i === 3 || i === 4 || i === 5 || i === 6) {
-                    if (tempI < i && $("#heart3").css('visibility') !== "hidden" && $("#heart2").css('visibility') !== "hidden" && $("#heart1").css('visibility') !== "hidden") {
-                        $("#heart3").css('visibility', 'hidden');
-                        tempI = i;
-                    } else if (tempI < i && $("#heart3").css('visibility') === "hidden" && $("#heart2").css('visibility') !== "hidden" && $("#heart1").css('visibility') !== "hidden") {
-                        $("#heart2").css('visibility', 'hidden');
-                        tempI = i;
-                    } else if (tempI < i && $("#heart3").css('visibility') === "hidden" && $("#heart2").css('visibility') === "hidden" && $("#heart1").css('visibility') !== "hidden") {
-                        $("#heart1").css('visibility', 'hidden');
-                        tempI = i;
-                        clearInterval(barrierAnimationId);
-                        clearInterval(runAnimationNumber);
-                        runAnimationNumber = -1;
-
-                        clearInterval(jumpAnimationNumber);
-                        jumpAnimationNumber = -1;
-
-                        clearInterval(moveBackgroundAnimationId);
-                        moveBackgroundAnimationId = -1;
-                        deadAnimationNumber = setInterval(girlDeadAnimation, 100);
-                        deadTrack.play();
-                        game_over();
-                    }
-                }
-            }
-        }
-    }
-}
-
-/***
- * End Barrier Animation
- * */
+// /***
+//  * Start Barrier Animation
+//  * */
+//
+// let barrierMarginLeft = 500;
+//
+// function createBarrier() {
+//     for (let i = 0; i <= 10; i++) {
+//         $("#barrier").append("<div class='barrier' style='margin-left: " + barrierMarginLeft + "px' id='barrier" + i + "'></div>");
+//
+//         if (i < 5) {
+//             barrierMarginLeft = barrierMarginLeft + 2000;
+//         }
+//         if (i >= 5) {
+//             barrierMarginLeft = barrierMarginLeft + 1000;
+//         }
+//     }
+// }
+//
+// let barrierAnimationId = 0;
+//
+// var tempI = -2;
+//
+// function barrierAnimation() {
+//     for (let i = 0; i < 6; i++) {
+//         let css = parseInt($("#barrier" + i).css("margin-left"));
+//
+//         let newMarginLeft = css - 25;
+//         $("#barrier" + i).css("margin-left", newMarginLeft - 25 + "px")
+//         if (newMarginLeft >= -110 & newMarginLeft <= 100) {
+//             if (girlMarginTop > 175) {
+//                 if (i === 0 || i === 1 || i === 2 || i === 3 || i === 4 || i === 5 || i === 6) {
+//                     if (tempI < i && $("#heart3").css('visibility') !== "hidden" && $("#heart2").css('visibility') !== "hidden" && $("#heart1").css('visibility') !== "hidden") {
+//                         $("#heart3").css('visibility', 'hidden');
+//                         tempI = i;
+//                     } else if (tempI < i && $("#heart3").css('visibility') === "hidden" && $("#heart2").css('visibility') !== "hidden" && $("#heart1").css('visibility') !== "hidden") {
+//                         $("#heart2").css('visibility', 'hidden');
+//                         tempI = i;
+//                     } else if (tempI < i && $("#heart3").css('visibility') === "hidden" && $("#heart2").css('visibility') === "hidden" && $("#heart1").css('visibility') !== "hidden") {
+//                         $("#heart1").css('visibility', 'hidden');
+//                         tempI = i;
+//                         clearInterval(barrierAnimationId);
+//                         clearInterval(runAnimationNumber);
+//                         runAnimationNumber = -1;
+//
+//                         clearInterval(jumpAnimationNumber);
+//                         jumpAnimationNumber = -1;
+//
+//                         clearInterval(moveBackgroundAnimationId);
+//                         moveBackgroundAnimationId = -1;
+//                         deadAnimationNumber = setInterval(girlDeadAnimation, 100);
+//                         deadTrack.play();
+//                         game_over();
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+//
+// /***
+//  * End Barrier Animation
+//  * */
 
 $(document).on('keypress', function (e) {
     // alert(e.which);
@@ -356,10 +356,14 @@ $("#btnSound").on('click', function (e) {
 
 function blurComponents() {
     $(".background1").addClass("bgBlur");
+    $(".background2").addClass("bgBlur");
+    $(".background3").addClass("bgBlur");
 }
 
 function removeBlur() {
     $(".background1").removeClass("bgBlur");
+    $(".background2").removeClass("bgBlur");
+    $(".background3").removeClass("bgBlur");
 }
 
 function pauseAll() {
@@ -460,12 +464,12 @@ function winResults() {
     $("#btnSound").removeClass("sound-on");
 }
 
-$("#btnNext1").on('click', function (e) {
-    window.location.href = "index2.html";
-});
+// $("#btnNext1").on('click', function (e) {
+//     window.location.href = "index2.html";
+// });
 
-$("#btnNext2").on('click', function (e) {
-    window.location.href = "index3.html";
-});
+// $("#btnNext2").on('click', function (e) {
+//     window.location.href = "index3.html";
+// });
 
 
