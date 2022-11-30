@@ -357,10 +357,6 @@ $("#btnResume").on('click', function (e) {
     backgroundMusic.play();
 });
 
-$("#btnRestart").on('click', function (e) {
-    window.location.href = "index1.html";
-});
-
 function hideComponents() {
     $("#pause-bg").css("display", "none");
     $("#titleImg").css("display", "none");

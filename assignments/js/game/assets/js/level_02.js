@@ -70,3 +70,7 @@ function barrierAnimation() {
 $("#btnNext2").on('click', function (e) {
     window.location.href = "index3.html";
 });
+
+$("#btnRestart").on('click', function (e) {
+    window.location.href = "index3.html";
+});
