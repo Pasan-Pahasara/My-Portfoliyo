@@ -39,6 +39,16 @@
     position: absolute;
 }
 
+.background4 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./.././images/background4.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+    position: absolute;
+}
+
 .fighterGirl {
     height: 230px;
     margin-top: 232px;
@@ -291,7 +301,7 @@ section#pause-bg {
     cursor: pointer;
 }
 
-.barrier2{
+.barrier2 {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -301,7 +311,7 @@ section#pause-bg {
     background-repeat: no-repeat;
 }
 
-.barrier3{
+.barrier3 {
     width: 300px;
     height: 300px;
     position: absolute;
@@ -309,4 +319,15 @@ section#pause-bg {
     background-image: url("./.././images/barrier3.gif");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.barrier4 {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin-top: 230px;
+    background-image: url("./.././images/barrier4.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(270deg);
 }
