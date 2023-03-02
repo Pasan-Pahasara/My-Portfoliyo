@@ -55,6 +55,13 @@ This is Framework Assigment
 * 🔗 <a href="https://pasan-pahasara.github.io/My-Portfoliyo/assignments/js/calculator/" target="_blank">GitHub Page</a>
 #
 
+# Game (CRAZY GIRL)
+This is JS Assigment
+
+#
+* 🔗 <a href="https://pasan-pahasara.github.io/My-Portfoliyo/assignments/js/game/index.html" target="_blank">GitHub Page</a>
+#
+
 ###### If you think my code is good pleace drop a Star <img src="https://github.com/Pasan-Pahasara/md-alpha/blob/main/star.webp" width="40px">
 
 ![GitHub issues](https://img.shields.io/github/issues/Pasan-Pahasara/My-Portfoliyo?&labelColor=black&color=eb3b5a&label=Issues&logo=issues&logoColor=black&style=for-the-badge)
